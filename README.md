@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# AgrInov
 
 `Tecnólogo em Análise e Desenvolvimento de Sistemas - PUC Minas`
 
