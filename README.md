@@ -1,6 +1,6 @@
 # TÍTULO DO PROJETO
 
-`Análise e Desenvolvimento de Sistemas - PUC Minas`
+`Tecnólogo em Análise e Desenvolvimento de Sistemas - PUC Minas`
 
 `Desenvolvimento de uma Aplicação Interativa`
 
