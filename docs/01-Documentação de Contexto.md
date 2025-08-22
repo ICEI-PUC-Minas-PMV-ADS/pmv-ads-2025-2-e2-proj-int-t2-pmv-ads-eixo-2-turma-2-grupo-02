@@ -23,6 +23,21 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
+O objetivo geral deste projeto é criar uma aplicação web Back-end que utilize a agricultura de precisão para melhorar a tomada de decisões nas atividades agrícolas. 
+
+
+Como objetivos específicos, destacam-se: 
+
+* Disponibilizar uma plataforma que permita os agricultores monitorarem a variabilidade espacial e temporal, permitindo a aplicação de insumos como fertilizantes, água, sementes e outras de forma a reduzir custos de produção; 
+
+* Fornecer metadados de imagens para prover um melhor conhecimento espacial da atividade agrícola; 
+
+* Reduzir riscos da atividade agrícola; 
+
+* Auxiliar a rotação de cultura para evitar o empobrecimento do solo. 
+
+
+
 ## Justificativa
 
 Explique de forma clara a relevância da aplicação escolhida, justificando os objetivos específicos e os aspectos do software que serão aprofundados, e quantifique o impacto do problema com dados concretos (números, percentuais, indicadores) obtidos por bases oficiais ou outras fontes confiáveis, sempre citadas no padrão ABNT (no formato [Numérico] ou (AUTOR, ANO)).
