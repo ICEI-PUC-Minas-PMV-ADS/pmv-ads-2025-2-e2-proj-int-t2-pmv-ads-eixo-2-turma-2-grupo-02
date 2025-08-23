@@ -102,7 +102,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
+|03| O sistema não fará integração com sensores            |
+|04| O banco de dados usado precisa ser relacional         |
+|05|  A Linguagem de progração back-end utilizada é c#     |
+|06| O Front-End Utiliza apenas HTML,CSS e Javascript |
+|07| Não haverá validação dos dados em processos agrícolas reais, ou seja, não terão testes práticos; |
+|08|Por conta da limitação no orçamento, o sistema não permitirá utilização de equipamentos externos; |
+|09|As funcionalidades avançadas  e Venda ,fora do CRUD, ficam fora do escopo atual |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
