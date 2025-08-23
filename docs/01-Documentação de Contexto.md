@@ -35,7 +35,15 @@ Segundo o Census dos Estados Unidos a estimativa da população mundial em agost
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo da aplicação abrange produtores rurais de diferentes portes e empresas do setor agrícola que ainda utilizam controles manuais de plantio, insumos e colheita. Esses usuários necessitam otimizar seus recursos, prever riscos climáticos, identificar pragas e gerar relatórios do estado do plantio.
+
+Além do produtor, a aplicação contemplará outros públicos, tais como:
+
+- Engenheiros e técnicos agrícolas, que utilizarão os dados para validar recomendações e apoiar decisões técnicas;
+
+- Gestores de fazenda, responsáveis por acompanhar a produtividade e planejar o uso das áreas do plantio;
+
+- Administradores Financeiros, que necessitam de relatórios claros de uso de insumos agrícolas sem desperdícios para gastos eficiente
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
