@@ -28,13 +28,7 @@ Segundo o Census dos Estados Unidos a estimativa da população mundial em agost
 
 O público-alvo da aplicação abrange produtores rurais de diferentes portes e empresas do setor agrícola que ainda utilizam controles manuais de plantio, insumos e colheita. Esses usuários necessitam otimizar seus recursos, prever riscos climáticos, identificar pragas e gerar relatórios do estado do plantio.
 
-Além do produtor, a aplicação contemplará outros públicos, tais como:
-
-- Engenheiros e técnicos agrícolas, que utilizarão os dados para validar recomendações e apoiar decisões técnicas;
-
-- Gestores de fazenda, responsáveis por acompanhar a produtividade e planejar o uso das áreas do plantio;
-
-- Administradores Financeiros, que necessitam de relatórios claros de uso de insumos agrícolas sem desperdícios para gastos eficiente
+A aplicação será direcionada aos seguintes públicos:
 
 * **Administradores do sistema (ADM)**: são profissionais que tem um melhor conhecimento técnico de informática. A função deles é fornecer suporte aos usuários quanto aos acessos na plataforma. Apesar desse conhecimento em informática, não necessariamente apresentam conhecimento específico no contexto agrícola.
 
