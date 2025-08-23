@@ -3,12 +3,7 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
+Já é amplamente difundido pela mídia que a agricultura de precisão é benéfica para o meio ambiente, pois reduz o desperdício do produtor, diminui o custo operacional e ainda pode aumentar o lucro, segundo EXAME Solutions (2024, online). No entanto, desde a agricultura familiar até o médio produtor, observa-se que o elevado investimento inicial constitui uma barreira para a adoção da agricultura de precisão (MOZAMBANI et al., 2021, p. 5), o que torna a adesão a essa prática menos popular.
 
 ## Objetivos
 
@@ -27,16 +22,19 @@ Como objetivos específicos, destacam-se:
 
 ## Justificativa
 
-Explique de forma clara a relevância da aplicação escolhida, justificando os objetivos específicos e os aspectos do software que serão aprofundados, e quantifique o impacto do problema com dados concretos (números, percentuais, indicadores) obtidos por bases oficiais ou outras fontes confiáveis, sempre citadas no padrão ABNT (no formato [Numérico] ou (AUTOR, ANO)).
-
-**Relacione o problema aos Objetivos de Desenvolvimento Sustentável (ODS), indicando quais ODS e subobjetivos são atendidos e descrevendo como o projeto contribui para cada um deles, garantindo coerência entre o impacto mensurado e as metas selecionadas.**
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Segundo o Census dos Estados Unidos a estimativa da população mundial em agosto de 2025 é de 8,1 bilhões. Já em 2050, segundo cálculos da ONU, a população global deverá atingir 9,7 bilhões de pessoas, o que exigirá um aumento de 70% na produção de alimentos, de acordo com dados da ONU FAO. Nesse contexto, o desenvolvimento de uma aplicação de gestão e acompanhamento de áreas agrícolas e fazendas surge como uma solução estratégica, pois permite monitorar as atividades agrícolas, identificar oportunidades de otimização e apoiar decisões baseadas em dados, aumentando a produtividade e a sustentabilidade do setor.
 
 ## Público-Alvo
 
-O público-alvo da aplicação é formado por diferentes perfis que atuam diretamente no contexto agrícola e têm relação com o processo de produção, gestão e acompanhamento das fazendas.
+O público-alvo da aplicação abrange produtores rurais de diferentes portes e empresas do setor agrícola que ainda utilizam controles manuais de plantio, insumos e colheita. Esses usuários necessitam otimizar seus recursos, prever riscos climáticos, identificar pragas e gerar relatórios do estado do plantio.
+
+Além do produtor, a aplicação contemplará outros públicos, tais como:
+
+- Engenheiros e técnicos agrícolas, que utilizarão os dados para validar recomendações e apoiar decisões técnicas;
+
+- Gestores de fazenda, responsáveis por acompanhar a produtividade e planejar o uso das áreas do plantio;
+
+- Administradores Financeiros, que necessitam de relatórios claros de uso de insumos agrícolas sem desperdícios para gastos eficiente
 
 * **Administradores do sistema (ADM)**: são profissionais que tem um melhor conhecimento técnico de informática. A função deles é fornecer suporte aos usuários quanto aos acessos na plataforma. Apesar desse conhecimento em informática, não necessariamente apresentam conhecimento específico no contexto agrícola.
 
