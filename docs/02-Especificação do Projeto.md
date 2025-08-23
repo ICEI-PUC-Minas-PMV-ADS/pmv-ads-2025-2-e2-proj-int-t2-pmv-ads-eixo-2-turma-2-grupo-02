@@ -8,6 +8,27 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
+
+**Persona 1 - Administrador**
+Ana tem 35 anos, mora em Goiânia (GO), é administradora de sistemas e precisa cadastrar novos usuários na plataforma para que os gestores e técnicos agrícolas possam ter acesso. O objetivo dela é certificar a segurança do sistema para que cada perfil de usuário tenha acesso as funcionalidades conforme suas funções. 
+
+**Persona 2 - Gestor**
+João tem 45 anos, mora em Uberlândia (MG), é gestor de fazenda e busca uma visão abrangente do plantio e das vendas, além do controle operacional da propriedade. Seu objetivo é utilizar essas informações detalhadas para identificar perdas, otimizar processos e aumentar a eficiência da produção. 
+
+**Persona 3 - Técnico Agrícola**
+Carlos tem 32 anos, mora em Ribeirão Preto (SP), é técnico agrícola e precisa cadastrar áreas de plantio e durante seu trabalho acompanha as áreas de plantio da fazenda. Ele busca maneiras de registrar e organizar as informações sobre os insumos e os cultivos. Ele tem a necessidade de ter uma visão confiável do desenvolvimento da lavoura para tomar decisões mais precisas e colaborar com a eficiência da produção. 
+
+
+**Persona 4 – Técnico Agrícola**
+Mariana tem 28 anos, mora em Cascavel (PR), é técnica agrícola e acompanha pequenas propriedades familiares. Ela sente dificuldade em centralizar os dados de diferentes fazendas, pois cada produtor utiliza métodos manuais distintos. Sua necessidade é ter uma ferramenta que unifique as informações, permitindo registrar cultivos e insumos de forma organizada para apoiar os agricultores locais na busca por maior produtividade.
+
+**Persona 5 – Técnico Agrícola**
+Rafael tem 40 anos, mora em Barreiras (BA), trabalha há mais de 15 anos na área agrícola e acompanha grandes áreas de produção de soja e milho. Ele já tem contato com tecnologias digitais, mas enfrenta barreiras quando precisa integrar informações de campo com relatórios gerenciais. Seu objetivo é otimizar o tempo de coleta de dados em campo, reduzindo falhas e garantindo relatórios mais precisos para os gestores.
+
+**Persona 6 – Técnico Agrícola**
+Fernanda tem 34 anos, mora em Sinop (MT), é engenheira agrônoma e atua como técnica agrícola em fazendas de médio porte. Ela busca ferramentas que permitam não apenas registrar os dados, mas também gerar análises comparativas de diferentes safras. Sua necessidade é identificar padrões de produtividade e propor estratégias de manejo mais sustentáveis, auxiliando a reduzir custos e preservar o solo.
+
+
 Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
 
 Utilize também como referência o exemplo abaixo:

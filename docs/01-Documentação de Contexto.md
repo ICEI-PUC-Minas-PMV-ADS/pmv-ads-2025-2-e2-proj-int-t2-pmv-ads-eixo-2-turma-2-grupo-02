@@ -9,22 +9,10 @@ Descreva também o contexto em que essa aplicação será usada, se  houver: emp
 
 Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 O objetivo geral deste projeto é criar uma aplicação web Back-end que utilize a agricultura de precisão para melhorar a tomada de decisões nas atividades agrícolas. 
-
 
 Como objetivos específicos, destacam-se: 
 
@@ -35,7 +23,6 @@ Como objetivos específicos, destacam-se:
 * Reduzir riscos da atividade agrícola; 
 
 * Auxiliar a rotação de cultura para evitar o empobrecimento do solo. 
-
 
 
 ## Justificativa
@@ -49,10 +36,11 @@ Explique de forma clara a relevância da aplicação escolhida, justificando os 
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo da aplicação é formado por diferentes perfis que atuam diretamente no contexto agrícola e têm relação com o processo de produção, gestão e acompanhamento das fazendas.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+* **Administradores do sistema (ADM)**: são profissionais que tem um melhor conhecimento técnico de informática. A função deles é fornecer suporte aos usuários quanto aos acessos na plataforma. Apesar desse conhecimento em informática, não necessariamente apresentam conhecimento específico no contexto agrícola.
+
+
+* **Gestores de fazenda**: são os líderes nos quais são responsáveis por tomar decisões estratégicas sobre a produção. Possuem conhecimento e experiência prática no setor agropecuário e talvez possam ter pouco conhecimento em informática quanto ao uso de ferramentas digitais. Eles possuem a necessidade e acompnhar a produtividade e ter um melhor controle operacional.
+
+* **Técnicos agrícolas**: são profissionais com uma formação na área agronômica. São responsáveis por acompanhar os cultivos, a qualidade do solo, insumos e a produção. A maioria já utiliza ferramentas digitais no seu cotidiano, mas enfrentam dificuldades nos processos de registros manuais. Eles tem a necessidade e monitorar as lavouras e uma aplicação facilitaria o trabalho diário.
