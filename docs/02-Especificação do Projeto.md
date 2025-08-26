@@ -38,7 +38,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
 |Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
-
 | Técnico Agrícola          | Visualizar relatórios de custos e lucros por safra       | Acompanhar a rentabilidade                             |
 | Administrador da Fazenda  | Cadastrar diferentes usuários com permissões distintas   | Dar acesso controlado ao sistema                       |
 | Técnico Agrícola          | Acessar relatórios                                       | Validar as recomendações do sistema                    |
