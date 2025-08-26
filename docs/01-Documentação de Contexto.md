@@ -1,8 +1,8 @@
 # Introdução
 
-<!-- TODO: Pamela-->
-<!-- TODO: Matheus-->
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A agricultura, atualmente, é uma atividade que exige cada vez mais a utilização de tecnologias para aplicabilidade no campo. Através de métodos modernos será possível garantir a produtividade e atender à crescente demanda de alimentos por conta do crescimento populacional. Entre essas tecnologias, destaca-se a agricultura de precisão, que tem como objetivo otimizar recursos, fornecer indicadores para uma melhor tomada de decisões e, consequentemente, elevar a produtividade. 
+
+Nesse cenário, a proposta deste projeto é o desenvolvimento uma aplicação web back-end voltada a agricultura de precisão. A solução visa fornecer informações valiosas que ajudem em decisões estratégicas das atividades agrícolas, aumentar a eficiência produtiva, reduzir desperdícios, e claro, resolver as necessidades dos usuários envolvidos. 
 
 
 ## Problema
