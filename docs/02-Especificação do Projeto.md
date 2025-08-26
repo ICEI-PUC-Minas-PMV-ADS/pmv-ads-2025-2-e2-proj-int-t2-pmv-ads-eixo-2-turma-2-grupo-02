@@ -39,6 +39,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
 |Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
+| Técnico Agrícola          | Visualizar relatórios de custos e lucros por safra       | Acompanhar a rentabilidade                             |
+| Administrador da Fazenda  | Cadastrar diferentes usuários com permissões distintas   | Dar acesso controlado ao sistema                       |
+| Técnico Agrícola          | Acessar relatórios                                       | Validar as recomendações do sistema                    |
+| Técnico Agrícola          | Visualizar imagens da região agrícola                    | Conhecer o terreno                                     |
+| Técnico Agrícola          | Trocar a senha da conta                                  | Recuperar o acesso à conta criada                      |
+| Técnico Agrícola          | Fazer login na plataforma com as credenciais cadastradas | Acessar a aplicação e suas funcionalidades             |
+
+
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 <!-- TODO: Gabriel delete links -->
