@@ -30,7 +30,8 @@ Fernanda tem 34 anos, mora em Sinop (MT), é engenheira agrônoma e atua como t�
 
 
 ## Histórias de Usuários
-
+<!-- TODO: Lucas -->
+<!-- TODO: Gabriel -->
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
@@ -40,7 +41,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
+<!-- TODO: Gabriel delete links -->
+> **Links Úteis**
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
 > - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
@@ -112,6 +114,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |08|Por conta da limitação no orçamento, o sistema não permitirá utilização de equipamentos externos; |
 |09|As funcionalidades avançadas  e Venda ,fora do CRUD, ficam fora do escopo atual |
 
+
+<!-- TODO: Matheus delete -->
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 > **Links Úteis**:
@@ -124,6 +128,8 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 <img width="4355" height="4153" alt="AgrInov(1)" src="https://github.com/user-attachments/assets/330cb120-524e-4c74-b0dd-ef19d2665648" />
 
+
+<!-- TODO: Lucas delete -->
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
 
 > **Links Úteis**:

@@ -1,6 +1,9 @@
 # Introdução
 
+<!-- TODO: Pamela-->
+<!-- TODO: Matheus-->
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+
 
 ## Problema
 Já é amplamente difundido pela mídia que a agricultura de precisão é benéfica para o meio ambiente, pois reduz o desperdício do produtor, diminui o custo operacional e ainda pode aumentar o lucro, segundo EXAME Solutions (2024, online). No entanto, desde a agricultura familiar até o médio produtor, observa-se que o elevado investimento inicial constitui uma barreira para a adoção da agricultura de precisão (MOZAMBANI et al., 2021, p. 5), o que torna a adesão a essa prática menos popular.
@@ -22,7 +25,7 @@ Como objetivos específicos, destacam-se:
 
 ## Justificativa
 
-Segundo o Census dos Estados Unidos a estimativa da população mundial em agosto de 2025 é de 8,1 bilhões. Já em 2050, segundo cálculos da ONU, a população global deverá atingir 9,7 bilhões de pessoas, o que exigirá um aumento de 70% na produção de alimentos, de acordo com dados da ONU FAO. Nesse contexto, o desenvolvimento de uma aplicação de gestão e acompanhamento de áreas agrícolas e fazendas surge como uma solução estratégica, pois permite monitorar as atividades agrícolas, identificar oportunidades de otimização e apoiar decisões baseadas em dados, aumentando a produtividade e a sustentabilidade do setor.
+Segundo o Census dos Estados Unidos a estimativa da população mundial em agosto de 2025 é de 8,1 bilhões. Já em 2050, segundo cálculos da ONU, a população global deverá atingir 9,7 bilhões de pessoas, o que exigirá um aumento de 70% na produção de alimentos, de acordo com dados da ONU FAO. Nesse contexto, o desenvolvimento de uma aplicação de gestão e acompanhamento de áreas wagrícolas e fazendas surge como uma solução estratégica, pois permite monitorar as atividades agrícolas, identificar oportunidades de otimização e apoiar decisões baseadas em dados, aumentando a produtividade e a sustentabilidade do setor.
 
 ## Público-Alvo
 
