@@ -30,7 +30,6 @@ Fernanda tem 34 anos, mora em Sinop (MT), é engenheira agrônoma e atua como t�
 
 
 ## Histórias de Usuários
-<!-- TODO: Lucas -->
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
@@ -44,6 +43,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Carlos (Técnico Agrícola)          | Visualizar imagens da região agrícola                    | Conhecer o terreno                                     |
 | Mariana (Técnico Agrícola)          | Trocar a senha da conta                                  | Recuperar o acesso à conta criada                      |
 | Mariana (Técnico Agrícola)         | Fazer login na plataforma com as credenciais cadastradas | Acessar a aplicação e suas funcionalidades             |
+| Roberta(Técnico Agrícola)      | Visualizar a quantidade de insumos por safra             | Acompanhar o gasto de recursos de cada safra           |
+| João(Técnico Agrícola)         | Receber alertas sobre o clima e pragas                   | Tomar as devidas providências e evitar prejuísos       |
+| André(Gestor)                  | Cadastrar diferentes áreas de plantil                    | Poder acompanhar cada safra de forma mais detalhada    |
+| Millena(Gestor)                | Alterar as permições dos usuários                        | Garantir que todos estejam com os acessos corretos     |
+| Bárbara(Técnico agrícola)      | Cadastrar diferentes fazendas                            | Organizar as informações de cada uma individualmente   |
+| Marcos(Gestor)                 | Comparar dados de safras anteriores                      | Entender tendências e otimizar processos               |
+| Claudio(Técnico Agrícola)      | Receber sugestões de rotação de cultura                  | Manter a fertilidade do solo e reduzir pragas          |
+| Thais(Técnico Agrícola)        | Visualizar mapas com informações da plantação            | Entender a saúde das plantações e os solos para plantio|
 
 
 ## Requisitos
