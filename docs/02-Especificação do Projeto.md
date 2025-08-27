@@ -70,6 +70,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-014| A aplicação deve permitir que os administradores façam download dos relatórios. | BAIXA |
 |RF-015| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
 
+
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
@@ -78,22 +79,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-002| A aplicação deve estar disponível 24 horas por dia, 7 dias por semana, com tempo de inatividade mínimo para manutenções programadas. | ALTA |
 |RNF-003| A aplicação deve responder às interações do usuário em até 2 segundos para operações comuns, como consultas de dados e visualização de relatórios. | ALTA |
 |RNF-004| A aplicação deve ser capaz de processar e armazenar imagens (ex.: drones, satélites) de forma organizada e otimizada para consultas rápidas. | ALTA |
-|RNF-005| A aplicação deve ser compatível com os principais navegadores do mercado (ex.:Google Chrome, Safari, Firefox). | MÉDIA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-005| A aplicação deve ser compatível com os principais navegadores do mercado (ex.:Google Chrome, Safari, Firefox). | MÉDIA |
 
 ## Restrições
 
