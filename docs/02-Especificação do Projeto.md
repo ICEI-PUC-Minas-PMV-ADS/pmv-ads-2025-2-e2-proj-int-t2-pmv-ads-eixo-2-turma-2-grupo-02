@@ -31,30 +31,20 @@ Fernanda tem 34 anos, mora em Sinop (MT), é engenheira agrônoma e atua como t�
 
 ## Histórias de Usuários
 <!-- TODO: Lucas -->
-<!-- TODO: Gabriel -->
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
-| Técnico Agrícola          | Visualizar relatórios de custos e lucros por safra       | Acompanhar a rentabilidade                             |
-| Administrador da Fazenda  | Cadastrar diferentes usuários com permissões distintas   | Dar acesso controlado ao sistema                       |
-| Técnico Agrícola          | Acessar relatórios                                       | Validar as recomendações do sistema                    |
-| Técnico Agrícola          | Visualizar imagens da região agrícola                    | Conhecer o terreno                                     |
-| Técnico Agrícola          | Trocar a senha da conta                                  | Recuperar o acesso à conta criada                      |
-| Técnico Agrícola          | Fazer login na plataforma com as credenciais cadastradas | Acessar a aplicação e suas funcionalidades             |
+| João (Gestor)             | Visualizar relatórios consolidados de produção e vendas  | Ter uma visão abrangente da fazenda                    |
+| João (Gestor)             | Acompanhar indicadores de produtividade por área         | Identificar perdas e otimizar processos                |
+| João (Gestor)             | Registrar compras e vendas diretamente na plataforma     | Centralizar dados financeiros da fazenda               |
+| João (Gestor)             | Receber alertas sobre pragas ou clima                    | Tomar decisões rápidas e reduzir riscos                |
+| Carlos (Técnico Agrícola)          | Visualizar relatórios de custos e lucros por safra       | Acompanhar a rentabilidade                             |
+| Carlos (Técnico Agrícola)          | Acessar relatórios                                       | Validar as recomendações do sistema                    |
+| Carlos (Técnico Agrícola)          | Visualizar imagens da região agrícola                    | Conhecer o terreno                                     |
+| Mariana (Técnico Agrícola)          | Trocar a senha da conta                                  | Recuperar o acesso à conta criada                      |
+| Mariana (Técnico Agrícola)         | Fazer login na plataforma com as credenciais cadastradas | Acessar a aplicação e suas funcionalidades             |
 
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-<!-- TODO: Gabriel delete links -->
-> **Links Úteis**
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
