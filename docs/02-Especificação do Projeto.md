@@ -112,13 +112,3 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 
 <img width="4355" height="4153" alt="AgrInov(1)" src="https://github.com/user-attachments/assets/330cb120-524e-4c74-b0dd-ef19d2665648" />
 
-
-<!-- TODO: Lucas delete -->
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
