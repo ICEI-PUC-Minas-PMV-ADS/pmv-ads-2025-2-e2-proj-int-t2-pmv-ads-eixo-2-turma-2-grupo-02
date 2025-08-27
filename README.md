@@ -6,7 +6,7 @@
 
 `2º semestre/2025`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo geral deste projeto é criar uma aplicação web Back-end que utilize a agricultura de precisão para melhorar a tomada de decisões nas atividades agrícolas.
 
 ## Integrantes
 
