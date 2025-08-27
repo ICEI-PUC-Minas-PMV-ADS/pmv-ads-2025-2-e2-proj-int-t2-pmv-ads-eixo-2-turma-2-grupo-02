@@ -51,8 +51,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Marcos(Gestor)                 | Comparar dados de safras anteriores                      | Entender tendências e otimizar processos               |
 | Claudio(Técnico Agrícola)      | Receber sugestões de rotação de cultura                  | Manter a fertilidade do solo e reduzir pragas          |
 | Thais(Técnico Agrícola)        | Visualizar mapas com informações da plantação            | Entender a saúde das plantações e os solos para plantio|
-
-
+| Ana (Administrador)             | Visualizar lista de usuários cadastrados                 | Conferir quem tem acesso ao sistema                   |
+| Ana (Administrador)             | Ativar ou desativar contas de usuários                   | Impedir acesso de usuários que não deveriam usar o sistema |
+| Ana (Administrador)             | Editar informações básicas de usuário                    | Corrigir dados simples, como nome ou e-mail           |
+| Ana (Administrador)             | Ver lista de fazendas cadastradas                        | Ter noção geral de todas as propriedades gerenciadas  |
+| Ana (Administrador)             | Definir metas de produção por área de plantio            | Acompanhar desempenho e incentivar melhoria contínua  |
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
