@@ -112,6 +112,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-<img width="1893" height="2012" alt="AgrInov(2)" src="https://github.com/user-attachments/assets/c1e68596-eb43-468d-9bac-09e64f0a60c7" />
+
+<img width="1873" height="1994" alt="AgrInov_atualizado" src="https://github.com/user-attachments/assets/5b51ce9a-524c-4533-872e-a0fb7ba3617e" />
 
 
