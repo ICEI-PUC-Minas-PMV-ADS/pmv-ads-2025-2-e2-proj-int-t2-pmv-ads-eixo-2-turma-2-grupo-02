@@ -70,12 +70,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| A aplicação deve permitir o gerenciamento do registro de aplicação de insumos (fertilizantes, sementes, água, defensivos) em cada área de plantio (CRUD). | ALTA |
 |RF-008| A aplicação deve emitir alertas ao agricultor sobre riscos de clima adverso ou presença de pragas. | ALTA |
 |RF-009| A aplicação deve permitir o gerenciamento de imagens da fazenda (CRUD). | ALTA |
-|RF-010| A aplicação deve permitir a comparação entre dados de safras anteriores, mostrando evolução de produtividade. | MÉDIA |
-|RF-011| A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido. | MÉDIA |
-|RF-012| A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas. | MÉDIA |
-|RF-013| A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). | MÉDIA |
-|RF-014| A aplicação deve permitir que os administradores façam download dos relatórios. | BAIXA |
-|RF-015| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
+|RF-010| A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). | MÉDIA |
+|RF-011| A aplicação deve permitir a comparação entre dados de safras anteriores, mostrando evolução de produtividade. | MÉDIA |
+|RF-012| A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido. | MÉDIA |
+|RF-013| A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas. | MÉDIA |
+|RF-014| A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). | MÉDIA |
+|RF-015| A aplicação deve permitir que os administradores façam download dos relatórios. | BAIXA |
+|RF-016| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
 
 
 ### Requisitos não Funcionais
