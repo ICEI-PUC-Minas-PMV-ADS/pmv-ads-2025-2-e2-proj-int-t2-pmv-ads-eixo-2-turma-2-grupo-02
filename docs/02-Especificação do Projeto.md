@@ -82,9 +82,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-012| A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido. | MÉDIA |
 |RF-013| A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas. | MÉDIA |
 |RF-014| A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). | MÉDIA |
-|RF-015| A aplicação deve permitir que os administradores façam download dos relatórios. | BAIXA |
-|RF-016| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
-|RF-017| A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra, além de visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas. | BAIXA |
+|RF-015| A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). | MÉDIA |
+|RF-016| A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas. | MÉDIA |
+|RF-017| A aplicação deve permitir que os administradores façam download dos relatórios. | BAIXA |
+|RF-018| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
+
 
 
 ### Requisitos não Funcionais
