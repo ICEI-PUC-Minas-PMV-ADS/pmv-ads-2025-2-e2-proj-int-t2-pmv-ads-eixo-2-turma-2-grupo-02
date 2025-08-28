@@ -84,7 +84,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-014| A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). | MÉDIA |
 |RF-015| A aplicação deve permitir que os administradores façam download dos relatórios. | BAIXA |
 |RF-016| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
-|RF-018| A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra, além de visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas. | BAIXA |
+|RF-017| A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra, além de visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas. | BAIXA |
 
 
 ### Requisitos não Funcionais
