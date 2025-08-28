@@ -41,6 +41,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Carlos (Técnico Agrícola)          | Visualizar relatórios de custos e lucros por safra       | Acompanhar a rentabilidade                             |
 | Carlos (Técnico Agrícola)          | Acessar relatórios                                       | Validar as recomendações do sistema                    |
 | Carlos (Técnico Agrícola)          | Visualizar imagens da região agrícola                    | Conhecer o terreno                                     |
+| Carlos (Técnico Agrícola) | Registrar culturas com data, variedade e safra         | Manter histórico organizado e planejar safras futuras       |
+| Fernanda (Técnica Agrícola)| Receber sugestões automáticas de boas práticas         | Tomar decisões informadas e melhorar a produtividade        |
+| João (Gestor)             | Baixar relatórios em PDF ou planilha                   | Compartilhar em reuniões e analisar dados offline           |
+| Rafael (Técnico Agrícola) | Visualizar previsão do tempo na plataforma             | Planejar atividades de campo com mais eficiência e segurança|                               |
 | Rafael (Técnico Agrícola)          | Trocar a senha da conta                                  | Recuperar o acesso à conta criada                      |
 | Mariana (Técnico Agrícola)         | Fazer login na plataforma com as credenciais cadastradas | Acessar a aplicação e suas funcionalidades             |
 | Mariana (Técnico Agrícola)      | Visualizar a quantidade de insumos por safra             | Acompanhar o gasto de recursos de cada safra           |
