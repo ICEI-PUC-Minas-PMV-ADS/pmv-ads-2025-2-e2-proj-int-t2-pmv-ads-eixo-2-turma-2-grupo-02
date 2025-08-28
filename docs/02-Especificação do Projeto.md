@@ -9,7 +9,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ## Personas
 <br>
 
-![ana](https://github.com/user-attachments/assets/ef5c2c37-1c98-4836-9185-88a7d9f3668a)
+![ana](https://github.com/user-attachments/assets/d2f8a7ba-7f88-460f-b93a-aa377535c416)
 
 **Persona 1 - Administrador**
 
@@ -17,7 +17,7 @@ Ana tem 35 anos, mora em Goiânia (GO), é administradora de sistemas e precisa 
 
 <br>
 
-![joao](https://github.com/user-attachments/assets/24bb7f97-09aa-467b-8b69-1e025eaa512b)
+![joao](https://github.com/user-attachments/assets/c8ba9506-8a41-4078-9817-10cdb9d72003)
 
 **Persona 2 - Gestor**
 
@@ -25,7 +25,7 @@ João tem 45 anos, mora em Uberlândia (MG), é gestor de fazenda e busca uma vi
 
 <br>
 
-![carlos](https://github.com/user-attachments/assets/daafbd5b-f2a3-4a79-8f46-e1ac544a94e3)
+![carlos](https://github.com/user-attachments/assets/4e0c875c-cfab-4283-8b8e-939873096411)
 
 **Persona 3 - Técnico Agrícola**
 
@@ -33,7 +33,7 @@ Carlos tem 32 anos, mora em Ribeirão Preto (SP), é técnico agrícola e precis
 
 <br>
 
-![mariana](https://github.com/user-attachments/assets/2df26f76-2d7e-44ee-9b9c-9d9180b24199)
+![mariana](https://github.com/user-attachments/assets/0e8934e7-c6cd-489c-b4b7-5265a4a135e1)
 
 **Persona 4 – Técnico Agrícola**
 
@@ -41,7 +41,7 @@ Mariana tem 28 anos, mora em Cascavel (PR), é técnica agrícola e acompanha pe
 
 <br>
 
-![rafael](https://github.com/user-attachments/assets/6ee16250-381e-459a-a14d-cbea1edf32e3)
+![rafael](https://github.com/user-attachments/assets/2421dd3d-ef51-4c76-890f-9df8896f3bfe)
 
 **Persona 5 – Técnico Agrícola**
 
@@ -49,7 +49,7 @@ Rafael tem 40 anos, mora em Barreiras (BA), trabalha há mais de 15 anos na áre
 
 <br>
 
-![fernanda](https://github.com/user-attachments/assets/a3bb27b5-cd7f-4534-9b32-27e908574192)
+![fernanda](https://github.com/user-attachments/assets/dfa8a044-a8d0-4dd9-b269-7bec994d0270)
 
 **Persona 6 – Técnico Agrícola**
 
