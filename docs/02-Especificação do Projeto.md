@@ -7,25 +7,52 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
+<br>
 
+![ana](https://github.com/user-attachments/assets/ef5c2c37-1c98-4836-9185-88a7d9f3668a)
 
 **Persona 1 - Administrador**
+
 Ana tem 35 anos, mora em Goiânia (GO), é administradora de sistemas e precisa cadastrar novos usuários na plataforma para que os gestores e técnicos agrícolas possam ter acesso. O objetivo dela é certificar a segurança do sistema para que cada perfil de usuário tenha acesso as funcionalidades conforme suas funções. 
 
+<br>
+
+![joao](https://github.com/user-attachments/assets/24bb7f97-09aa-467b-8b69-1e025eaa512b)
+
 **Persona 2 - Gestor**
+
 João tem 45 anos, mora em Uberlândia (MG), é gestor de fazenda e busca uma visão abrangente do plantio e das vendas, além do controle operacional da propriedade. Seu objetivo é utilizar essas informações detalhadas para identificar perdas, otimizar processos e aumentar a eficiência da produção. 
 
+<br>
+
+![carlos](https://github.com/user-attachments/assets/daafbd5b-f2a3-4a79-8f46-e1ac544a94e3)
+
 **Persona 3 - Técnico Agrícola**
+
 Carlos tem 32 anos, mora em Ribeirão Preto (SP), é técnico agrícola e precisa cadastrar áreas de plantio e durante seu trabalho acompanha as áreas de plantio da fazenda. Ele busca maneiras de registrar e organizar as informações sobre os insumos e os cultivos. Ele tem a necessidade de ter uma visão confiável do desenvolvimento da lavoura para tomar decisões mais precisas e colaborar com a eficiência da produção. 
 
+<br>
+
+![mariana](https://github.com/user-attachments/assets/2df26f76-2d7e-44ee-9b9c-9d9180b24199)
 
 **Persona 4 – Técnico Agrícola**
+
 Mariana tem 28 anos, mora em Cascavel (PR), é técnica agrícola e acompanha pequenas propriedades familiares. Ela sente dificuldade em centralizar os dados de diferentes fazendas, pois cada produtor utiliza métodos manuais distintos. Sua necessidade é ter uma ferramenta que unifique as informações, permitindo registrar cultivos e insumos de forma organizada para apoiar os agricultores locais na busca por maior produtividade.
 
+<br>
+
+![rafael](https://github.com/user-attachments/assets/6ee16250-381e-459a-a14d-cbea1edf32e3)
+
 **Persona 5 – Técnico Agrícola**
+
 Rafael tem 40 anos, mora em Barreiras (BA), trabalha há mais de 15 anos na área agrícola e acompanha grandes áreas de produção de soja e milho. Ele já tem contato com tecnologias digitais, mas enfrenta barreiras quando precisa integrar informações de campo com relatórios gerenciais. Seu objetivo é otimizar o tempo de coleta de dados em campo, reduzindo falhas e garantindo relatórios mais precisos para os gestores.
 
+<br>
+
+![fernanda](https://github.com/user-attachments/assets/a3bb27b5-cd7f-4534-9b32-27e908574192)
+
 **Persona 6 – Técnico Agrícola**
+
 Fernanda tem 34 anos, mora em Sinop (MT), é engenheira agrônoma e atua como técnica agrícola em fazendas de médio porte. Ela busca ferramentas que permitam não apenas registrar os dados, mas também gerar análises comparativas de diferentes safras. Sua necessidade é identificar padrões de produtividade e propor estratégias de manejo mais sustentáveis, auxiliando a reduzir custos e preservar o solo.
 
 
