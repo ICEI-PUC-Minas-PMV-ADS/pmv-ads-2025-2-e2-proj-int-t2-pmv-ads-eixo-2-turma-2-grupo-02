@@ -41,16 +41,16 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Carlos (Técnico Agrícola)          | Visualizar relatórios de custos e lucros por safra       | Acompanhar a rentabilidade                             |
 | Carlos (Técnico Agrícola)          | Acessar relatórios                                       | Validar as recomendações do sistema                    |
 | Carlos (Técnico Agrícola)          | Visualizar imagens da região agrícola                    | Conhecer o terreno                                     |
-| Mariana (Técnico Agrícola)          | Trocar a senha da conta                                  | Recuperar o acesso à conta criada                      |
+| Rafael (Técnico Agrícola)          | Trocar a senha da conta                                  | Recuperar o acesso à conta criada                      |
 | Mariana (Técnico Agrícola)         | Fazer login na plataforma com as credenciais cadastradas | Acessar a aplicação e suas funcionalidades             |
-| Roberta(Técnico Agrícola)      | Visualizar a quantidade de insumos por safra             | Acompanhar o gasto de recursos de cada safra           |
-| João(Técnico Agrícola)         | Receber alertas sobre o clima e pragas                   | Tomar as devidas providências e evitar prejuísos       |
-| André(Gestor)                  | Cadastrar diferentes áreas de plantil                    | Poder acompanhar cada safra de forma mais detalhada    |
-| Millena(Gestor)                | Alterar as permições dos usuários                        | Garantir que todos estejam com os acessos corretos     |
-| Bárbara(Técnico agrícola)      | Cadastrar diferentes fazendas                            | Organizar as informações de cada uma individualmente   |
-| Marcos(Gestor)                 | Comparar dados de safras anteriores                      | Entender tendências e otimizar processos               |
-| Claudio(Técnico Agrícola)      | Receber sugestões de rotação de cultura                  | Manter a fertilidade do solo e reduzir pragas          |
-| Thais(Técnico Agrícola)        | Visualizar mapas com informações da plantação            | Entender a saúde das plantações e os solos para plantio|
+| Mariana (Técnico Agrícola)      | Visualizar a quantidade de insumos por safra             | Acompanhar o gasto de recursos de cada safra           |
+| Rafael(Técnico Agrícola)         | Receber alertas sobre o clima e pragas                   | Tomar as devidas providências e evitar prejuísos       |
+| João(Gestor)                  | Cadastrar diferentes áreas de plantil                    | Poder acompanhar cada safra de forma mais detalhada    |
+| João(Gestor)                | Alterar as permições dos usuários                        | Garantir que todos estejam com os acessos corretos     |
+| Fernanda(Técnico agrícola)      | Cadastrar diferentes fazendas                            | Organizar as informações de cada uma individualmente   |
+| Mariana(Gestor)                 | Comparar dados de safras anteriores                      | Entender tendências e otimizar processos               |
+| Carlos(Técnico Agrícola)      | Receber sugestões de rotação de cultura                  | Manter a fertilidade do solo e reduzir pragas          |
+| Fernada (Técnico Agrícola)        | Visualizar mapas com informações da plantação            | Entender a saúde das plantações e os solos para plantio|
 | Ana (Administrador)             | Visualizar lista de usuários cadastrados                 | Conferir quem tem acesso ao sistema                   |
 | Ana (Administrador)             | Ativar ou desativar contas de usuários                   | Impedir acesso de usuários que não deveriam usar o sistema |
 | Ana (Administrador)             | Editar informações básicas de usuário                    | Corrigir dados simples, como nome ou e-mail           |
@@ -80,6 +80,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-014| A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). | MÉDIA |
 |RF-015| A aplicação deve permitir que os administradores façam download dos relatórios. | BAIXA |
 |RF-016| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
+|RF-017| A aplicação deve permitir o gerenciamento completo de múltiplas fazendas (CRUD), com associação de dados específicos (áreas de plantio, insumos, safras). | ALTA |
+|RF-018| A aplicação deve permitir que administradores e gestores definam metas de produção para cada área de plantio e safra, além de visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas. | BAIXA |
+|RF-019| A aplicação deve permitir a geração de relatórios operacionais e de produção. | MÉDIA |
 
 
 ### Requisitos não Funcionais
