@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A equipe adota a metodologia ágil Scrum, com sprints organizados e uma reunião semanal para acompanhamento e divisão das tarefas. O código-fonte é gerenciado no Github, garantindo versionamento e colaboração eficiente. Para modelagem e planejamento, utilizamos o Lucidchart na criação de diagramas de casos de uso e classes, apoiando o design da aplicação.
 
 ## Controle de Versão
 
@@ -39,7 +39,10 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+- **Scrum Master**: Mario Guilherme Carvalho
+- **Product Owner**: Pamela Silva Otéro
+-** Equipe de Desenvolvimento**: Gabriel Alves Pires, Lucas de Souza Santos, Mario Guilherme Carvalho, Mateus de Lucena Tavares, Pamela Silva Otéro e Tiago Silva dos Reis
+- **Equipe de Design**: Mateus de Lucena Tavares
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
