@@ -39,8 +39,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-- **Scrum Master**: Mario Guilherme Carvalho
-- **Product Owner**: Pamela Silva Otéro
+- **Scrum Master**: Pamela Silva Otéro
+- **Product Owner**: Mario Guilherme Carvalho
 - **Equipe de Desenvolvimento**: Gabriel Alves Pires, Lucas de Souza Santos, Mario Guilherme Carvalho, Mateus de Lucena Tavares, Pamela Silva Otéro e Tiago Silva dos Reis
 - **Equipe de Design**: Mateus de Lucena Tavares
 
