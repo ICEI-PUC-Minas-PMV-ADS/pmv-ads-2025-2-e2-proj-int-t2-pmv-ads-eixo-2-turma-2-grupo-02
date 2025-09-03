@@ -41,7 +41,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 - **Scrum Master**: Mario Guilherme Carvalho
 - **Product Owner**: Pamela Silva Otéro
--** Equipe de Desenvolvimento**: Gabriel Alves Pires, Lucas de Souza Santos, Mario Guilherme Carvalho, Mateus de Lucena Tavares, Pamela Silva Otéro e Tiago Silva dos Reis
+- **Equipe de Desenvolvimento**: Gabriel Alves Pires, Lucas de Souza Santos, Mario Guilherme Carvalho, Mateus de Lucena Tavares, Pamela Silva Otéro e Tiago Silva dos Reis
 - **Equipe de Design**: Mateus de Lucena Tavares
 
 > **Links Úteis**:
