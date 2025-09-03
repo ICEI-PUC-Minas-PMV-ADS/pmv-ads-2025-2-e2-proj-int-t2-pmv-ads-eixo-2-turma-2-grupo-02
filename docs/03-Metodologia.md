@@ -48,6 +48,8 @@ Apresente a divisão de papéis entre os membros do grupo.
 
 ### Processo
 
+
+Foi criado um Backlog, inicial, com todas as atividades do projeto e foi dividio em Sprints.
 Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
  
 > **Links Úteis**:
@@ -73,5 +75,8 @@ necessidades da nossa solução.
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
+> - [Teams](https://teams.microsoft.com) 
 > - [Github](https://github.com/)
+> - [Git](https://git-scm.com/)
+> - [Lucid](https://lucid.app) 
+> - [Visual Code](https://code.visualstudio.com/) 
