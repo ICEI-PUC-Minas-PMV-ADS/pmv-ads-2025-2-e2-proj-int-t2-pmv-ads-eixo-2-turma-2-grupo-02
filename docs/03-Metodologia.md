@@ -77,9 +77,11 @@ necessidades da nossa solução.
 
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
+> **Possíveis Ferramentas que auxiliarão no gerenciamento**:
 > - [Teams](https://teams.microsoft.com) 
 > - [Github](https://github.com/)
 > - [Git](https://git-scm.com/)
 > - [Lucid](https://lucid.app) 
-> - [Visual Code](https://code.visualstudio.com/) 
+> - [Visual Code](https://code.visualstudio.com/)
+> - [Figma](https://www.figma.com/)
+
