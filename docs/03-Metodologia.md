@@ -54,7 +54,17 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 Foi criado um Backlog, inicial, com todas as atividades do projeto e foi dividio em Sprints.
 Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
+
+Abaixo o print do quadro do backlog:
+
+<img width="1912" height="849" alt="image" src="https://github.com/user-attachments/assets/d481f639-3be4-49e1-bc5d-c1852ef0a224" />
+
+
+
+Abaixo é possível ver as sprints e seus respectivos backlogs:
+
+ <img width="1912" height="816" alt="image" src="https://github.com/user-attachments/assets/f37a3974-5eb2-4cbb-989f-679de7c528c9" />
+
 > **Links Úteis**:
 > - [Project management, made simple](https://github.com/features/project-management/)
 > - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
