@@ -141,6 +141,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
 
-<img width="1873" height="1994" alt="AgrInov_atualizado" src="https://github.com/user-attachments/assets/5b51ce9a-524c-4533-872e-a0fb7ba3617e" />
+<img width="1873" height="1994" alt="AgrInov_atualizado" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t2-pmv-ads-eixo-2-turma-2-grupo-02/blob/main/docs/img/AgrInov%20-%20OFICIAL%20-%20DIAGRAMA%20DE%20CASO%20DE%20USO.png" />
 
 
