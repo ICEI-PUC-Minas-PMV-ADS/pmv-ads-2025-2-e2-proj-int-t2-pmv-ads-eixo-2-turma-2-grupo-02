@@ -3,6 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
+
 A equipe adota a metodologia ágil Scrum, com sprints organizados e uma reunião semanal para acompanhamento e divisão das tarefas. O código-fonte é gerenciado no Github, garantindo versionamento e colaboração eficiente. Para modelagem e planejamento, utilizamos o Lucidchart na criação de diagramas de casos de uso e classes, apoiando o design da aplicação.
 
 ## Controle de Versão
