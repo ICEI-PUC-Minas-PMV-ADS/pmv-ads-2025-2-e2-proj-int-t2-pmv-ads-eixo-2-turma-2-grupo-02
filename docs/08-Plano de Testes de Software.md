@@ -62,13 +62,13 @@ Por exemplo:
 |Critério de Êxito | - O download feito com sucesso. |
 
 
-
 | **Caso de Teste** 	| **CT0xx – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|RF-018  A aplicação deve fornecer uma previsão do clima dos próximos 7 dias.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+| Passos 	| - Acessar a Plataforma <br> - Acessar a página de Relatório <br>
+- Clicar em relatório de Clima <br>|
+|Critério de Êxito | - Visualizar relatório de clima com os últimos 7 dias |
 
 
 
