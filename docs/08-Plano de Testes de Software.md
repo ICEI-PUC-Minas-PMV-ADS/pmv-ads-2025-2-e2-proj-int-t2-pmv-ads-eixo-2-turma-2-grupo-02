@@ -44,7 +44,7 @@ Por exemplo:
 | Caso de Teste | CT04 – Cadastrar cultura em uma área de plantio |
 | Requisito Associado | RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
 | Objetivo do Teste | Garantir que o usuário consiga cadastrar uma nova cultura vinculada a uma área de plantio. |
-| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Selecionar “Gerenciar Culturas” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
+| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Selecionar “Gerenciar Propriedade agricola” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
 | Critério de Êxito | A cultura deve ser cadastrada e vinculada corretamente à área de plantio selecionada. |
  
 > **Links Úteis**:
