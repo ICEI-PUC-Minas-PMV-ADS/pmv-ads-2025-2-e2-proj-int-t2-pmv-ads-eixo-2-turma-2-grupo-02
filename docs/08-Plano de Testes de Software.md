@@ -4,22 +4,41 @@
 
 Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
+Não deixe de enumerar os casos de teste de forma **sequencial** e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
 
 Por exemplo:
  
-| **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
+| **Caso de Teste** 	| **CT01 – Visualizar Informação sobre o risco a saúde da plantação** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|	Requisito Associado 	| RF-008 - A aplicação deve emitir alertas ao agricultor sobre riscos de clima adverso ou presença de pragas |
+| Objetivo do Teste 	| Verificar se a aplicação está exibindo os alertas sobre os riscos que podem acontecer |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Gerenciar área de plantio" <br> - Selecionar uma plantação da listagem em: **Visualizar** <br> - Será exibido o mapa da plantação com as informações sobre a saúde da plantação, no qual será exibido a informação da causa da saúde em que se encontra |
+|Critério de Êxito | - A visualização sobre o alerta sobre os riscos foi exibido com sucesso |
 |  	|  	|
-| Caso de Teste 	| CT02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+| Caso de Teste 	| **CT02 – Gerenciar Imagens da Fazenda - Visualizar as Imagens**	|
+|Requisito Associado | RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo visualizá-las|
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido um carrousel com as imagens da fazenda <br> |
+|Critério de Êxito | - As imagens estão sendo exibidas corretamente |
+|  	|  	|
+| Caso de Teste 	| **CT03 – Gerenciar Imagens da Fazenda - Anexar as Imagens**	|
+|Requisito Associado | RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo anexá-las. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido a página do gerenciamento da fazenda <br> - No canto Superior direito deverá conter um botão de **Anexar Imagens da Fazenda**<br> - Ao clicar neste botão deverá ser exibido um modal para anexar a imagem da fazenda <br> - Ao anexar a imagem e clicar em **Confirmar** deverá ser possível ver a imagem anexada|
+|Critério de Êxito | - A imagem foi anexada com sucesso|
+|  	|  	|
+| Caso de Teste 	| **CT04 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem**	|
+|Requisito Associado | RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo anexá-las. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido a página do gerenciamento da fazenda <br> - No canto Superior direito deverá conter um botão de **Anexar Imagens da Fazenda**<br> - Ao clicar neste botão deverá ser exibido um modal para anexar a imagem da fazenda <br> - Ao anexar a imagem e clicar no X ou **cancelar** a imagem não deverá ser anexada|
+|Critério de Êxito | - A imagem não foi anexada|
+|  	|  	|
+| Caso de Teste 	| **CT05 – Gerenciar Vendas, custos e lucros**	|
+|Requisito Associado | RF-010	A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD) |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo anexá-las. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido a página do gerenciamento da fazenda <br> - No canto Superior direito deverá conter um botão de **Anexar Imagens da Fazenda**<br> - Ao clicar neste botão deverá ser exibido um modal para anexar a imagem da fazenda <br> - Ao anexar a imagem e clicar no X ou **cancelar** a imagem não deverá ser anexada|
+|Critério de Êxito | - A imagem não foi anexada|
+
 
  
 > **Links Úteis**:
