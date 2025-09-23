@@ -20,8 +20,22 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
+| Caso de Teste 	| CT00 – Relatórios sobre as plantações	|
+|Requisito Associado | RF-013	- A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas sobre as plantações. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar as informações sobre as plantações |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como técnico agrícola <br> - Clicar no botão "Gerenciar Área de Plantio" <br> - Clicar no botão "Visualizar" de alguma das plantações <br> -  Visualizar a seção de dados sobre a plantação escolhida. | 
+|Critério de Êxito | - As informações sobre a plantação serem exibidas. |
+| Caso de Teste 	| CT00 – Recomendações sobre otimização da produção	|
+|Requisito Associado | RF-014	- A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar as recomendações para otmização da produção |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como técnico agrícola <br> - Clicar no botão "Recomendação para otimização da produção" <br> -  Visualizar as recomendações. | 
+|Critério de Êxito | - As recomendações de otimizações serem exibidas. |
+| Caso de Teste 	| CT00 – Gerenciamento das metas de produção	|
+|Requisito Associado | RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
+| Objetivo do Teste 	| Verificar se o usuário consegue gerenciar as metas de produção |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Clicar em "CADASTRAR META DE PRODUÇÃO" <br> - Preencher os campos obrigatórios (Data Início, Data Fim, Cultura e Quantidade) <br> - Clicar em "Cadastrar" <br> - Selecionar a meta de produção criada e clicar em "Atualizar" <br> - Alterar algum dos campos e clicar em "Atualizar" <br> - Selecionar a meta de produção criada e clicar em "REMOVER" <br> - Clicar em "Confirmar" no modal de remoção | 
+|Critério de Êxito | - A meta é cadastrada, atualizada e removida com sucesso. |
 
- 
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
