@@ -21,6 +21,58 @@ Por exemplo:
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 
+
+
+
+| **Caso de Teste** 	| **CT0xx – Visualizar Gráfico** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-016 A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas.|
+| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
+| Passos 	| - Acessar a página de  Gerenciar metas de vendas <br> - Clicar na aba de relatórios da Página de Gerenciar Metas de Produção  |
+|Critério de Êxito | - Gráfico mostrando o comparativo  do desempenho real e metas |
+
+
+
+| **Caso de Teste** 	| **CT0x1 – Download Gráfico 1** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
+| Objetivo do Teste 	| Baixar Relatórios de meta de produção |
+| Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios metas de produção<br> - Baixe o relatório clicando no campo de download <br>  |
+|Critério de Êxito | - O download feito com sucesso. |
+
+| **Caso de Teste** 	| **CT0x2 – Download Gráfico 2** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
+| Objetivo do Teste 	| Baixar Relatórios de meta de vendas por plantio |
+| Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de vendas de plantio<br> - Baixe o relatório clicando no campo de download <br>  |
+|Critério de Êxito | - O download feito com sucesso. |
+
+| **Caso de Teste** 	| **CT0x3 – Download Gráfico 3** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
+| Objetivo do Teste 	| Baixar Relatórios de Clima |
+| Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de Clima<br> - Baixe o relatório clicando no campo de download <br>  |
+|Critério de Êxito | - O download feito com sucesso. |
+
+| **Caso de Teste** 	| **CT0x4 – Download Gráfico 4** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
+| Objetivo do Teste 	| Baixar Relatórios de Insumos |
+| Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de Insumos<br> - Baixe o relatório clicando no campo de download <br>  |
+|Critério de Êxito | - O download feito com sucesso. |
+
+
+
+| **Caso de Teste** 	| **CT0xx – Cadastrar perfil** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-018  A aplicação deve fornecer uma previsão do clima dos próximos 7 dias.|
+| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
+|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+
+
+
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
