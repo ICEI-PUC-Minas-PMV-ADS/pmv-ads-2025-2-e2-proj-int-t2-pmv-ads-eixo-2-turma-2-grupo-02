@@ -161,9 +161,67 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 
 
 
+---
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+### Cenário 7 - Cadastrar de plantação
+
+- **Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar uma nova plantação, anexar a foto aérea, visualizar a análise automática e acessar as recomendações geradas pelo sistema.
+- **Contexto:** O usuário é um técnico agrícola que deseja registrar uma nova plantação em uma das áreas de plantio da própriedade agrícola. Ele deve cadastrar as informações básicas da plantação, enviar uma foto obtida por drone e, em seguida, visualizar os dados gerados pelo sistema sobre a saúde da plantação e a recomendação de rotação de cultura.
+- **Tarefa(s):** 
+  1. Acessar o sistema e entrar na área de gerenciar área de plantio.
+  2. Selecionar uma área de plantio já cadastrada.
+  3. Cadastrar uma nova plantação preenchendo os seguintes dados:
+     - Nome da plantação
+     - Data de início
+     - Data prevista de término 
+     - Área utilizada
+     - Cultura (ex.: milho, soja, café etc.)
+     - Status (ex.: semeado, plantado, colhido)
+     - Foto da plantação
+  4. Visualizar a análise automática gerada pelo sistema (saúde da plantação e recomendação de rotação de cultura).
+  5. Acessar a página da plantação e confirmar se as informações cadastradas e os dados da análise foram exibidos corretamente.
+- **Critério(s) de Sucesso(s):**
+  - O usuário consegue localizar a área de gerenciamento de plantio sem dificuldades.
+  - A plantação é cadastrada corretamente com todas as informações solicitadas.
+  - O upload da foto ocorre sem erros.
+  - O sistema gera e exibe automaticamente a análise e a recomendação de rotação de cultura.
+  - O usuário consegue visualizar os dados da plantação cadastrada na página da plantação.
+  - Todo o processo ocorre em menos de 7 minutos, sem necessidade de assistência.
+
+---
+
+### Cenário 8 – Cadastrar compra de insumos
+- **Objetivo:** Verificar se o gestor consegue cadastrar compra de insumos.  
+- **Contexto:** O gestor deseja cadastrar compra de insumos.  
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar compra de insumos**.  
+  2. Clicar em **Cadastrar compra de insumos**.  
+  3. Preencher os campos: Nome, Quantidade, Unidade de Medida.  
+  4. Confirmar cadastro.  
+- **Critérios de Sucesso:**  
+  - Insumo aparece na lista.  
+  - Informações cadastradas são exibidas corretamente. 
+
+---
+
+### Cenário 9 – Cadastrar metas de Produção
+- **Objetivo:** Verificar se o Gestor consegue cadastrar as metas de produção.
+- **Contexto:** O Gestor necessita ter o controle das metas de produção e para isso ele necessita cadastrar uma meta.
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar Metas de Produção**.  
+  2. Clicar em **Cadastrar Metas de Produção**.  
+  3. Preencher os campos: Data Início, Data Fim, Cultura e Quantidade
+  4. Clicar em **Cadastrar**.  
+- **Critérios de Sucesso:**  
+  - Após o cadastro a meta cadastrada deve ser exibida na listagem
+  - Informações cadastradas devem ser exibidas corretamente.  
+
+### Cenário 10 – Visualizar vendas
+- **Objetivo:** Verificar se o Gestor consegue gerenciar as vendas a partir das listagens.
+- **Contexto:** O Gestor necessita ter o controle das vendas da plantação.
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar vendas**.  
+  2. **Acessar listagem das vendas**.
+- **Critérios de Sucesso:**  
+  - Deverá ser exibida a listagem atualizada das vendas.
+  - Deveram ser exibidas as opções de atualizar e remover habilitadas em cada venda.
