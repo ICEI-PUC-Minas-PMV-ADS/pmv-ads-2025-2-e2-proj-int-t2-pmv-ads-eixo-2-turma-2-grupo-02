@@ -154,31 +154,28 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 
 ### Cenário 7 - Criação de Plantação
 
-**Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar uma nova plantação, anexar a foto aérea, visualizar a análise automática e acessar as recomendações geradas pelo sistema.
-
-**Contexto:** O usuário é um técnico agrícola que deseja registrar uma nova plantação em uma das áreas de plantio da própriedade agrícola. Ele deve cadastrar as informações básicas da plantação, enviar uma foto obtida por drone e, em seguida, visualizar os dados gerados pelo sistema sobre a saúde da plantação e a recomendação de rotação de cultura.
-
-**Tarefa(s):** 
-- Acessar o sistema e entrar na área de gerenciar área de plantio.
-- Selecionar uma área de plantio já cadastrada.
-- Cadastrar uma nova plantação preenchendo os seguintes dados:
-  - Nome da plantação
-  - Data de início
-  - Data prevista de término 
-  - Área utilizada
-  - Cultura (ex.: milho, soja, café etc.)
-  - Status (ex.: semeado, plantado, colhido)
-  - Foto da plantaçõa
-- Visualizar a análise automática gerada pelo sistema (saúde da plantação e recomendação de rotação de cultura).
-- Acessar a página da plantação e confirmar se as informações cadastradas e os dados da análise foram exibidos corretamente.
-
-**Critério(s) de Sucesso(s):**
-- O usuário consegue localizar a área de gerenciamento de plantio sem dificuldades.
-- A plantação é cadastrada corretamente com todas as informações solicitadas.
-- O upload da foto ocorre sem erros.
-- O sistema gera e exibe automaticamente a análise e a recomendação de rotação de cultura.
-- O usuário consegue visualizar os dados da plantação cadastrada na página da plantação.
-- Todo o processo ocorre em menos de 7 minutos, sem necessidade de assistência.
+- **Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar uma nova plantação, anexar a foto aérea, visualizar a análise automática e acessar as recomendações geradas pelo sistema.
+- **Contexto:** O usuário é um técnico agrícola que deseja registrar uma nova plantação em uma das áreas de plantio da própriedade agrícola. Ele deve cadastrar as informações básicas da plantação, enviar uma foto obtida por drone e, em seguida, visualizar os dados gerados pelo sistema sobre a saúde da plantação e a recomendação de rotação de cultura.
+- **Tarefa(s):** 
+  1. Acessar o sistema e entrar na área de gerenciar área de plantio.
+  2. Selecionar uma área de plantio já cadastrada.
+  3. Cadastrar uma nova plantação preenchendo os seguintes dados:
+     - Nome da plantação
+     - Data de início
+     - Data prevista de término 
+     - Área utilizada
+     - Cultura (ex.: milho, soja, café etc.)
+     - Status (ex.: semeado, plantado, colhido)
+     - Foto da plantação
+  4. Visualizar a análise automática gerada pelo sistema (saúde da plantação e recomendação de rotação de cultura).
+  5. Acessar a página da plantação e confirmar se as informações cadastradas e os dados da análise foram exibidos corretamente.
+- **Critério(s) de Sucesso(s):**
+  - O usuário consegue localizar a área de gerenciamento de plantio sem dificuldades.
+  - A plantação é cadastrada corretamente com todas as informações solicitadas.
+  - O upload da foto ocorre sem erros.
+  - O sistema gera e exibe automaticamente a análise e a recomendação de rotação de cultura.
+  - O usuário consegue visualizar os dados da plantação cadastrada na página da plantação.
+  - Todo o processo ocorre em menos de 7 minutos, sem necessidade de assistência.
 
 ### Cenário 8 – Cadastrar compra de insumos
 - **Objetivo:** Verificar se o gestor consegue cadastrar compra de insumos.  
