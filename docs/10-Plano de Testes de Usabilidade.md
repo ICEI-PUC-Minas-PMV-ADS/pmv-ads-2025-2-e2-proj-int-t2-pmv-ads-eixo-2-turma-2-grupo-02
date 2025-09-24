@@ -150,7 +150,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
   4. Confirmar cadastro.  
 - **Critérios de Sucesso:**  
   - Propriedade aparece na lista.  
-  - Informações cadastradas são exibidas corretamente.
+
+---
 
 ### Cenário 7 - Criação de Plantação
 
@@ -177,6 +178,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
   - O usuário consegue visualizar os dados da plantação cadastrada na página da plantação.
   - Todo o processo ocorre em menos de 7 minutos, sem necessidade de assistência.
 
+---
+
 ### Cenário 8 – Cadastrar compra de insumos
 - **Objetivo:** Verificar se o gestor consegue cadastrar compra de insumos.  
 - **Contexto:** O gestor deseja cadastrar compra de insumos.  
@@ -189,8 +192,26 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
   - Insumo aparece na lista.  
   - Informações cadastradas são exibidas corretamente. 
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+---
+
+### Cenário 9 – Cadastrar metas de Produção
+- **Objetivo:** Verificar se o Gestor consegue cadastrar as metas de produção.
+- **Contexto:** O Gestor necessita ter o controle das metas de produção e para isso ele necessita cadastrar uma meta.
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar Metas de Produção**.  
+  2. Clicar em **Cadastrar Metas de Produção**.  
+  3. Preencher os campos: Data Início, Data Fim, Cultura e Quantidade
+  4. Clicar em **Cadastrar**.  
+- **Critérios de Sucesso:**  
+  - Após o cadastro a meta cadastrada deve ser exibida na listagem
+  - Informações cadastradas devem ser exibidas corretamente.  
+
+### Cenário 10 – Visualizar vendas
+- **Objetivo:** Verificar se o Gestor consegue gerenciar as vendas a partir das listagens.
+- **Contexto:** O Gestor necessita ter o controle das vendas da plantação.
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar vendas**.  
+  2. **Acessar listagem das vendas**.
+- **Critérios de Sucesso:**  
+  - Deverá ser exibida a listagem atualizada das vendas.
+  - Deveram ser exibidas as opções de atualizar e remover habilitadas em cada venda.
