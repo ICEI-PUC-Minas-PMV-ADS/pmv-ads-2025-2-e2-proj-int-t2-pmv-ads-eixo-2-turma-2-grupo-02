@@ -37,11 +37,6 @@
 | Passos | - Acessar a plataforma <br> - Efetuar login <br> - Selecionar “Gerenciar Propriedade Agrícola” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
 | Critério de Êxito | A cultura deve ser cadastrada e vinculada corretamente à área de plantio selecionada. |
 |   |   |
-
----
-
-
- 
 | **Caso de Teste** 	| **CT05 – Rotação de cultura** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
@@ -60,3 +55,52 @@
 | Objetivo do Teste 	| Verificar se o usuário consegue gerenciar corretamente os insumos |
 | Passos 	| - Acessar o endereço do site<br> - Efetuar login<br>  - clicar em "Gerenciar compra de insumos"<br> - Preencher os campos obrigatórios(Nome, Quantidade, Unidade de medida) <br> - Clicar em "Cadastrar"<br> - Clicar em "Atualizar"<br> - Atualizar os dados desejados<br> - Clicar em "Atualizar"<br> - Clicar em "Remover"<br> - Clicar em "Confirmar"<br> |
 |Critério de Êxito | - O gerenciamento foi realizado com sucesso |
+
+
+| **Caso de Teste** 	| **CT08 – Visualizar Informação sobre o risco a saúde da plantação** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-008 - A aplicação deve emitir alertas ao agricultor sobre riscos de clima adverso ou presença de pragas |
+| Objetivo do Teste 	| Verificar se a aplicação está exibindo os alertas sobre os riscos que podem acontecer |
+| Passos 	| - Acessar a aplicação <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Gerenciar área de plantio" <br> - Selecionar uma plantação da listagem em: **Visualizar** <br> - Será exibido o mapa da plantação com as informações sobre a saúde da plantação, no qual será exibido a informação da causa da saúde em que se encontra |
+|Critério de Êxito | - A visualização sobre o alerta sobre os riscos foi exibido com sucesso |
+|  	|  	|
+| **Caso de Teste**	| **CT09 – Gerenciar Imagens da Fazenda - Visualizar as Imagens**	|
+|Requisito Associado | RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo visualizá-las|
+| Passos 	| - Acessar a aplicação <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido um carrousel com as imagens da fazenda <br> |
+|Critério de Êxito | - As imagens estão sendo exibidas corretamente |
+|  	|  	|
+| **Caso de Teste**	| **CT10 – Gerenciar Imagens da Fazenda - Anexar as Imagens**	|
+|Requisito Associado | RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo anexá-las. |
+| Passos 	| - Acessar a aplicação <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido a página do gerenciamento da fazenda <br> - No canto Superior direito deverá conter um botão de **Anexar Imagens da Fazenda**<br> - Ao clicar neste botão deverá ser exibido um modal para anexar a imagem da fazenda <br> - Ao anexar a imagem e clicar em **Confirmar** deverá ser possível ver a imagem anexada|
+|Critério de Êxito | - A imagem foi anexada com sucesso|
+|  	|  	|
+| **Caso de Teste**	| **CT11 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem**	|
+|Requisito Associado | RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo anexá-las. |
+| Passos 	| - Acessar a aplicação <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido a página do gerenciamento da fazenda <br> - No canto Superior direito deverá conter um botão de **Anexar Imagens da Fazenda**<br> - Ao clicar neste botão deverá ser exibido um modal para anexar a imagem da fazenda <br> - Ao anexar a imagem e clicar no X ou **cancelar** a imagem não deverá ser anexada|
+|Critério de Êxito | - A imagem não foi anexada|
+|  	|  	|
+| **Caso de Teste**       | **CT12 – Visualizar a listagem de vendas**                                                                                                                               |****
+| **Requisito Associado** | RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD).                                                                                |
+| **Objetivo do Teste**   | Verificar se a aplicação exibe corretamente a listagem de vendas cadastradas.                                                                                                     |
+| **Passos**              | - Acessar a aplicação <br> - Informar o endereço da aplicação <br> - Clicar no módulo **Gerenciar Vendas** <br> - O sistema deve exibir a listagem de todas as vendas cadastradas |
+| **Critério de Êxito**   | - A listagem exibe todas as vendas cadastradas com informações corretas (ex.: receita, custo,plantio, data operação).                                                                     |
+| **Caso de Teste**       | **CT13 – Cadastrar uma nova venda**                                                                                                                                                          |
+| **Requisito Associado** | RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD).                                                                                           |
+| **Objetivo do Teste**   | Verificar se a aplicação permite cadastrar uma nova venda corretamente.                                                                                                                      |
+| **Passos**              | - Acessar o módulo **Gerenciar Vendas** <br> - Clicar em **Cadastrar Venda** <br> - Preencher os campos obrigatórios (receita, custo, plantio, data operação, chave de acesso NF-e e quantidade) <br> - Clicar em **Cadastrar** |
+| **Critério de Êxito**   | - A nova venda é exibida na listagem com os dados informados.                                                                                                                                |
+| **Caso de Teste**       | **CT14 – Atualizar uma venda existente**                                                                                                                                                  |
+| **Requisito Associado** | RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD).                                                                                        |
+| **Objetivo do Teste**   | Verificar se a aplicação permite atualizar as informações de uma venda existente.                                                                                                         |
+| **Passos**              | - Acessar o módulo **Gerenciar Vendas** <br> - Selecionar uma venda já cadastrada <br> - Clicar em **Atualizar** <br> - Alterar algum campo (ex.: quantidade ou plantio) <br> - Clicar em **Atualizar** |
+| **Critério de Êxito**   | - A venda é atualizada e a alteração aparece corretamente na listagem.                                                                                                                    |
+| **Caso de Teste**       | **CT15 – Remover uma venda**                                                                                                             |
+| **Requisito Associado** | RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD).                                       |
+| **Objetivo do Teste**   | Verificar se a aplicação permite remover uma venda cadastrada.                                                                           |
+| **Passos**              | - Acessar o módulo **Gerenciar Vendas** <br> - Selecionar uma venda da listagem <br> - Clicar em **Remover** <br> - Confirmar a exclusão |
+| **Critério de Êxito**   | - A venda selecionada não aparece mais na listagem.                                                                                      |
+
+
