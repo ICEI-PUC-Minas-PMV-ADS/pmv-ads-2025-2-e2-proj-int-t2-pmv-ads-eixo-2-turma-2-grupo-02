@@ -63,8 +63,7 @@ Os dados coletados devem ajudar a entender a experiência dos usuários e os dad
 Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
-<!--gabriel -->
----
+
 
 ## Cenários de Teste  
 
@@ -225,3 +224,38 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 - **Critérios de Sucesso:**  
   - Deverá ser exibida a listagem atualizada das vendas.
   - Deveram ser exibidas as opções de atualizar e remover habilitadas em cada venda.
+
+
+## Cenário 11 - Upload Imagem Fazenda
+
+**Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma Imagem da Fazenda
+
+**Contexto:** O usuário desejar fazer upload de uma  imagem da fazenda para ter uma visualização geral da sua propriedade. 
+
+**Tarefa(s):** 
+- Acessar o site e localiza a aba de gerenciar imagens.
+- Clicar na aba  Anexar Imagem da Fazenda.
+- Clicar ou arrastar um imagem  para o modal de upload de imagem.
+- Clicar no botão  "confirmar envio" e visualizar a confirmação.
+
+**Critério(s) de Sucesso(s):**
+- Fazer upload de imagem
+- Mensagem de sucesso de envio
+
+
+## Cenário 12 - Upload Imagem Plantação
+
+**Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma Imagem da Plantação.
+
+**Contexto:** O usuário desejar fazer upload de uma  imagem de uma plantação para ter uma visualização geral da sua propriedade. 
+
+**Tarefa(s):** 
+- Acessar o site e localiza a aba de gerenciar imagens.
+- Clicar na aba  Anexar Imagem da Plantação
+- Selecionar a plantação que deseja fazer upload da imagem.
+- Clicar ou arrastar um imagem  para o modal de upload de imagem.
+- Clicar no botão  "confirmar envio" e visualizar a confirmação.
+
+**Critério(s) de Sucesso(s):**
+- Fazer upload de imagem
+- Mensagem de sucesso de envio
