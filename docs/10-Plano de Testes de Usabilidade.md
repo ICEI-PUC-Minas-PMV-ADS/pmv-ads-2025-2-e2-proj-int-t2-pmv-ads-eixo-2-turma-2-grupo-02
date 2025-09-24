@@ -180,6 +180,17 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 - O usuário consegue visualizar os dados da plantação cadastrada na página da plantação.
 - Todo o processo ocorre em menos de 7 minutos, sem necessidade de assistência.
 
+### Cenário 8 – Cadastrar compra de insumos
+- **Objetivo:** Verificar se o gestor consegue cadastrar compra de insumos.  
+- **Contexto:** O gestor deseja cadastrar compra de insumos.  
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar compra de insumos**.  
+  2. Clicar em **Cadastrar compra de insumos**.  
+  3. Preencher os campos: Nome, Quantidade, Unidade de Medida.  
+  4. Confirmar cadastro.  
+- **Critérios de Sucesso:**  
+  - Insumo aparece na lista.  
+  - Informações cadastradas são exibidas corretamente. 
 
 > **Links Úteis**:
 > - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
