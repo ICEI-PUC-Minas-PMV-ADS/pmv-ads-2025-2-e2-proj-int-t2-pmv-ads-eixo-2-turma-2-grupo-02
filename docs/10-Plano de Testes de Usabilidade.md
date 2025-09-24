@@ -150,11 +150,19 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
   4. Confirmar cadastro.  
 - **Critérios de Sucesso:**  
   - Propriedade aparece na lista.  
-  - Informações cadastradas são exibidas corretamente.  
+  - Informações cadastradas devem ser exibidas corretamente.  
 
+<!-- AUTOR: Lucas & Pamela -->
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+### Cenário 6 – Cadastrar metas de Produção
+- **Objetivo:** Verificar se o Gestor consegue cadastrar as metas de produção.
+- **Contexto:** O Gestor necessita ter o controle das metas de produção e para isso ele necessita cadastrar uma meta.
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar Metas de Produção*.  
+  2. Clicar em **Cadastrar Metas de Produção**.  
+  3. Preencher os campos: Data Início, Data Fim, Cultura e Quantidade
+  4. Clicar em **Cadastrar**.  
+- **Critérios de Sucesso:**  
+  - Após o cadastro a meta cadastrada deve ser exibida na listagem
+  - Informações cadastradas devem ser exibidas corretamente.  
+
