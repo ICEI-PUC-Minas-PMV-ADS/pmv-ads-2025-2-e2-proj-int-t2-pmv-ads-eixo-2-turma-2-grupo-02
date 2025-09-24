@@ -68,88 +68,98 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 
 ## Cenários de Teste  
 
-### Cenário 1 – Login no sistema  
-- **Objetivo:** Validar se o usuário consegue acessar o sistema com credenciais válidas.  
-- **Contexto:** O usuário deseja acessar o AGRINOV para gerenciar dados de plantio.  
+# Plano de Testes de Usabilidade – AGRINOV
+
+## Cenário 1 – Primeiro acesso ao sistema  
+- **Objetivo:** Avaliar a clareza e a simplicidade da tela de login para um novo usuário.  
+- **Contexto:** Imagine que hoje é seu primeiro dia na empresa. Seu gestor te passou o e-mail e a senha de acesso e sua primeira tarefa é simplesmente entrar no sistema AGRINOV.  
 - **Tarefas:**  
-  1. Inserir e-mail cadastrado.  
-  2. Inserir senha válida.  
-  3. Clicar em **Login**.  
+    1. Localizar e preencher o campo **E-mail** com o endereço fornecido.
+    2. Localizar e preencher o campo **Senha** com a senha fornecida.
+    3. Clicar no botão **Login** para acessar o sistema.
 - **Critérios de Sucesso:**  
-  - O sistema valida as credenciais.  
-  - O usuário é redirecionado para a tela inicial do sistema.  
+  - O participante insere os dados nos campos corretos sem hesitação.
+  - A tarefa é concluída com velocidade.
+  - O participante não expressa nenhuma confusão sobre o que fazer na tela.
 
 ---
 
-### Cenário 2 – Recuperar senha  
-- **Objetivo:** Testar se o usuário consegue redefinir senha esquecida.  
-- **Contexto:** O usuário não lembra a senha de acesso.  
+## Cenário 2 – Recuperação de acesso  
+- **Objetivo:** Testar a facilidade de encontrar a opção de recuperação e a confiança do usuário no processo.  
+- **Contexto:** Passaram-se algumas semanas e você esqueceu completamente a sua senha. Você precisa urgentemente acessar o sistema para verificar uns dados, mas não consegue logar.  
 - **Tarefas:**  
-  1. Acessar a tela de login.  
-  2. Clicar em **Esqueceu a senha?**  
-  3. Informar o e-mail cadastrado.  
-  4. Acessar o link enviado.  
-  5. Definir e confirmar nova senha.  
+   1. Identificar o link **"Esqueceu a senha?"** na tela de login.  
+  2. Clicar no link para iniciar o processo de recuperação.  
+  3. Preencher o campo solicitado com o **e-mail cadastrado**.  
+  4. Confirmar a solicitação para receber as instruções de redefinição. 
 - **Critérios de Sucesso:**  
-  - O sistema envia o e-mail de recuperação.  
-  - O usuário redefine a senha com sucesso.  
-  - O acesso é restabelecido.  
+  - O participante localiza o link **"Esqueceu a senha?"** em menos de 10 segundos.  
+  - Ele entende que precisa inserir o e-mail para receber as instruções.  
+  - O participante expressa confiança de que, ao fazer isso, conseguirá resolver o problema.  
 
 ---
 
-### Cenário 3 – Cadastrar novo usuário  
-- **Objetivo:** Validar se o administrador consegue cadastrar usuários no sistema.  
-- **Contexto:** O administrador deseja adicionar um novo técnico agrícola.  
+## Cenário 3 – Cadastrar um novo membro da equipe  
+- **Objetivo:** Avaliar a facilidade e a eficiência do fluxo de cadastro de um novo usuário pelo administrador.  
+- **Contexto:** Você é o administrador do sistema. Uma nova técnica agrícola foi contratada. Você precisa criar uma conta para ela para que possa registrar as visitas de campo. 
 - **Tarefas:**  
-  1. Acessar o menu **Gerenciar Usuários**.  
-  2. Clicar em **Cadastrar Usuário**.  
-  3. Preencher campos: Nome, E-mail, CPF, Matrícula e Cargo.  
-  4. Confirmar cadastro.  
+  1. Acessar a área **Gerenciar Usuários** no sistema.  
+  2. Selecionar a opção **Adicionar Novo Usuário**.  
+  3. Preencher os campos obrigatórios (ex: nome, e-mail, senha).  
+  4. Definir o cargo da nova usuária como **Técnico Agrícola**.  
+  5. Salvar o cadastro para concluir o processo.    
 - **Critérios de Sucesso:**  
-  - O novo usuário aparece na lista.  
-  - Todos os dados são exibidos corretamente.  
+  - O participante encontra a área de **"Gerenciar Usuários"** e o botão para criar um novo usuário sem ajuda.  
+  - O preenchimento do formulário é fluido, sem pausas longas ou dúvidas sobre os campos.  
+  - A tarefa é concluída em menos de 2 minutos.  
 
 ---
 
-### Cenário 4 – Atualizar informações de usuário  
-- **Objetivo:** Garantir que o administrador possa editar dados já cadastrados.  
-- **Contexto:** Um usuário mudou de cargo e precisa atualizar suas informações.  
+## Cenário 4 – Atualizar o cargo de um colaborador  
+- **Objetivo:** Garantir que o processo de edição de um usuário existente seja intuitivo.  
+- **Contexto:** Um colaborador foi promovido. O cargo dele está desatualizado no sistema e você, como administrador, precisa corrigir isso.  
 - **Tarefas:**  
-  1. Acessar **Gerenciar Usuários**.  
-  2. Selecionar usuário.  
-  3. Clicar em **Editar**.  
-  4. Alterar dados (ex.: cargo, e-mail).  
-  5. Salvar alterações.  
+  1. Localizar o usuário na lista de colaboradores.  
+  2. Clicar no botão ou ícone **Editar** associado ao seu cadastro.  
+  3. Alterar o campo **Cargo** para **Técnico Agrícola**.  
+  4. Salvar as alterações realizadas.    
 - **Critérios de Sucesso:**  
-  - Alterações são salvas.  
-  - Lista exibe informações atualizadas.  
+  - O participante identifica rapidamente o botão/ícone para **Editar**.  
+  - Ele realiza a alteração e salva sem erros.  
+  - O participante sente confiança de que a informação foi atualizada com sucesso.  
 
 ---
 
-### Cenário 5 – Remover usuário  
-- **Objetivo:** Testar a exclusão de usuários pelo administrador.  
-- **Contexto:** Um funcionário saiu da fazenda e deve ser removido do sistema.  
+## Cenário 5 – Desligar um funcionário do sistema  
+- **Objetivo:** Testar a clareza do processo de exclusão e a eficácia da confirmação para evitar acidentes.  
+- **Contexto:** Um funcionário não trabalha mais na fazenda. Por razões de segurança, o acesso dele ao AGRINOV precisa ser removido o mais rápido possível.  
 - **Tarefas:**  
-  1. Acessar **Gerenciar Usuários**.  
-  2. Selecionar usuário da lista.  
-  3. Clicar em **Remover**.  
-  4. Confirmar exclusão.  
+  1. Localizar o usuário na lista de colaboradores.  
+  2. Selecionar a opção **Remover/Excluir Usuário**.  
+  3. Ler atentamente a mensagem de confirmação exibida.  
+  4. Confirmar a exclusão para finalizar o processo.  
 - **Critérios de Sucesso:**  
-  - Usuário removido não aparece mais na lista.  
-  - Sistema exibe mensagem de confirmação.  
+  - O participante encontra a opção para remover o usuário facilmente.  
+  - Ele lê a mensagem de confirmação antes de prosseguir, entendendo a consequência do ato.  
+  - A tarefa é completada com uma sensação de segurança no processo.  
 
 ---
 
-### Cenário 6 – Cadastrar propriedade agrícola  
-- **Objetivo:** Verificar se o administrador consegue cadastrar novas propriedades.  
-- **Contexto:** O gestor deseja adicionar uma nova área de plantio.  
+## Cenário 6 – Cadastrar uma nova área de plantio  
+- **Objetivo:** Verificar a clareza dos campos e a lógica do formulário de cadastro de uma nova propriedade.  
+- **Contexto:** A cooperativa fechou parceria com uma nova propriedade. Você precisa cadastrá-la no sistema para que as operações de campo possam ser gerenciadas.  
 - **Tarefas:**  
-  1. Acessar o menu **Propriedade Agrícola**.  
-  2. Clicar em **Cadastrar Propriedade**.  
-  3. Preencher os campos: Nome, Localização, Área, Responsável, Matrícula Rural.  
-  4. Confirmar cadastro.  
+  1. Acessar a seção **Propriedades** no sistema. 
+  2. Selecionar a opção **Cadastrar Nova Propriedade**.  
+  3. Preencher os campos obrigatórios do formulário (ex: nome, localização, matrícula rural).  
+  4. Revisar os dados preenchidos para evitar erros.  
+  5. Salvar o cadastro para concluir a inclusão da propriedade.    
 - **Critérios de Sucesso:**  
-  - Propriedade aparece na lista.  
+  - O participante encontra a seção correta para cadastro da propriedade sem dificuldades.  
+  - Ele preenche o formulário sem expressar dúvidas sobre termos técnicos (ex: *Matrícula Rural*).  
+  - O participante considera o processo rápido e direto.  
+
+
 
 ---
 
