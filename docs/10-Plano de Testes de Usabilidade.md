@@ -64,6 +64,45 @@ Para cada voluntário do teste, é fundamental coletar e apresentar todos os dad
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
 
+
+
+**Exemplo: Cenário 1**
+
+**Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma Imagem da Fazenda
+
+**Contexto:** O usuário desejar fazer upload de uma  imagem da fazenda para ter uma visualização geral da sua propriedade. 
+
+**Tarefa(s):** 
+- Acessar o site e localiza a aba de gerenciar imagens.
+- Clicar na aba  Anexar Imagem da Fazenda.
+- Clicar ou arrastar um imagem  para o modal de upload de imagem.
+- Clicar no botão  "confirmar envio" e visualizar a confirmação.
+
+**Critério(s) de Sucesso(s):**
+- Fazer upload de imagem
+- Mensagem de sucesso de envio
+
+
+**Exemplo: Cenário 2**
+
+**Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma Imagem da Plantação.
+
+**Contexto:** O usuário desejar fazer upload de uma  imagem de uma plantação para ter uma visualização geral da sua propriedade. 
+
+**Tarefa(s):** 
+- Acessar o site e localiza a aba de gerenciar imagens.
+- Clicar na aba  Anexar Imagem da Plantação
+- Selecionar a plantação que deseja fazer upload da imagem.
+- Clicar ou arrastar um imagem  para o modal de upload de imagem.
+- Clicar no botão  "confirmar envio" e visualizar a confirmação.
+
+**Critério(s) de Sucesso(s):**
+- Fazer upload de imagem
+- Mensagem de sucesso de envio
+
+
+
+
 > **Links Úteis**:
 > - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
 > - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
