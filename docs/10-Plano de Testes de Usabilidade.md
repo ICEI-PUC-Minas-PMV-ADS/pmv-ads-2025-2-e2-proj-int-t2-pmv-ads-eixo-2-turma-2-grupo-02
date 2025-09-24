@@ -63,6 +63,95 @@ Os dados coletados devem ajudar a entender a experiência dos usuários e os dad
 Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+<!--gabriel -->
+---
+
+## Cenários de Teste  
+
+### Cenário 1 – Login no sistema  
+- **Objetivo:** Validar se o usuário consegue acessar o sistema com credenciais válidas.  
+- **Contexto:** O usuário deseja acessar o AGRINOV para gerenciar dados de plantio.  
+- **Tarefas:**  
+  1. Inserir e-mail cadastrado.  
+  2. Inserir senha válida.  
+  3. Clicar em **Login**.  
+- **Critérios de Sucesso:**  
+  - O sistema valida as credenciais.  
+  - O usuário é redirecionado para a tela inicial do sistema.  
+
+---
+
+### Cenário 2 – Recuperar senha  
+- **Objetivo:** Testar se o usuário consegue redefinir senha esquecida.  
+- **Contexto:** O usuário não lembra a senha de acesso.  
+- **Tarefas:**  
+  1. Acessar a tela de login.  
+  2. Clicar em **Esqueceu a senha?**  
+  3. Informar o e-mail cadastrado.  
+  4. Acessar o link enviado.  
+  5. Definir e confirmar nova senha.  
+- **Critérios de Sucesso:**  
+  - O sistema envia o e-mail de recuperação.  
+  - O usuário redefine a senha com sucesso.  
+  - O acesso é restabelecido.  
+
+---
+
+### Cenário 3 – Cadastrar novo usuário  
+- **Objetivo:** Validar se o administrador consegue cadastrar usuários no sistema.  
+- **Contexto:** O administrador deseja adicionar um novo técnico agrícola.  
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar Usuários**.  
+  2. Clicar em **Cadastrar Usuário**.  
+  3. Preencher campos: Nome, E-mail, CPF, Matrícula e Cargo.  
+  4. Confirmar cadastro.  
+- **Critérios de Sucesso:**  
+  - O novo usuário aparece na lista.  
+  - Todos os dados são exibidos corretamente.  
+
+---
+
+### Cenário 4 – Atualizar informações de usuário  
+- **Objetivo:** Garantir que o administrador possa editar dados já cadastrados.  
+- **Contexto:** Um usuário mudou de cargo e precisa atualizar suas informações.  
+- **Tarefas:**  
+  1. Acessar **Gerenciar Usuários**.  
+  2. Selecionar usuário.  
+  3. Clicar em **Editar**.  
+  4. Alterar dados (ex.: cargo, e-mail).  
+  5. Salvar alterações.  
+- **Critérios de Sucesso:**  
+  - Alterações são salvas.  
+  - Lista exibe informações atualizadas.  
+
+---
+
+### Cenário 5 – Remover usuário  
+- **Objetivo:** Testar a exclusão de usuários pelo administrador.  
+- **Contexto:** Um funcionário saiu da fazenda e deve ser removido do sistema.  
+- **Tarefas:**  
+  1. Acessar **Gerenciar Usuários**.  
+  2. Selecionar usuário da lista.  
+  3. Clicar em **Remover**.  
+  4. Confirmar exclusão.  
+- **Critérios de Sucesso:**  
+  - Usuário removido não aparece mais na lista.  
+  - Sistema exibe mensagem de confirmação.  
+
+---
+
+### Cenário 6 – Cadastrar propriedade agrícola  
+- **Objetivo:** Verificar se o administrador consegue cadastrar novas propriedades.  
+- **Contexto:** O gestor deseja adicionar uma nova área de plantio.  
+- **Tarefas:**  
+  1. Acessar o menu **Propriedade Agrícola**.  
+  2. Clicar em **Cadastrar Propriedade**.  
+  3. Preencher os campos: Nome, Localização, Área, Responsável, Matrícula Rural.  
+  4. Confirmar cadastro.  
+- **Critérios de Sucesso:**  
+  - Propriedade aparece na lista.  
+  - Informações cadastradas são exibidas corretamente.  
+
 
 > **Links Úteis**:
 > - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
