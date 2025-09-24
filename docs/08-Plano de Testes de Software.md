@@ -183,6 +183,5 @@
 |:---:	|:---:	|
 |	Requisito Associado 	|RF-018  A aplicação deve fornecer uma previsão do clima dos próximos 7 dias.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar a Plataforma <br> - Acessar a página de Relatório <br>
-- Clicar em relatório de Clima <br>|
+| Passos 	| - Acessar a Plataforma <br> - Acessar a página de Relatório <br>- Clicar em relatório de Clima <br>|
 |Critério de Êxito | - Visualizar relatório de clima com os últimos 7 dias |
