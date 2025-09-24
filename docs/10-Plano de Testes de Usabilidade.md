@@ -153,7 +153,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 
 ---
 
-### Cenário 7 - Criação de Plantação
+### Cenário 7 - Cadastrar de plantação
 
 - **Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar uma nova plantação, anexar a foto aérea, visualizar a análise automática e acessar as recomendações geradas pelo sistema.
 - **Contexto:** O usuário é um técnico agrícola que deseja registrar uma nova plantação em uma das áreas de plantio da própriedade agrícola. Ele deve cadastrar as informações básicas da plantação, enviar uma foto obtida por drone e, em seguida, visualizar os dados gerados pelo sistema sobre a saúde da plantação e a recomendação de rotação de cultura.
