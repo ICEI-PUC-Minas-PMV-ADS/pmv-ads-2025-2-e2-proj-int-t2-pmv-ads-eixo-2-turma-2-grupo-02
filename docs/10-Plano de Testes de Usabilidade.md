@@ -154,11 +154,11 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 
 <!-- AUTOR: Lucas & Pamela -->
 
-### Cenário 6 – Cadastrar metas de Produção
+### Cenário 9 – Cadastrar metas de Produção
 - **Objetivo:** Verificar se o Gestor consegue cadastrar as metas de produção.
 - **Contexto:** O Gestor necessita ter o controle das metas de produção e para isso ele necessita cadastrar uma meta.
 - **Tarefas:**  
-  1. Acessar o menu **Gerenciar Metas de Produção*.  
+  1. Acessar o menu **Gerenciar Metas de Produção**.  
   2. Clicar em **Cadastrar Metas de Produção**.  
   3. Preencher os campos: Data Início, Data Fim, Cultura e Quantidade
   4. Clicar em **Cadastrar**.  
@@ -166,3 +166,12 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
   - Após o cadastro a meta cadastrada deve ser exibida na listagem
   - Informações cadastradas devem ser exibidas corretamente.  
 
+### Cenário 10 – Visualizar vendas
+- **Objetivo:** Verificar se o Gestor consegue gerenciar as vendas a partir das listagens.
+- **Contexto:** O Gestor necessita ter o controle das vendas da plantação.
+- **Tarefas:**  
+  1. Acessar o menu **Gerenciar vendas**.  
+  2. **Acessar listagem das vendas**.
+- **Critérios de Sucesso:**  
+  - Deverá ser exibida a listagem atualizada das vendas.
+  - Deveram ser exibidas as opções de atualizar e remover habilitadas em cada venda.
