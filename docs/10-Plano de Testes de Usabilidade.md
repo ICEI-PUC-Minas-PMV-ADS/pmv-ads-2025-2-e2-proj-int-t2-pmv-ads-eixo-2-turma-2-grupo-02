@@ -77,26 +77,21 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
     2. Localizar e preencher o campo **Senha** com a senha fornecida.
     3. Clicar no botão **Login** para acessar o sistema.
 - **Critérios de Sucesso:**  
-  - O participante insere os dados nos campos corretos sem hesitação.
-  - A tarefa é concluída com velocidade.
-  - O participante não expressa nenhuma confusão sobre o que fazer na tela.
-
----
+  - O usuário insere os dados nos campos corretos sem hesitação.
+  - O usuário não expressa nenhuma confusão sobre o que fazer na tela.
 
 ## Cenário 2 – Recuperação de acesso  
 - **Objetivo:** Testar a facilidade de encontrar a opção de recuperação e a confiança do usuário no processo.  
 - **Contexto:** Passaram-se algumas semanas e você esqueceu completamente a sua senha. Você precisa urgentemente acessar o sistema para verificar uns dados, mas não consegue logar.  
 - **Tarefas:**  
-   1. Identificar o link **"Esqueceu a senha?"** na tela de login.  
+  1. Identificar o link **"Esqueceu a senha?"** na tela de login.  
   2. Clicar no link para iniciar o processo de recuperação.  
   3. Preencher o campo solicitado com o **e-mail cadastrado**.  
   4. Confirmar a solicitação para receber as instruções de redefinição. 
 - **Critérios de Sucesso:**  
-  - O participante localiza o link **"Esqueceu a senha?"** em menos de 10 segundos.  
-  - Ele entende que precisa inserir o e-mail para receber as instruções.  
-  - O participante expressa confiança de que, ao fazer isso, conseguirá resolver o problema.  
-
----
+  - O usuário localiza o link **"Esqueceu a senha?"** em menos de 10 segundos.  
+  - O usuário entende que precisa inserir o e-mail para receber as instruções.  
+  - O usuário expressa confiança de que, ao fazer isso, conseguirá resolver o problema.
 
 ## Cenário 3 – Cadastrar um novo membro da equipe  
 - **Objetivo:** Avaliar a facilidade e a eficiência do fluxo de cadastro de um novo usuário pelo administrador.  
@@ -104,68 +99,58 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 - **Tarefas:**  
   1. Acessar a área **Gerenciar Usuários** no sistema.  
   2. Selecionar a opção **Adicionar Novo Usuário**.  
-  3. Preencher os campos obrigatórios (ex: nome, e-mail, senha).  
+  3. Preencher os campos obrigatórios (nome, e-mail, cpf e matricula).  
   4. Definir o cargo da nova usuária como **Técnico Agrícola**.  
   5. Salvar o cadastro para concluir o processo.    
 - **Critérios de Sucesso:**  
-  - O participante encontra a área de **"Gerenciar Usuários"** e o botão para criar um novo usuário sem ajuda.  
-  - O preenchimento do formulário é fluido, sem pausas longas ou dúvidas sobre os campos.  
-  - A tarefa é concluída em menos de 2 minutos.  
+  - O usuário encontra a área de **"Gerenciar Usuários"** e o botão para criar um novo usuário sem ajuda.
+  - O preenchimento do formulário é fluido, sem pausas longas ou dúvidas sobre os campos.
+  - A tarefa é concluída em menos de 2 minutos.
 
----
-
-## Cenário 4 – Atualizar o cargo de um colaborador  
+## Cenário 4 – Atualizar o cargo de um usuário  
 - **Objetivo:** Garantir que o processo de edição de um usuário existente seja intuitivo.  
 - **Contexto:** Um colaborador foi promovido. O cargo dele está desatualizado no sistema e você, como administrador, precisa corrigir isso.  
 - **Tarefas:**  
-  1. Localizar o usuário na lista de colaboradores.  
-  2. Clicar no botão ou ícone **Editar** associado ao seu cadastro.  
+  1. Localizar o usuário na área **Gerenciar Usuários** no sistema.  
+  2. Clicar no botão ou ícone **Atualizar** associado ao cadastro.  
   3. Alterar o campo **Cargo** para **Técnico Agrícola**.  
-  4. Salvar as alterações realizadas.    
+  4. Clicar no botão de **Atualizar**.
+  5. Salvar as alterações realizadas.
 - **Critérios de Sucesso:**  
-  - O participante identifica rapidamente o botão/ícone para **Editar**.  
-  - Ele realiza a alteração e salva sem erros.  
-  - O participante sente confiança de que a informação foi atualizada com sucesso.  
-
----
+  - O usuário identifica rapidamente o botão/ícone para **Atualizar**.  
+  - O usuário identifica o campo de cargo em menos de 10 segundos.
+  - O usuário sente confiança de que a informação foi atualizada com sucesso. 
 
 ## Cenário 5 – Desligar um funcionário do sistema  
-- **Objetivo:** Testar a clareza do processo de exclusão e a eficácia da confirmação para evitar acidentes.  
+- **Objetivo:** Testar a clareza do processo de exclusão.  
 - **Contexto:** Um funcionário não trabalha mais na fazenda. Por razões de segurança, o acesso dele ao AGRINOV precisa ser removido o mais rápido possível.  
 - **Tarefas:**  
-  1. Localizar o usuário na lista de colaboradores.  
-  2. Selecionar a opção **Remover/Excluir Usuário**.  
+  1. Localizar o usuário na área **Gerenciar Usuários** no sistema.
+  2. Selecionar a opção **Deletar**.  
   3. Ler atentamente a mensagem de confirmação exibida.  
   4. Confirmar a exclusão para finalizar o processo.  
 - **Critérios de Sucesso:**  
-  - O participante encontra a opção para remover o usuário facilmente.  
+  - O usuário encontra a opção para remover o usuário facilmente.  
   - Ele lê a mensagem de confirmação antes de prosseguir, entendendo a consequência do ato.  
-  - A tarefa é completada com uma sensação de segurança no processo.  
-
----
+  - A tarefa é completada com uma sensação de segurança no processo. 
 
 ## Cenário 6 – Cadastrar uma nova área de plantio  
-- **Objetivo:** Verificar a clareza dos campos e a lógica do formulário de cadastro de uma nova propriedade.  
+- **Objetivo:** Verificar a clareza dos campos de cadastro de uma nova propriedade.  
 - **Contexto:** A cooperativa fechou parceria com uma nova propriedade. Você precisa cadastrá-la no sistema para que as operações de campo possam ser gerenciadas.  
 - **Tarefas:**  
-  1. Acessar a seção **Propriedades** no sistema. 
-  2. Selecionar a opção **Cadastrar Nova Propriedade**.  
-  3. Preencher os campos obrigatórios do formulário (ex: nome, localização, matrícula rural).  
-  4. Revisar os dados preenchidos para evitar erros.  
-  5. Salvar o cadastro para concluir a inclusão da propriedade.    
+  1. Acessar a seção **Propriedade Agrícola** no sistema. 
+  2. Preencher os campos obrigatórios do formulário (nome da propriedade, cnpj, área, imagem, localização, tipos de solo e tamanho hectares).  
+  3. Salvar o cadastro para concluir a inclusão da propriedade.    
 - **Critérios de Sucesso:**  
-  - O participante encontra a seção correta para cadastro da propriedade sem dificuldades.  
-  - Ele preenche o formulário sem expressar dúvidas sobre termos técnicos (ex: *Matrícula Rural*).  
-  - O participante considera o processo rápido e direto.  
+  - Todo o processo ocorre em menos de 5 minutos.
+  - A tarefa é completada com uma sensação de segurança no processo.
+  - Se houver um erro no cadastro aparece uma mensagem informando o problema.
+  - Se o cadastro for feito com corretamente aparece uma mensagem de sucesso.
 
+## Cenário 7 - Cadastrar de plantação
 
-
----
-
-### Cenário 7 - Cadastrar de plantação
-
-- **Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar uma nova plantação, anexar a foto aérea, visualizar a análise automática e acessar as recomendações geradas pelo sistema.
-- **Contexto:** O usuário é um técnico agrícola que deseja registrar uma nova plantação em uma das áreas de plantio da própriedade agrícola. Ele deve cadastrar as informações básicas da plantação, enviar uma foto obtida por drone e, em seguida, visualizar os dados gerados pelo sistema sobre a saúde da plantação e a recomendação de rotação de cultura.
+- **Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar uma nova plantação.
+- **Contexto:** O usuário é um técnico agrícola que deseja registrar uma nova plantação em uma das áreas de plantio da própriedade agrícola.
 - **Tarefa(s):** 
   1. Acessar o sistema e entrar na área de gerenciar área de plantio.
   2. Selecionar uma área de plantio já cadastrada.
@@ -177,34 +162,28 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
      - Cultura (ex.: milho, soja, café etc.)
      - Status (ex.: semeado, plantado, colhido)
      - Foto da plantação
-  4. Visualizar a análise automática gerada pelo sistema (saúde da plantação e recomendação de rotação de cultura).
-  5. Acessar a página da plantação e confirmar se as informações cadastradas e os dados da análise foram exibidos corretamente.
 - **Critério(s) de Sucesso(s):**
-  - O usuário consegue localizar a área de gerenciamento de plantio sem dificuldades.
-  - A plantação é cadastrada corretamente com todas as informações solicitadas.
-  - O upload da foto ocorre sem erros.
-  - O sistema gera e exibe automaticamente a análise e a recomendação de rotação de cultura.
-  - O usuário consegue visualizar os dados da plantação cadastrada na página da plantação.
-  - Todo o processo ocorre em menos de 7 minutos, sem necessidade de assistência.
+  - Todo o processo ocorre em menos de 5 minutos.
+  - A tarefa é completada com uma sensação de segurança no processo.
+  - Se houver um erro no cadastro aparece uma mensagem informando o problema.
+  - Se o cadastro for feito com corretamente aparece uma mensagem de sucesso.
 
----
-
-### Cenário 8 – Cadastrar compra de insumos
-- **Objetivo:** Verificar se o gestor consegue cadastrar compra de insumos.  
+## Cenário 8 – Cadastrar compra de insumos
+- **Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar compra de insumos.
 - **Contexto:** O gestor deseja cadastrar compra de insumos.  
 - **Tarefas:**  
   1. Acessar o menu **Gerenciar compra de insumos**.  
   2. Clicar em **Cadastrar compra de insumos**.  
   3. Preencher os campos: Nome, Quantidade, Unidade de Medida.  
-  4. Confirmar cadastro.  
-- **Critérios de Sucesso:**  
-  - Insumo aparece na lista.  
-  - Informações cadastradas são exibidas corretamente. 
+  4. Clicar no botão de **Cadastrar**.  
+- **Critérios de Sucesso:**
+  - Todo o processo ocorre em menos de 2 minutos.
+  - A tarefa é completada com uma sensação de segurança no processo.
+  - Se houver um erro no cadastro aparece uma mensagem informando o problema.
+  - Se o cadastro for feito com corretamente aparece uma mensagem de sucesso.
 
----
-
-### Cenário 9 – Cadastrar metas de Produção
-- **Objetivo:** Verificar se o Gestor consegue cadastrar as metas de produção.
+## Cenário 9 – Cadastrar metas de produção
+- **Objetivo:** Avaliar a facilidade e eficiência do usuário em cadastrar as metas de produção.
 - **Contexto:** O Gestor necessita ter o controle das metas de produção e para isso ele necessita cadastrar uma meta.
 - **Tarefas:**  
   1. Acessar o menu **Gerenciar Metas de Produção**.  
@@ -212,50 +191,41 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
   3. Preencher os campos: Data Início, Data Fim, Cultura e Quantidade
   4. Clicar em **Cadastrar**.  
 - **Critérios de Sucesso:**  
-  - Após o cadastro a meta cadastrada deve ser exibida na listagem
-  - Informações cadastradas devem ser exibidas corretamente.  
+  - Todo o processo ocorre em menos de 3 minutos.
+  - A tarefa é completada com uma sensação de segurança no processo.
+  - Se houver um erro no cadastro aparece uma mensagem informando o problema.
+  - Se o cadastro for feito com corretamente aparece uma mensagem de sucesso.
 
-### Cenário 10 – Visualizar vendas
-- **Objetivo:** Verificar se o Gestor consegue gerenciar as vendas a partir das listagens.
-- **Contexto:** O Gestor necessita ter o controle das vendas da plantação.
+## Cenário 10 – Visualizar relatório de vendas
+- **Objetivo:** Avaliar se o gestor consegue entender as informações do relatório de vendas com facilidade.
+- **Contexto:** O Gestor necessita acessar o relatório de vendas da propriedade.
 - **Tarefas:**  
-  1. Acessar o menu **Gerenciar vendas**.  
-  2. **Acessar listagem das vendas**.
+  1. Acessar o menu **Visualizar relatórios de vendas**.   
 - **Critérios de Sucesso:**  
-  - Deverá ser exibida a listagem atualizada das vendas.
-  - Deveram ser exibidas as opções de atualizar e remover habilitadas em cada venda.
-
+  - O usuário consegue entender os simbolos dos relatórios.
+  - As informações são relevantes para o usuário.
 
 ## Cenário 11 - Upload Imagem Fazenda
-
-**Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma Imagem da Fazenda
-
-**Contexto:** O usuário desejar fazer upload de uma  imagem da fazenda para ter uma visualização geral da sua propriedade. 
-
-**Tarefa(s):** 
-- Acessar o site e localiza a aba de gerenciar imagens.
-- Clicar na aba  Anexar Imagem da Fazenda.
-- Clicar ou arrastar um imagem  para o modal de upload de imagem.
-- Clicar no botão  "confirmar envio" e visualizar a confirmação.
-
-**Critério(s) de Sucesso(s):**
-- Fazer upload de imagem
-- Mensagem de sucesso de envio
-
+- **Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma imagem da fazenda
+- **Contexto:** O usuário desejar fazer upload de uma  imagem da fazenda para ter uma visualização geral da sua propriedade. 
+- **Tarefa(s):** 
+  - Acessar o site e localiza a aba de gerenciar imagens.
+  - Clicar na aba  Anexar Imagem da Fazenda.
+  - Clicar ou arrastar um imagem  para o modal de upload de imagem.
+  - Clicar no botão  "confirmar envio" e visualizar a confirmação.
+- **Critério(s) de Sucesso(s):**
+  - Se houver um erro no upload aparece uma mensagem informando o problema.
+  - Se o upload for feito com corretamente aparece uma mensagem de sucesso.
 
 ## Cenário 12 - Upload Imagem Plantação
-
-**Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma Imagem da Plantação.
-
-**Contexto:** O usuário desejar fazer upload de uma  imagem de uma plantação para ter uma visualização geral da sua propriedade. 
-
-**Tarefa(s):** 
-- Acessar o site e localiza a aba de gerenciar imagens.
-- Clicar na aba  Anexar Imagem da Plantação
-- Selecionar a plantação que deseja fazer upload da imagem.
-- Clicar ou arrastar um imagem  para o modal de upload de imagem.
-- Clicar no botão  "confirmar envio" e visualizar a confirmação.
-
-**Critério(s) de Sucesso(s):**
-- Fazer upload de imagem
-- Mensagem de sucesso de envio
+- **Objetivo:** Avaliar a facilidade e eficiência do usuário adicionar uma imagem da plantação.
+- **Contexto:** O usuário desejar fazer upload de uma  imagem de uma plantação para ter uma visualização geral da sua propriedade. 
+- **Tarefa(s):** 
+  - Acessar o site e localiza a aba de gerenciar imagens.
+  - Clicar na aba  Anexar Imagem da Plantação
+  - Selecionar a plantação que deseja fazer upload da imagem.
+  - Clicar ou arrastar um imagem  para o modal de upload de imagem.
+  - Clicar no botão  "confirmar envio" e visualizar a confirmação.
+- **Critério(s) de Sucesso(s):**
+  - Se houver um erro no upload aparece uma mensagem informando o problema.
+  - Se o upload for feito com corretamente aparece uma mensagem de sucesso.
