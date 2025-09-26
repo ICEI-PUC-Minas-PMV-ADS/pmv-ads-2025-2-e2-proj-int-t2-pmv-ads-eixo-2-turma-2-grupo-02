@@ -200,7 +200,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Test
 - **Objetivo:** Avaliar se o gestor consegue entender as informações do relatório de vendas com facilidade.
 - **Contexto:** O Gestor necessita acessar o relatório de vendas da propriedade.
 - **Tarefas:**  
-  1. Acessar o menu **Visualizar relatórios de vendas**.   
+  1. Acessar o menu **Gerenciar vendas por plantio**.  
+  1. Clicar no botão **Visualizar relatório**.   
 - **Critérios de Sucesso:**  
   - O usuário consegue entender os simbolos dos relatórios.
   - As informações são relevantes para o usuário.
