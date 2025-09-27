@@ -192,10 +192,28 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 
 ### RF-007
 **Descrição:** A aplicação deve permitir o gerenciamento do registro de aplicação de insumos (fertilizantes, sementes, água, defensivos) em cada área de plantio (CRUD).  
-**Prioridade:** ALTA  
+**Prioridade:** ALTA
 
 **Wireframe:**  
-![RF-007](./prints/RF-007.png)
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS" src="https://github.com/user-attachments/assets/736094ab-3efd-49cb-aa63-b4b41849ee2c" />
+<figcaption>Tela de listagem de insumos</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - CADASTRAR INSUMOS" src="https://github.com/user-attachments/assets/3f8ed8c2-b58a-4682-bb2b-8382bd6fddbc" />
+ <figcaption>Tela de cadastros de insumo</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - COMPRAR INSUMOS" src="https://github.com/user-attachments/assets/277e9c03-9115-47e9-ae06-4688246828b9" />
+ <figcaption>Tela de atualização de insumo</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - REMOVER INSUMO" src="https://github.com/user-attachments/assets/aa873b28-b41d-4b27-8f78-382235dbe564" />
+ <figcaption>Tela de remoção de insumo</figcaption>
+</figure>
 
 ---
 
@@ -204,7 +222,10 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Prioridade:** ALTA  
 
 **Wireframe:**  
-![RF-008](./prints/RF-008.png)
+<figure>
+ <img width="1440" height="1024" alt="TECNICO AGRICOLA - PLANTAÇÃO" src="https://github.com/user-attachments/assets/2c3a2d91-4c89-4118-bdf9-2b0bbc49f8c7" />
+ <figcaption>Tela da plantação onde aparece os alertas de clima e pragas</figcaption>
+</figure>
 
 ---
 
@@ -213,7 +234,15 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Prioridade:** ALTA  
 
 **Wireframe:**  
-![RF-009](./prints/RF-009.png)
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR IMAGENS DA FAZENDA" src="https://github.com/user-attachments/assets/20fe920d-9765-488e-b557-30f5f3bd3cbd" />
+ <figcaption>Tela de listagem das imagens da fazenda</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="CADASTRAR IMAGEM DA FAZENDA" src="https://github.com/user-attachments/assets/fa1dee46-e490-45ef-a577-7a1e342ae032" />
+ <figcaption>Tela de cadastro de imagem da fazenda</figcaption>
+</figure>
 
 ---
 
@@ -222,7 +251,31 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Prioridade:** MÉDIA  
 
 **Wireframe:**  
-![RF-010](./prints/RF-010.png)
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR VENDAS" src="https://github.com/user-attachments/assets/09d59712-ac68-48c3-82c9-86f1c1ffe480" />
+ <figcaption>Tela de listagem de vendas</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR VENDAS - CADASTRAR VENDA" src="https://github.com/user-attachments/assets/f26cc363-5dac-4e1e-8db1-1e9db43a6f11" />
+ <figcaption>Tela de cadastro de venda</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR VENDAS - ATUALIZAR VENDA" src="https://github.com/user-attachments/assets/f119a86b-80e6-498e-82aa-2f97f6983018" />
+ <figcaption>Tela de atualização de venda</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="GERENCIAR VENDAS - REMOVER VENDA" src="https://github.com/user-attachments/assets/ff8ae1e9-e11d-4860-b128-770cb71dcc80" />
+ <figcaption>Tela de remoção de venda</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="RELATÓRIO DE VENDAS" src="https://github.com/user-attachments/assets/f8bf05dd-1cee-447c-999c-16ad8c618fe0" />
+ <figcaption>Tela de relatório de vendas</figcaption>
+</figure>
+<hr/>
 
 ---
 
