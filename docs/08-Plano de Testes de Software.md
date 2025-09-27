@@ -20,12 +20,12 @@
 
 ---
 
-| **Caso de Teste** | **CT03 – Cadastrar propriedade agrícola** |
+| **Caso de Teste** | **CT03 – Cadastrar área de plantio** |
 |:---:|:---:|
 | Requisito Associado | RF-003 – A aplicação deve permitir o gerenciamento das áreas de plantio (CRUD). |
 | Objetivo do Teste | Garantir que o usuário consiga cadastrar uma nova propriedade agrícola. |
-| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Acessar menu “Áreas de Plantio” <br> - Clicar em “Nova Propriedade Agrícola” <br> - Preencher dados obrigatórios (nome da propriedade, localização, tamanho) <br> - Clicar em “Salvar” |
-| Critério de Êxito | A propriedade agrícola deve ser cadastrada corretamente e listada no sistema. |
+| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Acessar menu “Gerenciar Áreas de Plantio” <br> - Clicar em “Área de Plnatio” <br> - Preencher dados obrigatórios (Data ínicio, Data Fim prevista, Área Utilizadas e Status) <br> - Clicar em “Salvar” |
+| Critério de Êxito | A área de plantio deve ser cadastrada corretamente e listada no sistema. |
 |   |   |
 
 ---
@@ -34,7 +34,7 @@
 |:---:|:---:|
 | Requisito Associado | RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
 | Objetivo do Teste | Garantir que o usuário consiga cadastrar uma nova cultura vinculada a uma área de plantio. |
-| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Selecionar “Gerenciar Propriedade Agrícola” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
+| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Selecionar “Gerenciar Áreas de Plantio” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
 | Critério de Êxito | A cultura deve ser cadastrada e vinculada corretamente à área de plantio selecionada. |
 |   |   |
 | **Caso de Teste** 	| **CT05 – Rotação de cultura** 	|
@@ -140,48 +140,43 @@
 | Objetivo do Teste 	| Verificar se o usuário consegue remover uma meta de produção cadastrada |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Selecionar a meta de produção criada e clicar em "REMOVER" <br> - Clicar em "Confirmar" no modal de remoção | 
 |Critério de Êxito | - A meta é removida com sucesso. |
-
-
 | **Caso de Teste** 	| **CT23 – Visualizar Gráfico** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-016 A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar a página de  Gerenciar metas de vendas <br> - Clicar na aba de relatórios da Página de Gerenciar Metas de Produção  |
 |Critério de Êxito | - Gráfico mostrando o comparativo  do desempenho real e metas |
-
-
 | **Caso de Teste** 	| **CT24 – Download Gráfico 1** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de meta de produção |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios metas de produção<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
 | **Caso de Teste** 	| **CT25 – Download Gráfico 2** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de meta de vendas por plantio |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de vendas de plantio<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
 | **Caso de Teste** 	| **CT26 – Download Gráfico 3** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de Clima |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de Clima<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
 | **Caso de Teste** 	| **CT27 – Download Gráfico 4** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de Insumos |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de Insumos<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
-
 | **Caso de Teste** 	| **CT28 – Cadastrar perfil** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	|RF-018  A aplicação deve fornecer uma previsão do clima dos próximos 7 dias.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar a Plataforma <br> - Acessar a página de Relatório <br>- Clicar em relatório de Clima <br>|
 |Critério de Êxito | - Visualizar relatório de clima com os últimos 7 dias |
+| **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
+|	Requisito Associado 	|RF-019  A aplicação deve permitir o gerenciamento da fazenda (CRUD).|
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar a fazenda. |
+| Passos 	| - Acessar a Plataforma <br> - Acessar a página de Propriedade Agrícola <br>- Cadastrar os dados obrigatórios da propriedade (Nome da propriedade, CNPJ, Area, Imagem, Localização, Tipos de Solos e Tamanho Hectares). <br>|
+|Critério de Êxito | - As informações são cadastradas corretamente |
+| **Caso de Teste** 	| **CT30 – Atualizar propriedade agrícola** 	|
+|	Requisito Associado 	|RF-019  A aplicação deve permitir o gerenciamento da fazenda (CRUD).|
+| Objetivo do Teste 	| Verificar se o usuário consegue atualizar a fazenda. |
+| Passos 	| - Acessar a Plataforma <br> - Acessar a página de Propriedade Agrícola <br>- Clicar no botão "Editar". <br>- Editar os dados da fazenda. <br>- Clicar no botão "Atualizar". <br>|
+|Critério de Êxito | - As informações são atualizadas corretamente |
