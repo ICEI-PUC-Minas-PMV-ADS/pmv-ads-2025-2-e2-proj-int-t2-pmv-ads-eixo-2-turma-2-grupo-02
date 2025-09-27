@@ -19,6 +19,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 # Wireframes e Requisitos do Projeto
 
 LINK DA INTERAÇÃO:
+Para acesso ao link necessita ter uma conta no Figma:
 https://www.figma.com/proto/xelBHXsiu1kT3nxAYQf7KM/AGRINOV-WIREFRAME?node-id=2-2&t=kuyjj6L4HYDeBNL4-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2
 
 Os wireframes são protótipos utilizados no design de interfaces para representar a estrutura de um site e o relacionamento entre suas páginas.  
