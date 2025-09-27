@@ -110,17 +110,64 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD).  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
+**Wireframe:**
+
 <figure>
  <img width="1440" height="1024" alt="ADMIN - AREA DE PLANTIO - PLANTACOES" src="https://github.com/user-attachments/assets/80f64b8b-cce6-4262-bbd2-9d3438fd24ab" />
+<figcaption>Tela da Listagem das plantaçoes </figcaption>
+</figure>
+<hr/>
+<figure>
+
+<figure>
+<img width="1060" height="755" alt="image" src="https://github.com/user-attachments/assets/173ef812-ec17-429f-a4d7-5b596d1d6024" />
+<figcaption>Tela de cadastro das plantações</figcaption>
+</figure>
+<hr/>
+
+
+<figure>
+<img width="1061" height="753" alt="image" src="https://github.com/user-attachments/assets/fbb5cb96-84ee-4236-872a-7902e2710812" />
+<figcaption>Tela de atualizar a plantação</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+
+<figure>
+<img width="1343" height="953" alt="image" src="https://github.com/user-attachments/assets/7a2f8930-dac2-4baa-a3ee-6bb2d0f0c012" />
+
 <figcaption>Tela de visualização de culturas</figcaption>
 </figure>
 <hr/>
 <figure>
- <img width="1440" height="1024" alt="ADMIN - CADASTRO DA PLANTAÇÃO" src="https://github.com/user-attachments/assets/b18a4741-4a3e-4e4f-bd2c-3f2a0cc367b0" />
-<figcaption>Tela de cadastro de de plantações</figcaption>
+
+
+<figure>
+<img width="1344" height="969" alt="image" src="https://github.com/user-attachments/assets/d5782d39-37ba-41c0-b80c-47f4241eb2a7" />
+<figcaption>Tela Cadastrar Culturas</figcaption>
 </figure>
 <hr/>
+<figure>
+
+
+<figure>
+<img width="1346" height="963" alt="image" src="https://github.com/user-attachments/assets/50a4559a-71e1-4ec3-94b2-d39d906dcc85" />
+<figcaption>Tela Atualizar Cultura</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+<img width="1344" height="961" alt="image" src="https://github.com/user-attachments/assets/29862892-2d9c-4f55-a340-4ad6264e6164" />
+<figcaption>Tela Remover Cultura</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
 
 
 ### RF-005
