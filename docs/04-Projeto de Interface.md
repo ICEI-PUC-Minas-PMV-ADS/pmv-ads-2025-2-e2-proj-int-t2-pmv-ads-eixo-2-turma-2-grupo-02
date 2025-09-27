@@ -88,7 +88,12 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 
 ### RF-007
 **Descrição:** A aplicação deve permitir o gerenciamento do registro de aplicação de insumos (fertilizantes, sementes, água, defensivos) em cada área de plantio (CRUD).  
-**Prioridade:** ALTA  
+**Prioridade:** ALTA
+
+<figure><figcaption>Tela de listagem de insumos</figcaption></figure>
+<figure><figcaption>Tela de cadastros de insumo</figcaption></figure>
+<figure><figcaption>Tela de atualização de insumo</figcaption></figure>
+<figure><figcaption>Tela de remoção de insumo</figcaption></figure>
 
 **Wireframe:**  
 ![RF-007](./prints/RF-007.png)
