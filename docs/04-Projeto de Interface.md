@@ -228,14 +228,6 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 
 
 <figure>
-<img width="1031" height="732" alt="image" src="https://github.com/user-attachments/assets/c507e415-e567-46cc-813e-a8c85fd8e1ee" />
-<figcaption>Tela do Gerenciar Metas de produção com a funcionalidade de atualizar a meta</figcaption>
-</figure>
-<hr/>
-<figure>
-
-
-<figure>
 <img width="1029" height="737" alt="image" src="https://github.com/user-attachments/assets/2f5e28ae-7b0d-425d-a2eb-84c3bb171d6e" />
 <figcaption>Tela do Gerenciar Metas de produção com a funcionalidade de cadastrar a meta</figcaption>
 </figure>
