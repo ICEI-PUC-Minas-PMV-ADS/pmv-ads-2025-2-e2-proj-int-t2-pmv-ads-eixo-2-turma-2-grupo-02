@@ -91,13 +91,18 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 </figure>
 <hr/>
 <figure>
- <img width="1440" height="1024" alt="ADMIN - PROPRIEDADE AGRÍCOLA VISIALIZAR" src="https://github.com/user-attachments/assets/b8cba62d-b7e3-4574-9d3d-143a3b860576" />
-<figcaption>Tela de visuaçização da propriedade agrícola</figcaption>
+ <img width="1440" height="1024" alt="ADMIN - AREA DE PLANTIO" src="https://github.com/user-attachments/assets/dfa6dc37-e694-4f51-bed4-debdac2c21f2" />
+<figcaption>Tela de visualização de áreas de plantil</figcaption>
 </figure>
 <hr/>
 <figure>
- <img width="1440" height="1024" alt="ADMIN - PROPRIEDADE AGRÍCOLA CADASTRAR" src="https://github.com/user-attachments/assets/7c2addaa-f396-43cf-b1a7-61562762a2df" />
-<figcaption>Tela de cadastro de de propriedade agrícola</figcaption>
+<img width="1440" height="1024" alt="TECNICO AGRICOLA - ATUALIZAR AREA DE PLANTIL" src="https://github.com/user-attachments/assets/f38bcd90-f592-4735-bea5-0d92879b8e92" />
+<figcaption>Tela de atualização de áreas de plantil</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - CADASTRO DA AREA DE PLANTIL" src="https://github.com/user-attachments/assets/19beef3a-e1b3-4e42-9347-426919389117" />
+<figcaption>Tela de cadastro de áreas de plantil</figcaption>
 </figure>
 <hr/>
 
