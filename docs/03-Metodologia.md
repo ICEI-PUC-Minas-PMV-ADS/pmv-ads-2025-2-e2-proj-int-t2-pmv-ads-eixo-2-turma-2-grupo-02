@@ -45,10 +45,6 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - **Equipe de Desenvolvimento**: Gabriel Alves Pires, Lucas de Souza Santos, Mario Guilherme Carvalho, Mateus de Lucena Tavares, Pamela Silva Otéro e Tiago Silva dos Reis
 - **Equipe de Design**: Mateus de Lucena Tavares
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
 
@@ -66,11 +62,6 @@ Abaixo é possível ver as sprints e seus respectivos backlogs:
 
  <img width="1912" height="816" alt="image" src="https://github.com/user-attachments/assets/f37a3974-5eb2-4cbb-989f-679de7c528c9" />
 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
 
 ### Ferramentas
 
