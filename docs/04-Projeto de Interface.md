@@ -90,13 +90,26 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o gerenciamento do registro de aplicação de insumos (fertilizantes, sementes, água, defensivos) em cada área de plantio (CRUD).  
 **Prioridade:** ALTA
 
-<figure><figcaption>Tela de listagem de insumos</figcaption></figure>
-<figure><figcaption>Tela de cadastros de insumo</figcaption></figure>
-<figure><figcaption>Tela de atualização de insumo</figcaption></figure>
-<figure><figcaption>Tela de remoção de insumo</figcaption></figure>
-
 **Wireframe:**  
-![RF-007](./prints/RF-007.png)
+<figure>
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS" src="https://github.com/user-attachments/assets/78e3c111-73d0-4222-9898-d0f0ab7d38a3" />
+<figcaption>Tela de listagem de insumos</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - CADASTRAR INSUMOS" src="https://github.com/user-attachments/assets/7b4125d2-eb1a-4daa-a9e8-c4e25af85855" />
+ <figcaption>Tela de cadastros de insumo</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - COMPRAR INSUMOS" src="https://github.com/user-attachments/assets/d75877a2-21cf-44f7-b34d-5e49a3bd9f05" />
+ <figcaption>Tela de atualização de insumo</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - REMOVER INSUMO" src="https://github.com/user-attachments/assets/0c901c47-b185-4d3c-b20d-2927a1f272a4" />
+ <figcaption>Tela de remoção de insumo</figcaption>
+</figure>
 
 ---
 
