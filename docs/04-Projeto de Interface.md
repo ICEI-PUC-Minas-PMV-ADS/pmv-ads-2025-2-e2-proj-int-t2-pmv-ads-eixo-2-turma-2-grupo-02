@@ -34,8 +34,27 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o gerenciamento de contas de usuários e seus níveis de permissão (CRUD).  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
-![RF-001](./prints/RF-001.png)
+**Wireframes:**  
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - CADASTRO" src="https://github.com/user-attachments/assets/4c0a5de6-2159-4c0e-ab51-10b6a9898be5" />
+ <figcaption>Tela de cadastro de usuários</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - GERENCIAR USUARIOS" src="https://github.com/user-attachments/assets/38d7e6d0-d7eb-4060-a468-ed73c927a147" />
+ <figcaption>Tela de visualização de usuários</figcaption>
+</figure>
+<hr/>
+
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - ATUALIZAR" src="https://github.com/user-attachments/assets/ebd7b826-1956-43b5-a59a-7805b0920062" />
+ <figcaption>Tela de atualização de usuários</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - GERENCIAR USUARIOS - REMOVER USUÁRIO" src="https://github.com/user-attachments/assets/dca1a7ea-80da-4fa2-a6fc-7f9ff8cb15ee" />
+ <figcaption>Tela de remoção de usuários</figcaption>
+</figure>
 
 ---
 
@@ -43,8 +62,21 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir que os usuários façam login.  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
-![RF-002](./prints/RF-002.png)
+**Wireframes:**  
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - LOGIN" src="https://github.com/user-attachments/assets/535c54b3-cc53-474f-a912-98a884278bab" />
+ <figcaption>Tela de login de usuário</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ESQUECEU A SENHA" src="https://github.com/user-attachments/assets/d4ea1a7c-b8b4-4047-be32-f08835e4315a" />
+ <figcaption>Tela de recuperação de senha</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="CRIAÇÃO DA SENHA" src="https://github.com/user-attachments/assets/772cb6f9-4ba8-4787-bec6-1bc6f7207173" />
+<figcaption>Tela de criação de nova senha</figcaption>
+</figure>
 
 ---
 
@@ -52,35 +84,63 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o gerenciamento das áreas de plantio (CRUD).  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
-![RF-003](./prints/RF-003.png)
-
----
+**Wireframes:**  
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - AREA DE PLANTIO" src="https://github.com/user-attachments/assets/4bf37111-2c9d-4170-9e15-9f7b74078b63" />
+<figcaption>Tela de visulização de áreas de plantil</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - PROPRIEDADE AGRÍCOLA VISIALIZAR" src="https://github.com/user-attachments/assets/b8cba62d-b7e3-4574-9d3d-143a3b860576" />
+<figcaption>Tela de visuaçização da propriedade agrícola</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - PROPRIEDADE AGRÍCOLA CADASTRAR" src="https://github.com/user-attachments/assets/7c2addaa-f396-43cf-b1a7-61562762a2df" />
+<figcaption>Tela de cadastro de de propriedade agrícola</figcaption>
+</figure>
+<hr/>
 
 ### RF-004
 **Descrição:** A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD).  
 **Prioridade:** ALTA  
 
 **Wireframe:**  
-![RF-004](./prints/RF-004.png)
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - AREA DE PLANTIO - PLANTACOES" src="https://github.com/user-attachments/assets/80f64b8b-cce6-4262-bbd2-9d3438fd24ab" />
+<figcaption>Tela de visualização de culturas</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - CADASTRO DA PLANTAÇÃO" src="https://github.com/user-attachments/assets/b18a4741-4a3e-4e4f-bd2c-3f2a0cc367b0" />
+<figcaption>Tela de cadastro de de plantações</figcaption>
+</figure>
+<hr/>
 
----
 
 ### RF-005
 **Descrição:** A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área.  
 **Prioridade:** ALTA  
 
 **Wireframe:**  
-![RF-005](./prints/RF-005.png)
 
----
+<figure>
+ <img width="1440" height="1024" alt="TECNICO AGRICOLA - PLANTAÇÃO" src="https://github.com/user-attachments/assets/a46f226f-f932-4126-bb5f-2e0153c0be8f" />
+<figcaption>Tela de detalhes da plantação</figcaption>
+</figure>
+<hr/>
+
 
 ### RF-006
 **Descrição:** A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos).  
 **Prioridade:** ALTA  
 
 **Wireframe:**  
-![RF-006](./prints/RF-006.png)
+
+<figure>
+ <img width="1440" height="1024" alt="TECNICO AGRICOLA - PLANTAÇÃO" src="https://github.com/user-attachments/assets/be299814-99e2-4d57-a944-0094226efb35" />
+<figcaption>Tela de informações de saúde de plantações</figcaption>
+</figure>
 
 ---
 
