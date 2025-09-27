@@ -283,9 +283,13 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir a comparação entre dados de safras anteriores, mostrando evolução de produtividade.  
 **Prioridade:** MÉDIA  
 
-**Wireframe:**  
-![RF-011](./prints/RF-011.png)
-
+<figure>
+<img width="1440" height="1024" alt="" src="https://github.com/user-attachments/assets/736094ab-3efd-49cb-aa63-b4b41849ee2c](https://github.com/user-attachments/assets/faff217f-130d-4046-bdd7-37c4bbea80a4)" />
+<figcaption>Tela de Relatório de Histórico de Safras</figcaption>
+</figure>
+<hr/>
+<figure>
+ 
 ---
 
 ## PAMELA
@@ -294,8 +298,32 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido.  
 **Prioridade:** MÉDIA  
 
-**Wireframe:**  
-![RF-012](./prints/RF-012.png)
+
+<figure>
+<img width="1440" height="1024" alt="" src="https://github.com/user-attachments/assets/736094ab-3efd-49cb-aa63-b4b41849ee2c](https://github.com/user-attachments/assets/faff217f-130d-4046-bdd7-37c4bbea80a4)" />
+<figcaption>Tela de Relatório de Histórico de Safras</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+ <img width="1125" height="812" alt="image" src="https://github.com/user-attachments/assets/b9456ddf-26d8-43f1-b782-52a55fef633c" />
+<figcaption>Tela de Relatório de Insumos</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+<img width="986" height="707" alt="image" src="https://github.com/user-attachments/assets/2d6e033c-0db0-4709-b822-48dabfb97ca7" />
+<figcaption>Tela de Relatório de Clima</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+
 
 ---
 
@@ -303,17 +331,28 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas sobre as plantações.  
 **Prioridade:** MÉDIA  
 
-**Wireframe:**  
-![RF-013](./prints/RF-013.png)
+<figure>
+<img width="1065" height="760" alt="image" src="https://github.com/user-attachments/assets/dd0ad6bd-a1e1-4c72-b1b2-558e9542ae58" />
+<figcaption>Tela do Dashboard das plantações</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+
 
 ---
 
 ### RF-014
 **Descrição:** A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo).  
 **Prioridade:** MÉDIA  
+<figure>
+<img width="951" height="679" alt="image" src="https://github.com/user-attachments/assets/0702635f-c4e4-4593-a893-c55bc4c32979" />
+<figcaption>Tela do Gerenciar Área de Plantio exibirá mensagens de recomendação sobre as boas práticas para otimização da produção</figcaption>
+</figure>
+<hr/>
+<figure>
 
-**Wireframe:**  
-![RF-014](./prints/RF-014.png)
 
 ---
 
@@ -321,17 +360,49 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD).  
 **Prioridade:** MÉDIA  
 
-**Wireframe:**  
-![RF-015](./prints/RF-015.png)
+<figure>
+<img width="1339" height="858" alt="image" src="https://github.com/user-attachments/assets/6155e28d-05ef-4836-8448-f70dc692c5c8" />
+<figcaption>Tela do Gerenciar Metas de produção página inicial com a listagem</figcaption>
+</figure>
+<hr/>
+<figure>
 
----
+
+<figure>
+<img width="1030" height="737" alt="image" src="https://github.com/user-attachments/assets/c1f7e75b-47aa-4912-981a-7c5deb0d2202" />
+<figcaption>Tela do Gerenciar Metas de produção com a funcionalidade de remover a meta</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+ <img width="1031" height="732" alt="image" src="https://github.com/user-attachments/assets/c507e415-e567-46cc-813e-a8c85fd8e1ee" />
+<figcaption>Tela do Gerenciar Metas de produção com a funcionalidade de atualizar a meta</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+<img width="1029" height="737" alt="image" src="https://github.com/user-attachments/assets/2f5e28ae-7b0d-425d-a2eb-84c3bb171d6e" />
+<figcaption>Tela do Gerenciar Metas de produção com a funcionalidade de cadastrar a meta</figcaption>
+</figure>
+<hr/>
+<figure>
+
+ ---
 
 ### RF-016
 **Descrição:** A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas.  
-**Prioridade:** MÉDIA  
+**Prioridade:** MÉDIA
 
-**Wireframe:**  
-![RF-016](./prints/RF-016.png)
+<figure>
+<img width="1020" height="730" alt="image" src="https://github.com/user-attachments/assets/683238b8-6dec-4fa4-87dd-9ee01f8eb85d" />
+<figcaption>Tela do Gerenciar Metas de produção com a funcionalidade de cadastrar a meta</figcaption>
+</figure>
+<hr/>
+<figure>
 
 ---
 
@@ -339,8 +410,12 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o download dos relatórios.  
 **Prioridade:** BAIXA  
 
-**Wireframe:**  
-![RF-017](./prints/RF-017.png)
+<figure>
+<img width="1020" height="730" alt="image" src="https://github.com/user-attachments/assets/683238b8-6dec-4fa4-87dd-9ee01f8eb85d" />
+ <figcaption>Tela de Metas de produção com o botão de "download" para baixar o relatório das metas de produção</figcaption>
+</figure>
+<hr/>
+<figure>
 
 ---
 
@@ -348,5 +423,9 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve fornecer uma previsão do clima dos próximos 7 dias.  
 **Prioridade:** BAIXA  
 
-**Wireframe:**  
-![RF-018](./prints/RF-018.png)
+<figure>
+<img width="986" height="707" alt="image" src="https://github.com/user-attachments/assets/2d6e033c-0db0-4709-b822-48dabfb97ca7" />
+<figcaption>Tela de Relatório de Clima</figcaption>
+</figure>
+<hr/>
+<figure>
