@@ -28,8 +28,6 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 
 ---
 
-## LUCAS
-
 ### RF-001
 **Descrição:** A aplicação deve permitir o gerenciamento de contas de usuários e seus níveis de permissão (CRUD).  
 **Prioridade:** ALTA  
@@ -188,7 +186,6 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 
 ---
 
-## TIAGO
 
 ### RF-007
 **Descrição:** A aplicação deve permitir o gerenciamento do registro de aplicação de insumos (fertilizantes, sementes, água, defensivos) em cada área de plantio (CRUD).  
@@ -292,7 +289,7 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
  
 ---
 
-## PAMELA
+
 
 ### RF-012
 **Descrição:** A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido.  
