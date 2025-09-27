@@ -140,48 +140,43 @@
 | Objetivo do Teste 	| Verificar se o usuário consegue remover uma meta de produção cadastrada |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Selecionar a meta de produção criada e clicar em "REMOVER" <br> - Clicar em "Confirmar" no modal de remoção | 
 |Critério de Êxito | - A meta é removida com sucesso. |
-
-
 | **Caso de Teste** 	| **CT23 – Visualizar Gráfico** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-016 A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar a página de  Gerenciar metas de vendas <br> - Clicar na aba de relatórios da Página de Gerenciar Metas de Produção  |
 |Critério de Êxito | - Gráfico mostrando o comparativo  do desempenho real e metas |
-
-
 | **Caso de Teste** 	| **CT24 – Download Gráfico 1** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de meta de produção |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios metas de produção<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
 | **Caso de Teste** 	| **CT25 – Download Gráfico 2** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de meta de vendas por plantio |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de vendas de plantio<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
 | **Caso de Teste** 	| **CT26 – Download Gráfico 3** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de Clima |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de Clima<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
 | **Caso de Teste** 	| **CT27 – Download Gráfico 4** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de Insumos |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de Insumos<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-
-
 | **Caso de Teste** 	| **CT28 – Cadastrar perfil** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	|RF-018  A aplicação deve fornecer uma previsão do clima dos próximos 7 dias.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar a Plataforma <br> - Acessar a página de Relatório <br>- Clicar em relatório de Clima <br>|
 |Critério de Êxito | - Visualizar relatório de clima com os últimos 7 dias |
+| **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
+|	Requisito Associado 	|RF-019  A aplicação deve permitir o gerenciamento da fazenda (CRUD).|
+| Objetivo do Teste 	| Verificar se o usuário consegue cadastrar a fazenda. |
+| Passos 	| - Acessar a Plataforma <br> - Acessar a página de Propriedade Agrícola <br>- Cadastrar os dados obrigatórios da propriedade (Nome da propriedade, CNPJ, Area, Imagem, Localização, Tipos de Solos e Tamanho Hectares). <br>|
+|Critério de Êxito | - As informações são cadastradas corretamente |
+| **Caso de Teste** 	| **CT30 – Editar propriedade agrícola** 	|
+|	Requisito Associado 	|RF-019  A aplicação deve permitir o gerenciamento da fazenda (CRUD).|
+| Objetivo do Teste 	| Verificar se o usuário consegue editar a fazenda. |
+| Passos 	| - Acessar a Plataforma <br> - Acessar a página de Propriedade Agrícola <br>- Clicar no botão "Editar". <br>- Alterar os dados da fazenda. <br>- Clicar em "Atualizar" <br>|
+|Critério de Êxito | - As informações são atualizadas corretamente |
