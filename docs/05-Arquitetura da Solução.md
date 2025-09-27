@@ -8,11 +8,6 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
-
 
 <img width="4026" height="2759" alt="Agrinov - Diagrama de classes - DIAGRAMA DE CLASSES AGRINOV(1)" src="https://github.com/user-attachments/assets/59ee3fa3-eb9c-47d8-add2-72e1b177fa2a" />
 
@@ -22,11 +17,6 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
 
-A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-<img width="2165" height="1284" alt="agrinov_conceitual_27_09_2025" src="https://github.com/user-attachments/assets/0f46c0cd-4bdb-45f9-adb2-168a1c34d854" />
-
 
 
 ## Projeto da Base de Dados
@@ -34,7 +24,8 @@ A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
  
 Para mais informações, consulte o microfundamento "Modelagem de Dados".
-<img width="1778" height="1034" alt="agrinov_logico_27_09_2025" src="https://github.com/user-attachments/assets/0f22d448-00c5-41db-bfa7-e4ca5736dd2b" />
+<img width="1998" height="1188" alt="agrinov_logico_27_09_2025 1" src="https://github.com/user-attachments/assets/d1eec008-02d1-418a-b31e-6ffed1b5e6e6" />
+
 
 ## ATENÇÃO!!!
 
@@ -61,9 +52,4 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+
