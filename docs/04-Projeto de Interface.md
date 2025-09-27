@@ -92,22 +92,22 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 
 **Wireframe:**  
 <figure>
-<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS" src="https://github.com/user-attachments/assets/78e3c111-73d0-4222-9898-d0f0ab7d38a3" />
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS" src="https://github.com/user-attachments/assets/736094ab-3efd-49cb-aa63-b4b41849ee2c" />
 <figcaption>Tela de listagem de insumos</figcaption>
 </figure>
 <hr/>
 <figure>
- <img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - CADASTRAR INSUMOS" src="https://github.com/user-attachments/assets/7b4125d2-eb1a-4daa-a9e8-c4e25af85855" />
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - CADASTRAR INSUMOS" src="https://github.com/user-attachments/assets/3f8ed8c2-b58a-4682-bb2b-8382bd6fddbc" />
  <figcaption>Tela de cadastros de insumo</figcaption>
 </figure>
 <hr/>
 <figure>
- <img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - COMPRAR INSUMOS" src="https://github.com/user-attachments/assets/d75877a2-21cf-44f7-b34d-5e49a3bd9f05" />
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - COMPRAR INSUMOS" src="https://github.com/user-attachments/assets/277e9c03-9115-47e9-ae06-4688246828b9" />
  <figcaption>Tela de atualização de insumo</figcaption>
 </figure>
 <hr/>
 <figure>
- <img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - REMOVER INSUMO" src="https://github.com/user-attachments/assets/0c901c47-b185-4d3c-b20d-2927a1f272a4" />
+<img width="1440" height="1024" alt="GERENCIAR COMPRA DE INSUMOS - REMOVER INSUMO" src="https://github.com/user-attachments/assets/aa873b28-b41d-4b27-8f78-382235dbe564" />
  <figcaption>Tela de remoção de insumo</figcaption>
 </figure>
 
