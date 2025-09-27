@@ -9,7 +9,11 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-<img width="1873" height="1994" alt="AgrInov_atualizado" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t2-pmv-ads-eixo-2-turma-2-grupo-02/blob/main/docs/img/AgrInov%20-%20Diagrama%20Entidade-Relacionamentos%20-%20Diagrama%20de%20Fluxo%20.png" />
+<img width="1873" height="1994" alt="AgrInov_atualizado" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t2-pmv-ads-eixo-2-turma-2-grupo-02/blob/main/docs/img/AgrInov%20-%20Diagrama%20de%20Fluxo%20pt.1.png" />
+
+<img width="1873" height="1994" alt="AgrInov_atualizado" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t2-pmv-ads-eixo-2-turma-2-grupo-02/blob/main/docs/img/AgrInov%20-%20Diagrama%20de%20Fluxo%20pt.2.png" />
+
+<img width="1873" height="1994" alt="AgrInov_atualizado" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t2-pmv-ads-eixo-2-turma-2-grupo-02/blob/main/docs/img/AgrInov%20-%20Diagrama%20de%20Fluxo%20pt.3.png" />
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
 
