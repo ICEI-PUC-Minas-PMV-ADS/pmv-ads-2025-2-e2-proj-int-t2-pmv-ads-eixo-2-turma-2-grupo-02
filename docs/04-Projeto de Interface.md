@@ -91,11 +91,6 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 </figure>
 <hr/>
 <figure>
- <img width="1440" height="1024" alt="ADMIN - AREA DE PLANTIO" src="https://github.com/user-attachments/assets/dfa6dc37-e694-4f51-bed4-debdac2c21f2" />
-<figcaption>Tela de visualização de áreas de plantil</figcaption>
-</figure>
-<hr/>
-<figure>
 <img width="1440" height="1024" alt="TECNICO AGRICOLA - ATUALIZAR AREA DE PLANTIL" src="https://github.com/user-attachments/assets/f38bcd90-f592-4735-bea5-0d92879b8e92" />
 <figcaption>Tela de atualização de áreas de plantil</figcaption>
 </figure>
@@ -131,13 +126,10 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 <figcaption>Tela de atualizar a plantação</figcaption>
 </figure>
 <hr/>
-<figure>
 
-
-
+ 
 <figure>
 <img width="1343" height="953" alt="image" src="https://github.com/user-attachments/assets/7a2f8930-dac2-4baa-a3ee-6bb2d0f0c012" />
-
 <figcaption>Tela de visualização de culturas</figcaption>
 </figure>
 <hr/>
