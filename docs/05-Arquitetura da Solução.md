@@ -7,14 +7,9 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Diagrama de Classes
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
-<img width="4276" height="2860" alt="Agrinov - Diagrama de classes - DIAGRAMA DE CLASSES AGRINOV" src="https://github.com/user-attachments/assets/f1ee198b-e11a-4e1b-8efa-c4d6c7d2ff34" />
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 
+<img width="4026" height="2759" alt="Agrinov - Diagrama de classes - DIAGRAMA DE CLASSES AGRINOV(1)" src="https://github.com/user-attachments/assets/59ee3fa3-eb9c-47d8-add2-72e1b177fa2a" />
 
 ## Modelo ER (Projeto Conceitual)
 
@@ -22,15 +17,15 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
 
-A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
 ## Projeto da Base de Dados
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
  
 Para mais informações, consulte o microfundamento "Modelagem de Dados".
+<img width="1998" height="1188" alt="agrinov_logico_27_09_2025 1" src="https://github.com/user-attachments/assets/d1eec008-02d1-418a-b31e-6ffed1b5e6e6" />
+
 
 ## ATENÇÃO!!!
 
@@ -39,6 +34,17 @@ Os três artefatos — **Diagrama de Classes, Modelo ER e Projeto da Base de Dad
 ## Tecnologias Utilizadas
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+> - C#
+> - .NET
+> - Entity FrameWork
+> - Visual Studio Code
+> - SQL SERVER
+> - Microsoft Azure
+
+
+<img width="1920" height="1080" alt="Tecnologia Usadas" src="https://github.com/user-attachments/assets/ca2cb731-b74e-42d6-9e2c-03406015b875" />
+
+
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
@@ -46,9 +52,4 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+

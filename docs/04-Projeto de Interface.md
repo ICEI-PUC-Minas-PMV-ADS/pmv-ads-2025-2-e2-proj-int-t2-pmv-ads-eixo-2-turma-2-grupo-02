@@ -34,8 +34,27 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o gerenciamento de contas de usuários e seus níveis de permissão (CRUD).  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
-![RF-001](./prints/RF-001.png)
+**Wireframes:**  
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - CADASTRO" src="https://github.com/user-attachments/assets/4c0a5de6-2159-4c0e-ab51-10b6a9898be5" />
+ <figcaption>Tela de cadastro de usuários</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - GERENCIAR USUARIOS" src="https://github.com/user-attachments/assets/38d7e6d0-d7eb-4060-a468-ed73c927a147" />
+ <figcaption>Tela de visualização de usuários</figcaption>
+</figure>
+<hr/>
+
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - ATUALIZAR" src="https://github.com/user-attachments/assets/ebd7b826-1956-43b5-a59a-7805b0920062" />
+ <figcaption>Tela de atualização de usuários</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - GERENCIAR USUARIOS - REMOVER USUÁRIO" src="https://github.com/user-attachments/assets/dca1a7ea-80da-4fa2-a6fc-7f9ff8cb15ee" />
+ <figcaption>Tela de remoção de usuários</figcaption>
+</figure>
 
 ---
 
@@ -43,8 +62,21 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir que os usuários façam login.  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
-![RF-002](./prints/RF-002.png)
+**Wireframes:**  
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - LOGIN" src="https://github.com/user-attachments/assets/535c54b3-cc53-474f-a912-98a884278bab" />
+ <figcaption>Tela de login de usuário</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ESQUECEU A SENHA" src="https://github.com/user-attachments/assets/d4ea1a7c-b8b4-4047-be32-f08835e4315a" />
+ <figcaption>Tela de recuperação de senha</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="CRIAÇÃO DA SENHA" src="https://github.com/user-attachments/assets/772cb6f9-4ba8-4787-bec6-1bc6f7207173" />
+<figcaption>Tela de criação de nova senha</figcaption>
+</figure>
 
 ---
 
@@ -52,35 +84,107 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Descrição:** A aplicação deve permitir o gerenciamento das áreas de plantio (CRUD).  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
-![RF-003](./prints/RF-003.png)
-
----
+**Wireframes:**  
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - AREA DE PLANTIO" src="https://github.com/user-attachments/assets/4bf37111-2c9d-4170-9e15-9f7b74078b63" />
+<figcaption>Tela de visulização de áreas de plantil</figcaption>
+</figure>
+<hr/>
+<figure>
+<img width="1440" height="1024" alt="TECNICO AGRICOLA - ATUALIZAR AREA DE PLANTIL" src="https://github.com/user-attachments/assets/f38bcd90-f592-4735-bea5-0d92879b8e92" />
+<figcaption>Tela de atualização de áreas de plantil</figcaption>
+</figure>
+<hr/>
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - CADASTRO DA AREA DE PLANTIL" src="https://github.com/user-attachments/assets/19beef3a-e1b3-4e42-9347-426919389117" />
+<figcaption>Tela de cadastro de áreas de plantil</figcaption>
+</figure>
+<hr/>
 
 ### RF-004
 **Descrição:** A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD).  
 **Prioridade:** ALTA  
 
-**Wireframe:**  
-![RF-004](./prints/RF-004.png)
+**Wireframe:**
 
----
+<figure>
+ <img width="1440" height="1024" alt="ADMIN - AREA DE PLANTIO - PLANTACOES" src="https://github.com/user-attachments/assets/80f64b8b-cce6-4262-bbd2-9d3438fd24ab" />
+<figcaption>Tela da Listagem das plantaçoes </figcaption>
+</figure>
+<hr/>
+<figure>
+
+<figure>
+<img width="1060" height="755" alt="image" src="https://github.com/user-attachments/assets/173ef812-ec17-429f-a4d7-5b596d1d6024" />
+<figcaption>Tela de cadastro das plantações</figcaption>
+</figure>
+<hr/>
+
+
+<figure>
+<img width="1061" height="753" alt="image" src="https://github.com/user-attachments/assets/fbb5cb96-84ee-4236-872a-7902e2710812" />
+<figcaption>Tela de atualizar a plantação</figcaption>
+</figure>
+<hr/>
+
+ 
+<figure>
+<img width="1343" height="953" alt="image" src="https://github.com/user-attachments/assets/7a2f8930-dac2-4baa-a3ee-6bb2d0f0c012" />
+<figcaption>Tela de visualização de culturas</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+<img width="1344" height="969" alt="image" src="https://github.com/user-attachments/assets/d5782d39-37ba-41c0-b80c-47f4241eb2a7" />
+<figcaption>Tela Cadastrar Culturas</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+<img width="1346" height="963" alt="image" src="https://github.com/user-attachments/assets/50a4559a-71e1-4ec3-94b2-d39d906dcc85" />
+<figcaption>Tela Atualizar Cultura</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+<figure>
+<img width="1344" height="961" alt="image" src="https://github.com/user-attachments/assets/29862892-2d9c-4f55-a340-4ad6264e6164" />
+<figcaption>Tela Remover Cultura</figcaption>
+</figure>
+<hr/>
+<figure>
+
+
+
 
 ### RF-005
 **Descrição:** A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área.  
 **Prioridade:** ALTA  
 
 **Wireframe:**  
-![RF-005](./prints/RF-005.png)
 
----
+<figure>
+ <img width="1440" height="1024" alt="TECNICO AGRICOLA - PLANTAÇÃO" src="https://github.com/user-attachments/assets/a46f226f-f932-4126-bb5f-2e0153c0be8f" />
+<figcaption>Tela de detalhes da plantação</figcaption>
+</figure>
+<hr/>
+
 
 ### RF-006
 **Descrição:** A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos).  
 **Prioridade:** ALTA  
 
 **Wireframe:**  
-![RF-006](./prints/RF-006.png)
+
+<figure>
+ <img width="1440" height="1024" alt="TECNICO AGRICOLA - PLANTAÇÃO" src="https://github.com/user-attachments/assets/be299814-99e2-4d57-a944-0094226efb35" />
+<figcaption>Tela de informações de saúde de plantações</figcaption>
+</figure>
 
 ---
 
