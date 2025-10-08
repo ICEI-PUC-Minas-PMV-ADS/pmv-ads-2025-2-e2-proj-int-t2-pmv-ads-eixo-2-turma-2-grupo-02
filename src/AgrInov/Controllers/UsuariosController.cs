@@ -22,7 +22,11 @@ namespace AgrInov.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Usuarios.ToListAsync());
+            var usuarios = await _context.Usuarios
+                .Include(u => u.Cargo)
+                .ToListAsync();
+
+            return View(usuarios);
         }
 
         // GET: Usuarios/Details/5
@@ -34,6 +38,7 @@ namespace AgrInov.Controllers
             }
 
             var usuario = await _context.Usuarios
+                .Include(usuario => usuario.Cargo)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
@@ -81,6 +86,7 @@ namespace AgrInov.Controllers
             {
                 return NotFound();
             }
+            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome");
             return View(usuario);
         }
 
@@ -89,7 +95,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha,Matricula,Cpf")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha,Matricula,Cpf,CargoId")] Usuario usuario)
         {
             if (id != usuario.Id)
             {
@@ -117,6 +123,7 @@ namespace AgrInov.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome", usuario.CargoId);
             return View(usuario);
         }
 
@@ -129,6 +136,7 @@ namespace AgrInov.Controllers
             }
 
             var usuario = await _context.Usuarios
+                .Include(usuario => usuario.Cargo)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
