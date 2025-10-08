@@ -1,6 +1,7 @@
 using AgrInov.Data;
 using AgrInov.Middleware;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

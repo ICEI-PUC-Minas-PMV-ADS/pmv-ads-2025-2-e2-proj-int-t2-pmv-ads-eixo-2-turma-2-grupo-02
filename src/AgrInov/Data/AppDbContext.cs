@@ -10,5 +10,6 @@ namespace AgrInov.Data
         public DbSet<Cultura> Culturas { get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Insumos> Insumos { get; set; }
     }
 }
