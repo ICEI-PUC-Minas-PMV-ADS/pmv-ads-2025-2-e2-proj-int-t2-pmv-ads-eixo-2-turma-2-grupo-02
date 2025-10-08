@@ -46,6 +46,7 @@ namespace AgrInov.Controllers
         // GET: Usuarios/Create
         public IActionResult Create()
         {
+            ViewData["CargoId"] = new SelectList(_context.Cargo,"Id","Nome");
             return View();
         }
 
@@ -54,7 +55,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha,Matricula,Cpf")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha,Matricula,Cpf,CargoId")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -63,6 +64,7 @@ namespace AgrInov.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome",usuario.CargoId);
             return View(usuario);
         }
 
