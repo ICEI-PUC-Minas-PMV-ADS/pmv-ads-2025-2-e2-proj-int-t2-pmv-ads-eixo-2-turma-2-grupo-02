@@ -22,5 +22,11 @@ namespace AgrInov.Models
         public string Matricula { get; set; }
 
         public string Cpf { get; set; }
+
+        [Required(ErrorMessage = "Obrigatório informar o cargo")]
+        public int CargoId { get; set; }
+
+        [ForeignKey("CargoId")]
+        public Cargo Cargo { get; set; }
     }
 }
