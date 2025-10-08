@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AgrInov.Models
 {
-    [Table("AreaDePlantio")]
+    [Table("AreasDePlantio")]
     public class AreaDePlantio
     {
         [Key]

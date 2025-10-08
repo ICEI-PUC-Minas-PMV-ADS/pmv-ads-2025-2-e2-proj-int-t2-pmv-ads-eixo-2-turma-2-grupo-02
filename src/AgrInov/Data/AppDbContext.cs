@@ -6,13 +6,10 @@ namespace AgrInov.Data
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){ }
-
         public DbSet<Cultura> Culturas { get; set; }
-
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Insumos> Insumos { get; set; }
-        //TODO: ajustar conforme padrão
-        public DbSet<AgrInov.Models.AreaDePlantio> AreaDePlantio { get; set; }
-        public DbSet<AgrInov.Models.Cargo> Cargo { get; set; }
+        public DbSet<Insumo> Insumos { get; set; }
+        public DbSet<AreaDePlantio> AreasDePlantio { get; set; }
+        public DbSet<Cargo> Cargos { get; set; }
     }
 }

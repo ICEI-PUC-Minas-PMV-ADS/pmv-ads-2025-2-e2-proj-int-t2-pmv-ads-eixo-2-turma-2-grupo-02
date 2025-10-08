@@ -54,7 +54,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,UnidadeMedida")] Insumos insumos)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,UnidadeMedida")] Insumo insumos)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Quantidade,UnidadeMedida")] Insumos insumos)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Quantidade,UnidadeMedida")] Insumo insumos)
         {
             if (id != insumos.Id)
             {

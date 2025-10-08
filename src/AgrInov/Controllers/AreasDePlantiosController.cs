@@ -10,11 +10,11 @@ using AgrInov.Models;
 
 namespace AgrInov.Controllers
 {
-    public class AreaDePlantiosController : Controller
+    public class AreasDePlantiosController : Controller
     {
         private readonly AppDbContext _context;
 
-        public AreaDePlantiosController(AppDbContext context)
+        public AreasDePlantiosController(AppDbContext context)
         {
             _context = context;
         }
@@ -22,7 +22,7 @@ namespace AgrInov.Controllers
         // GET: AreaDePlantios
         public async Task<IActionResult> Index()
         {
-            return View(await _context.AreaDePlantio.ToListAsync());
+            return View(await _context.AreasDePlantio.ToListAsync());
         }
 
         // GET: AreaDePlantios/Details/5
@@ -33,7 +33,7 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var areaDePlantio = await _context.AreaDePlantio
+            var areaDePlantio = await _context.AreasDePlantio
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (areaDePlantio == null)
             {
@@ -73,7 +73,7 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var areaDePlantio = await _context.AreaDePlantio.FindAsync(id);
+            var areaDePlantio = await _context.AreasDePlantio.FindAsync(id);
             if (areaDePlantio == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var areaDePlantio = await _context.AreaDePlantio
+            var areaDePlantio = await _context.AreasDePlantio
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (areaDePlantio == null)
             {
@@ -139,10 +139,10 @@ namespace AgrInov.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var areaDePlantio = await _context.AreaDePlantio.FindAsync(id);
+            var areaDePlantio = await _context.AreasDePlantio.FindAsync(id);
             if (areaDePlantio != null)
             {
-                _context.AreaDePlantio.Remove(areaDePlantio);
+                _context.AreasDePlantio.Remove(areaDePlantio);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace AgrInov.Controllers
 
         private bool AreaDePlantioExists(int id)
         {
-            return _context.AreaDePlantio.Any(e => e.Id == id);
+            return _context.AreasDePlantio.Any(e => e.Id == id);
         }
     }
 }

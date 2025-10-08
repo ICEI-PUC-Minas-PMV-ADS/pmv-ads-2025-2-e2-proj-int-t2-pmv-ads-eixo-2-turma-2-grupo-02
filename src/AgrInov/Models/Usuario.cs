@@ -23,8 +23,7 @@ namespace AgrInov.Models
 
         public string Cpf { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar o cargo")]
-        public int CargoId { get; set; }
+        public int? CargoId { get; set; }
 
         [ForeignKey("CargoId")]
         public Cargo Cargo { get; set; }
