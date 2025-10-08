@@ -3,6 +3,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251008004350_Insumos")]
+    partial class Insumos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,9 +23,8 @@ namespace AgrInov.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-            
-            
-            modelBuilder.Entity("AgrInov.Models.AreaDePlantio", b =>
+
+            modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,25 +32,15 @@ namespace AgrInov.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<float>("AreaUtilizada")
-                        .HasColumnType("real");
-
-                    b.Property<DateTime>("DataFimPrevista")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataInicio")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Status")
+                    b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("AreaDePlantio");
+                    b.ToTable("Cultura");
                 });
 
-
-                
             modelBuilder.Entity("AgrInov.Models.Insumos", b =>
                 {
                     b.Property<int>("Id")
@@ -71,44 +63,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Insumos");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.Cargo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Cargos");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Cultura", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Cultura");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -116,9 +70,6 @@ namespace AgrInov.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CargoId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Cpf")
                         .HasColumnType("nvarchar(max)");
@@ -140,20 +91,7 @@ namespace AgrInov.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CargoId");
-
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Usuario", b =>
-                {
-                    b.HasOne("AgrInov.Models.Cargo", "Cargo")
-                        .WithMany()
-                        .HasForeignKey("CargoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cargo");
                 });
 #pragma warning restore 612, 618
         }

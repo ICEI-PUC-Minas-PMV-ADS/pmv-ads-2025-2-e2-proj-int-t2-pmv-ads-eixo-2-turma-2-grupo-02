@@ -10,6 +10,9 @@ namespace AgrInov.Data
         public DbSet<Cultura> Culturas { get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Insumos> Insumos { get; set; }
+        //TODO: ajustar conforme padrão
+        public DbSet<AgrInov.Models.AreaDePlantio> AreaDePlantio { get; set; }
         public DbSet<AgrInov.Models.Cargo> Cargo { get; set; }
     }
 }
