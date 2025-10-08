@@ -11,5 +11,6 @@ namespace AgrInov.Data
 
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Insumos> Insumos { get; set; }
+        public DbSet<AgrInov.Models.AreaDePlantio> AreaDePlantio { get; set; }
     }
 }
