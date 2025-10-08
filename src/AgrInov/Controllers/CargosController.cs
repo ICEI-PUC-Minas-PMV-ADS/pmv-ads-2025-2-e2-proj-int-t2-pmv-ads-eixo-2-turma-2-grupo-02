@@ -10,26 +10,22 @@ using AgrInov.Models;
 
 namespace AgrInov.Controllers
 {
-    public class UsuariosController : Controller
+    public class CargosController : Controller
     {
         private readonly AppDbContext _context;
 
-        public UsuariosController(AppDbContext context)
+        public CargosController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: Usuarios
+        // GET: Cargos
         public async Task<IActionResult> Index()
         {
-            var usuarios = await _context.Usuarios
-                .Include(u => u.Cargo)
-                .ToListAsync();
-
-            return View(usuarios);
+            return View(await _context.Cargo.ToListAsync());
         }
 
-        // GET: Usuarios/Details/5
+        // GET: Cargos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -37,43 +33,39 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios
-                .Include(usuario => usuario.Cargo)
+            var cargo = await _context.Cargo
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (usuario == null)
+            if (cargo == null)
             {
                 return NotFound();
             }
 
-            return View(usuario);
+            return View(cargo);
         }
 
-        // GET: Usuarios/Create
+        // GET: Cargos/Create
         public IActionResult Create()
         {
-            ViewData["CargoId"] = new SelectList(_context.Cargo,"Id","Nome");
             return View();
         }
 
-        // POST: Usuarios/Create
+        // POST: Cargos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Email,Senha,Matricula,Cpf,CargoId")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao")] Cargo cargo)
         {
             if (ModelState.IsValid)
             {
-                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
-                _context.Add(usuario);
+                _context.Add(cargo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome",usuario.CargoId);
-            return View(usuario);
+            return View(cargo);
         }
 
-        // GET: Usuarios/Edit/5
+        // GET: Cargos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,23 +73,22 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
+            var cargo = await _context.Cargo.FindAsync(id);
+            if (cargo == null)
             {
                 return NotFound();
             }
-            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome");
-            return View(usuario);
+            return View(cargo);
         }
 
-        // POST: Usuarios/Edit/5
+        // POST: Cargos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Senha,Matricula,Cpf,CargoId")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Descricao")] Cargo cargo)
         {
-            if (id != usuario.Id)
+            if (id != cargo.Id)
             {
                 return NotFound();
             }
@@ -106,13 +97,12 @@ namespace AgrInov.Controllers
             {
                 try
                 {
-                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
-                    _context.Update(usuario);
+                    _context.Update(cargo);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UsuarioExists(usuario.Id))
+                    if (!CargoExists(cargo.Id))
                     {
                         return NotFound();
                     }
@@ -123,11 +113,10 @@ namespace AgrInov.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome", usuario.CargoId);
-            return View(usuario);
+            return View(cargo);
         }
 
-        // GET: Usuarios/Delete/5
+        // GET: Cargos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -135,35 +124,34 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios
-                .Include(usuario => usuario.Cargo)
+            var cargo = await _context.Cargo
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (usuario == null)
+            if (cargo == null)
             {
                 return NotFound();
             }
 
-            return View(usuario);
+            return View(cargo);
         }
 
-        // POST: Usuarios/Delete/5
+        // POST: Cargos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario != null)
+            var cargo = await _context.Cargo.FindAsync(id);
+            if (cargo != null)
             {
-                _context.Usuarios.Remove(usuario);
+                _context.Cargo.Remove(cargo);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UsuarioExists(int id)
+        private bool CargoExists(int id)
         {
-            return _context.Usuarios.Any(e => e.Id == id);
+            return _context.Cargo.Any(e => e.Id == id);
         }
     }
 }
