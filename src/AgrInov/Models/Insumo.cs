@@ -1,6 +1,9 @@
-﻿namespace AgrInov.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AgrInov.Models
 {
-    public class Insumos
+    [Table("Insumos")]
+    public class Insumo
     {
         public int Id { get; set; }
         public string Nome { get; set; }

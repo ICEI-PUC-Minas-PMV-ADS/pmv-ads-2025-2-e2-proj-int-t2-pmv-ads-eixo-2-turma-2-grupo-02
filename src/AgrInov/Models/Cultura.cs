@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AgrInov.Models
 {
-    [Table("Cultura")]
+    [Table("Culturas")]
     public class Cultura
     {
         [Key]

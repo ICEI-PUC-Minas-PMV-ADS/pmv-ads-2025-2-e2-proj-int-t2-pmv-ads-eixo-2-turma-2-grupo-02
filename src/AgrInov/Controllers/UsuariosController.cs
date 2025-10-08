@@ -51,7 +51,7 @@ namespace AgrInov.Controllers
         // GET: Usuarios/Create
         public IActionResult Create()
         {
-            ViewData["CargoId"] = new SelectList(_context.Cargo,"Id","Nome");
+            ViewData["CargoId"] = new SelectList(_context.Cargos,"Id","Nome");
             return View();
         }
 
@@ -69,7 +69,7 @@ namespace AgrInov.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome",usuario.CargoId);
+            ViewData["CargoId"] = new SelectList(_context.Cargos, "Id", "Nome",usuario.CargoId);
             return View(usuario);
         }
 
@@ -86,7 +86,7 @@ namespace AgrInov.Controllers
             {
                 return NotFound();
             }
-            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome");
+            ViewData["CargoId"] = new SelectList(_context.Cargos, "Id", "Nome");
             return View(usuario);
         }
 
@@ -123,7 +123,7 @@ namespace AgrInov.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CargoId"] = new SelectList(_context.Cargo, "Id", "Nome", usuario.CargoId);
+            ViewData["CargoId"] = new SelectList(_context.Cargos, "Id", "Nome", usuario.CargoId);
             return View(usuario);
         }
 

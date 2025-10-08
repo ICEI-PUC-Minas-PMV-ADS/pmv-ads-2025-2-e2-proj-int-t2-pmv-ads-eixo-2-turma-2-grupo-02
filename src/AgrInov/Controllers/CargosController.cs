@@ -22,7 +22,7 @@ namespace AgrInov.Controllers
         // GET: Cargos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cargo.ToListAsync());
+            return View(await _context.Cargos.ToListAsync());
         }
 
         // GET: Cargos/Details/5
@@ -33,7 +33,7 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var cargo = await _context.Cargo
+            var cargo = await _context.Cargos
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cargo == null)
             {
@@ -73,7 +73,7 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var cargo = await _context.Cargo.FindAsync(id);
+            var cargo = await _context.Cargos.FindAsync(id);
             if (cargo == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var cargo = await _context.Cargo
+            var cargo = await _context.Cargos
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (cargo == null)
             {
@@ -139,10 +139,10 @@ namespace AgrInov.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var cargo = await _context.Cargo.FindAsync(id);
+            var cargo = await _context.Cargos.FindAsync(id);
             if (cargo != null)
             {
-                _context.Cargo.Remove(cargo);
+                _context.Cargos.Remove(cargo);
             }
 
             await _context.SaveChangesAsync();
@@ -151,7 +151,7 @@ namespace AgrInov.Controllers
 
         private bool CargoExists(int id)
         {
-            return _context.Cargo.Any(e => e.Id == id);
+            return _context.Cargos.Any(e => e.Id == id);
         }
     }
 }

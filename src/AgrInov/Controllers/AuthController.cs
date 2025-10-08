@@ -25,16 +25,26 @@ namespace AgrInov.Controllers
         public async Task<IActionResult> Login(string email, string senha)
         {
             var usuario = await _context.Usuarios
-                .FirstOrDefaultAsync(u => u.Email == email && u.Senha == senha);
+                .FirstOrDefaultAsync(u => u.Email == email);
 
-            if (usuario != null)
+            if (usuario == null)
+            {
+                ViewBag.Erro = "Email ou senha inválidos";
+            }
+
+            bool senhaOk = BCrypt.Net.BCrypt.Verify(senha, usuario.Senha);
+
+            if(senhaOk)
             {
                 HttpContext.Session.SetString("UsuarioId", usuario.Id.ToString());
                 HttpContext.Session.SetString("UsuarioNome", usuario.Nome);
                 return RedirectToAction("Index", "Home");
             }
+            else
+            {
+                ViewBag.Erro = "Email ou senha inválidos";
+            }
 
-            ViewBag.Erro = "Email ou senha inválidos";
             return View();
         }
 
@@ -59,6 +69,7 @@ namespace AgrInov.Controllers
                     return View(usuario);
                 }
 
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Usuarios.Add(usuario);
                 await _context.SaveChangesAsync();
 
