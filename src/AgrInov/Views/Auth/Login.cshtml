@@ -3,86 +3,52 @@
     Layout = "_Layout";
 }
 
-<style>
-    .agrinov-green {
-        color: #28a745;
-    }
-    .btn-dark-custom {
-        background-color: #000;
-        border-color: #000;
-        color: white;
-    }
-    .btn-dark-custom:hover {
-        background-color: #333;
-        border-color: #333;
-    }
-    .login-modal {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    }
-    .modal-content {
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        width: 70dvh;
-    }
-    .modal-header {
-        border-bottom: none;
-        padding: 2rem 2rem 1rem;
-    }
-    .modal-body {
-        padding: 1rem 2rem 2rem;
-    }
-</style>
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+    <div class="row justify-content-center w-100">
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <h1 class="agr-green mb-2">
+                            <i class="fas fa-leaf me-2"></i>AgrInov
+                        </h1>
+                        <h5 class="text-muted">Faça login em sua conta</h5>
+                    </div>
 
-<div class="login-modal">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <div class="w-100">
-                    <h1 class="modal-title agrinov-green mb-2">
-                        <i class="fas fa-leaf me-2"></i>AgrInov
-                    </h1>
-                    <h5 class="text-muted">Faça login em sua conta</h5>
-                </div>
-            </div>
-            <div class="modal-body">
-                @if (ViewBag.Erro != null)
-                {
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <i class="fas fa-exclamation-triangle me-2"></i>@ViewBag.Erro
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                }
+                    @if (ViewBag.Erro != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-triangle me-2"></i>@ViewBag.Erro
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
 
-                <form method="post">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">
-                            <i class="fas fa-envelope me-2"></i>Email
-                        </label>
-                        <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Digite seu email" required />
-                    </div>
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope me-2"></i>Email
+                            </label>
+                            <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Digite seu email" required />
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="senha" class="form-label">
+                                <i class="fas fa-lock me-2"></i>Senha
+                            </label>
+                            <input type="password" class="form-control form-control-lg" name="senha" id="senha" placeholder="Digite sua senha" required />
+                        </div>
+                        
+                        <button type="submit" class="btn btn-dark btn-lg w-100 mb-3">
+                            <i class="fas fa-sign-in-alt me-2"></i>Entrar
+                        </button>
+                    </form>
                     
-                    <div class="mb-4">
-                        <label for="senha" class="form-label">
-                            <i class="fas fa-lock me-2"></i>Senha
-                        </label>
-                        <input type="password" class="form-control form-control-lg" name="senha" id="senha" placeholder="Digite sua senha" required />
+                    <div class="text-center">
+                        <p class="text-muted mb-0">Não tem conta?</p>
+                        <a href="@Url.Action("Cadastro", "Auth")" class="text-decoration-none agr-green fw-bold">
+                            Cadastre-se aqui
+                        </a>
                     </div>
-                    
-                    <button type="submit" class="btn btn-dark-custom btn-lg w-100 mb-3">
-                        <i class="fas fa-sign-in-alt me-2"></i>Entrar
-                    </button>
-                </form>
-                
-                <div class="text-center">
-                    <p class="text-muted mb-0">Não tem conta?</p>
-                    <a href="@Url.Action("Cadastro", "Auth")" class="text-decoration-none agrinov-green fw-bold">
-                        Cadastre-se aqui
-                    </a>
                 </div>
             </div>
         </div>
