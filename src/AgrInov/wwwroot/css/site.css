@@ -53,7 +53,8 @@ body {
   border-radius: 0;
 }
 
-.agr-sidebar .nav-link:hover {
+.agr-sidebar .nav-link:hover,
+.agr-sidebar .nav-link.active {
   background-color: #e9ecef;
   color: #28a745;
 }
