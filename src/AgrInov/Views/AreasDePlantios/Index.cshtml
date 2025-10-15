@@ -36,9 +36,9 @@
             <td>@Html.DisplayFor(modelItem => item.AreaUtilizada)</td>
             <td>@Html.DisplayFor(modelItem => item.Status)</td>
             <td class="text-end">
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Atualizar</a>
-                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Visualizar</a>
-                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Deletar</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit me-1"></i>Atualizar</a>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye me-1"></i>Visualizar</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash me-1"></i>Remover</a>
             </td>
         </tr>
 }
