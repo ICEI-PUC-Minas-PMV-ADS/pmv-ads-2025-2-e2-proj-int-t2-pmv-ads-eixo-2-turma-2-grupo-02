@@ -4,26 +4,17 @@
     ViewData["Title"] = "Delete";
 }
 
-<style>
-    .Remover{
-        margin-top: 100px;
-        text-align:center;
-    }
-
-    .btn{
-        margin:15px;
-    }
-</style>
 
 
 
-<div class="Remover">
+
+<div style="text-align:center; margin-top: 100px;" class="shadow p-3 mb-5 bg-body-tertiary rounded">
     <h3>Deseja remover a cultura @Html.DisplayFor(model => model.Nome)?</h3>
-    <p>Esta ação não poderá ser desfeita</p>
+    <p style="margin-top:10px;">Esta ação não poderá ser desfeita</p>
     
-    <form asp-action="Delete">
+    <form asp-action="Delete" style="margin-top:10px; ">
         <input type="hidden" asp-for="Id" />
-        <a asp-action="Index" class="btn btn-secondary">Sair</a> 
-        <input type="submit" value="Confirmar" class="btn btn-dark" />
+        <a asp-action="Index" class="btn btn-outline-secondary" style="margin:15px;">Sair</a>
+        <input type="submit" value="Confirmar" class="btn btn-outline-dark" style="margin:15px;" />
     </form>
 </div>
