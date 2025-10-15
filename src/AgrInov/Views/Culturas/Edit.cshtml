@@ -1,35 +1,24 @@
 ﻿@model AgrInov.Models.Cultura
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Cultura";
 }
 
-
-
+<h1 class="fs-3 mb-4">Culturas → Atualizar</h1>
 
 <div class="row">
-    <div class="col-md-4" style="justify-content: center;
-        align-items: center;
-        display: inline-block;
-        width: 1000px;
-        height: 500px;
-        border-radius: 55px;
-        margin-top: 50px; box-shadow:0 .25rem .75rem rgba(0, 0, 0, .05);">
-        <h1 class="fs-3 mb-5" style="text-align:center;">Culturas → Atualizar</h1>
+    <div class="col-md-6">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group" style=" display: inline-block;
-                 margin-top: 50px;
-                 margin-left: 250px;
-                 align-content: center;">
+            <div class="form-group mb-3">
                 <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" style="width: 500px;" />
+                <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
-            <div style="margin-top:10px;">
-                <input type="submit" value="ATUALIZAR" class="btn btn-dark" style="margin-top: 20px; text-align: center;width: 100px;margin-left: 250px; width: 500px;" />
-                <a asp-action="Index" class="btn btn-outline-secondary" style="margin-top: 20px; text-align: center;width: 100px;margin-left: 250px; width: 500px;">Voltar para listagem</a>
+            <div class="form-group">
+                <input type="submit" value="Atualizar" class="btn btn-dark" />
+                <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
             </div>
         </form>
     </div>

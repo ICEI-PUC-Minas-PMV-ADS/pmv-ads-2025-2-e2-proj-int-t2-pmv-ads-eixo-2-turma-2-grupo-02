@@ -1,26 +1,23 @@
 ﻿@model AgrInov.Models.Cultura
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar Cultura";
 }
 
-
-
+<h1 class="fs-3 mb-4">Culturas → Cadastrar</h1>
 
 <div class="row">
-    <div class="col-md-4" style="justify-content:center; align-items: center;display: inline-block;width: 1000px;height: 700px; margin-top: 50px; box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);">
-        <h1 style="text-align:center;">Culturas → Cadastrar</h1>
+    <div class="col-md-6">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group" style="display:inline-block; margin-top: 50px;margin-left: 250px;align-content: center;">
+            <div class="form-group mb-3">
                 <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" style="width: 500px;" />
+                <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
-            <div style="margin-top: 20px;text-align:center; margin-left: 50px; ">
-                <a asp-action="Index" class="btn btn-outline-secondary">Voltar para listagem</a>
-                <a asp-action="Create" class="btn btn-outline-dark" style="width: 250px">Cadastrar nova cultura</a>
-                
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+                <input type="submit" value="Cadastrar" class="btn btn-dark" />
             </div>
         </form>
     </div>
