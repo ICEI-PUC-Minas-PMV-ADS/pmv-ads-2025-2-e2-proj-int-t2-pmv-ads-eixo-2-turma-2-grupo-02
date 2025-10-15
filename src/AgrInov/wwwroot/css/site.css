@@ -29,6 +29,34 @@ body {
 .agr-green {
   color: #28a745;
 }
+
+/* Sidebar Styles */
+.agr-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  z-index: 1000;
+}
+
+.agr-main-content {
+  margin-left: 250px;
+  min-height: 100vh;
+}
+
+.agr-sidebar .nav-link {
+  color: #495057;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+}
+
+.agr-sidebar .nav-link:hover {
+  background-color: #e9ecef;
+  color: #28a745;
+}
 .agr-card {
   background-color: #d9d9d9;
   border-radius: 20px;
