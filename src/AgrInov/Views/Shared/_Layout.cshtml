@@ -23,27 +23,27 @@
             <nav class="flex-grow-1">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Index">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active" : "")" asp-controller="Home" asp-action="Index">
                             <i class="fas fa-home me-2"></i>Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Usuarios" asp-action="Index">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Usuarios" ? "active" : "")" asp-controller="Usuarios" asp-action="Index">
                             <i class="fas fa-users me-2"></i>Usuários
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Culturas" asp-action="Index">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Culturas" ? "active" : "")" asp-controller="Culturas" asp-action="Index">
                             <i class="fas fa-seedling me-2"></i>Culturas
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Insumos" asp-action="Index">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Insumos" ? "active" : "")" asp-controller="Insumos" asp-action="Index">
                             <i class="fas fa-boxes me-2"></i>Insumos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="AreasDePlantios" asp-action="Index">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "AreasDePlantios" ? "active" : "")" asp-controller="AreasDePlantios" asp-action="Index">
                             <i class="fas fa-map me-2"></i>Área de plantio
                         </a>
                     </li>
