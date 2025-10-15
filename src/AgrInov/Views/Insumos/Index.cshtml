@@ -1,44 +1,42 @@
-﻿@model IEnumerable<AgrInov.Models.Insumo>
+@model IEnumerable<AgrInov.Models.Insumo>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Insumos";
 }
 
-<h1>Insumos</h1>
+<h1 class="fs-3">Gerenciar Insumos</h1>
 
-<p style="text-align: end;">
-    <a asp-action="Create" class="btn btn-dark">CADASTRAR COMPRA DE INSUMOS</a>
-</p>
+<div class="d-flex justify-content-between align-items-center gap-2 my-4">
+    <form class="d-flex" role="search">
+        <div class="input-group">
+            <input type="search" class="form-control border-end-0" placeholder="Buscar" aria-label="Buscar">
+            <span class="input-group-text bg-white border-start-0">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </form>
+    <a asp-action="Create" class="btn btn-dark">+ Cadastrar novo insumo</a>
+</div>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Quantidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UnidadeMedida)
-            </th>
+            <th>@Html.DisplayNameFor(model => model.Nome)</th>
+            <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+            <th>@Html.DisplayNameFor(model => model.UnidadeMedida)</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UnidadeMedida)
-            </td>
-                <td style="text-align: end;" class="col-md-5">
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning" style="padding:6px 40px">ATUALIZAR</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger" style="padding:6px 40px; margin-left:20px">REMOVER</a>
+            <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+            <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>
+            <td>@Html.DisplayFor(modelItem => item.UnidadeMedida)</td>
+            <td class="text-end">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit me-1"></i>Atualizar</a>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye me-1"></i>Visualizar</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash me-1"></i>Remover</a>
             </td>
         </tr>
 }

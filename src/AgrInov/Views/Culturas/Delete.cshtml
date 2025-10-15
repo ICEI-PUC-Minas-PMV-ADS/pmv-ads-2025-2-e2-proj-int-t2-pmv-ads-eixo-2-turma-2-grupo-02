@@ -1,10 +1,11 @@
-@model AgrInov.Models.Cultura
+﻿@model AgrInov.Models.Cultura
 
 @{
     ViewData["Title"] = "Excluir Cultura";
 }
 
-<h1 class="fs-3 mb-4">Excluir Cultura</h1>
+<h1 class="fs-3 mb-5">Culturas → Remover</h1>
+
 
 <h3>Tem certeza de que deseja excluir esta cultura?</h3>
 <div>
@@ -19,7 +20,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
+        <a asp-action="Index" class="btn btn-outline-secondary">Voltar </a> |
         <input type="submit" value="Confirmar Exclusão" class="btn btn-danger" />
-        <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
     </form>
 </div>
