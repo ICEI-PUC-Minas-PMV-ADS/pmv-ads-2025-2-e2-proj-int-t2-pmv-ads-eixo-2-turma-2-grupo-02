@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AgrInov.Data;
 using AgrInov.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 namespace AgrInov.Controllers
 {
     public class PropriedadeAgriculaController : Controller
@@ -39,7 +40,39 @@ namespace AgrInov.Controllers
             }
             return View(propriedade);
         }
-    }
 
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var propriedade = await _context.PropriedadeAgricula.FindAsync(id);
+
+            if (propriedade == null)
+                return NotFound();
+
+
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id,PropriedadeAgricula propriedade)
+        {
+            if (id != propriedade.Id)
+                return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                _context.PropriedadeAgricula.Update(propriedade);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+
+            }
+            return View();  
+            
+        }
+    }
 
 }
