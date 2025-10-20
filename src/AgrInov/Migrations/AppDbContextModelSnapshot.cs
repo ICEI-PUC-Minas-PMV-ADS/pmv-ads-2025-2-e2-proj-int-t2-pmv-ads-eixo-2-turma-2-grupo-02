@@ -107,6 +107,38 @@ namespace AgrInov.Migrations
                     b.ToTable("Insumos");
                 });
 
+            modelBuilder.Entity("AgrInov.Models.PropriedadeAgricula", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<float>("Area")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Cnpj")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Localizacao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("TamanhoHectares")
+                        .HasColumnType("real");
+
+                    b.Property<string>("TipoDeSolo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PropriedadeAgricula");
+                });
+
             modelBuilder.Entity("AgrInov.Models.Usuario", b =>
                 {
                     b.Property<int>("Id")

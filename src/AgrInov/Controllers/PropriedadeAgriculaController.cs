@@ -58,7 +58,7 @@ namespace AgrInov.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id,PropriedadeAgricula propriedade)
+        public async Task<IActionResult> Edit(int id, PropriedadeAgricula propriedade)
         {
             if (id != propriedade.Id)
                 return NotFound();
@@ -70,9 +70,54 @@ namespace AgrInov.Controllers
                 return RedirectToAction("Index");
 
             }
-            return View();  
-            
+            return View();
+
         }
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+                return null;
+
+            var propriedade = await _context.PropriedadeAgricula.FindAsync(id);
+
+            if (propriedade == null)
+                return null;
+            return View(propriedade);
+        }
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var propriedade = await _context.PropriedadeAgricula.FindAsync(id);
+
+            if (propriedade == null)
+            {
+                return NotFound();
+            }
+
+            return View(propriedade);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int? id)
+        {
+
+            if (id == null)
+                return NotFound();
+
+            var pripriedade = await _context.PropriedadeAgricula.FindAsync(id);
+            if (pripriedade != null)
+            {
+                _context.PropriedadeAgricula.Remove(pripriedade);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 
 }
