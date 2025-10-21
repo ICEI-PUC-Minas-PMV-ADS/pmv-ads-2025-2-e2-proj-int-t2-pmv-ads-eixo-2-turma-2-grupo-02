@@ -1,0 +1,52 @@
+@model AgrInov.Models.PropriedadeAgricula
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="fs-3 mb-5">Propriedade Agricula → Detalhes</h1>
+
+<div class="d-flex justify-content-end align-items-center gap-2 my-4">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark">Editar</a>
+</div>
+
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Area)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Area)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Localizacao)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Localizacao)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.TipoDeSolo)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.TipoDeSolo)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Cnpj)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Cnpj)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TamanhoHectares)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TamanhoHectares)
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="d-flex justify-content-start gap-1">
+    <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+</div>

@@ -1,0 +1,57 @@
+@model AgrInov.Models.PropriedadeAgricula
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="fs-3 mb-5">Propriedade Agricula → Atualizar</h1>
+
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <form asp-action="Create" class="d-flex flex-column gap-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Area" class="control-label"></label>
+                <input asp-for="Area" class="form-control" />
+                <span asp-validation-for="Area" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TamanhoHectares" class="control-label"></label>
+                <input asp-for="TamanhoHectares" class="form-control" />
+                <span asp-validation-for="TamanhoHectares" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cnpj" class="control-label"></label>
+                <input asp-for="Cnpj" class="form-control" />
+                <span asp-validation-for="Cnpj" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoDeSolo" class="control-label"></label>
+                <input asp-for="TipoDeSolo" class="form-control" />
+                <span asp-validation-for="TipoDeSolo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Localizacao" class="control-label"></label>
+                <input asp-for="Localizacao" class="form-control" />
+                <span asp-validation-for="Localizacao" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Cadastrar" class="btn btn-dark w-100" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

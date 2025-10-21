@@ -47,6 +47,11 @@
                             <i class="fas fa-map me-2"></i>Área de plantio
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "PropriedadeAgricula" ? "active" : "")" asp-controller="PropriedadeAgricula" asp-action="Index">
+                            <i class="fas fa-geo-alt-fill me-2"></i>Propriedade Agricula
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <div class="p-3 border-top">
