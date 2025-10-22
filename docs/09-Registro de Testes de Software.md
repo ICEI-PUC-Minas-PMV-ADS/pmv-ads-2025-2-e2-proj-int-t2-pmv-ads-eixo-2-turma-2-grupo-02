@@ -4,15 +4,19 @@
 
 Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
 
-| **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-|Registro de evidência | www.teste.com.br/drive/ct-01 |
+<hr>
 
-| **Caso de Teste** 	| **CT02 – Realizar login** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+| **Caso de Teste** | **CT02 – Efetuar login** |
+|:---:|:---:|
+| Requisito Associado | RF-002 – A aplicação deve permitir que os usuários façam login. |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Tiago |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/c3ab6d5a-d93c-48dd-b7bc-ae0402574416
+
+<hr>
 
 | **Caso de Teste** 	| **CT03 – Cadastrar área de plantio** 	|
 |:---:	|:---:	|
@@ -24,7 +28,7 @@ Registro de evidência:
 
 https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 
-
+<hr>
 
 
 ## Relatório de testes de software
@@ -39,16 +43,3 @@ Por fim, apresente e/ou proponha as melhorias a partir dos testes realizados, de
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-
-
-<br>
-
----
-
-| **Caso de Teste** | **CT02 – Efetuar login** |
-|:---:|:---:|
-| Requisito Associado | RF-002 – A aplicação deve permitir que os usuários façam login. |
-|Registro de evidência | [cto2](https://github.com/user-attachments/assets/c3ab6d5a-d93c-48dd-b7bc-ae0402574416) |
-|   |   |
-
----
