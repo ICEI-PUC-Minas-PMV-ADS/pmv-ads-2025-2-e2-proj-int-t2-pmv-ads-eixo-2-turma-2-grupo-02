@@ -26,3 +26,16 @@ Por fim, apresente e/ou proponha as melhorias a partir dos testes realizados, de
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+
+
+<br>
+
+---
+
+| **Caso de Teste** | **CT02 – Efetuar login** |
+|:---:|:---:|
+| Requisito Associado | RF-002 – A aplicação deve permitir que os usuários façam login. |
+|Registro de evidência | [cto2](https://github.com/user-attachments/assets/c3ab6d5a-d93c-48dd-b7bc-ae0402574416) |
+|   |   |
+
+---
