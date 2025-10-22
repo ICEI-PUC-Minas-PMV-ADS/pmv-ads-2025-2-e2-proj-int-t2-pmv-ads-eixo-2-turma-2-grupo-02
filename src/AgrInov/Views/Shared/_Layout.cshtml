@@ -33,6 +33,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Cargos" ? "active" : "")" asp-controller="Cargos" asp-action="Index">
+                            <i class="fas fa-briefcase me-2"></i>Cargos
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Culturas" ? "active" : "")" asp-controller="Culturas" asp-action="Index">
                             <i class="fas fa-seedling me-2"></i>Culturas
                         </a>
