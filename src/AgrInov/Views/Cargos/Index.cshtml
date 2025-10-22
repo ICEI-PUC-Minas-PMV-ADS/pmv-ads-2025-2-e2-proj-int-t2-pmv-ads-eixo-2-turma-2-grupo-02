@@ -4,9 +4,20 @@
     ViewData["Title"] = "Index";
 }
 
-<p>
+
 <h1 class="fs-3 mb-5">Cargos</h1>
-</p>
+
+<div class="d-flex justify-content-between align-items-center gap-2 my-4">
+    <form class="d-flex" role="search">
+        <div class="input-group">
+            <input type="search" class="form-control border-end-0" placeholder="Buscar" aria-label="Buscar">
+            <span class="input-group-text bg-white border-start-0">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </form>
+    <a asp-action="Create" class="btn btn-dark">+ Cadastrar novo usuário</a>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -28,10 +39,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            <td class="text-end">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit me-1"></i>Atualizar</a>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye me-1"></i>Visualizar</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash me-1"></i>Remover</a>
             </td>
         </tr>
 }
