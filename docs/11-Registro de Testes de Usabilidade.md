@@ -46,11 +46,14 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 3**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1   |         98         |            12                   |     Sim         |           2             | Sistema bonito e intuitivo  |                     |      
+| Usuário 2   |         60         |            8                    |     Sim         |           0             | Sistema intuitivo e fácil de navegar|             |      
+| Usuário 3   |         75         |            10                   |     Sim         |           1             | Sistema ágil e intuitivo            |             |  
+| Usuário 4   |         83         |            8                    |     Sim         |           0             | Páginas bem organizadas             |             | 
+| Usuário 5   |         67         |            13                   |     Sim         |           2             | Acha que botões maiores seria legal |             |
+| Usuário 6   |         110        |            15                   |     Sim         |           3             | Acha que poderia ser implantado um sistema de leitura para deficiêntes visuais|                     | 
+| Usuário 7   |         100        |            12                   |     Sim         |           2             | Acha que o sistema está simples e intuitivo|                     | 
+| Usuário 8   |         71         |            8                    |     Sim         |           0             | Acha que o sistma está facilmente compreensível|                     |
 
 **Cenário 4**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
