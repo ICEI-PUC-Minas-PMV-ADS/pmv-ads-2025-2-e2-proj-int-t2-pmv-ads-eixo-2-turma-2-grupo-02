@@ -19,17 +19,17 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 Para registrar os indicadores de cada cenário, é preciso manter a coerência com os critérios quantitativos e qualitativos que foram definidos no plano de testes de usabilidade.
 
 
-**Cenário 1**:          
-| **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3    |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 6    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 8    |                    |                                 |                 |                        |                              |                     | 
+**Cenário 1**: Imagine que hoje é seu primeiro dia na empresa. Seu gestor te passou o e-mail e a senha de acesso e sua primeira tarefa é simplesmente entrar no sistema AGRINOV.          
+| Usuário | Tempo Total (seg) | Quantidade de Cliques | Tarefa foi concluída? (Sim/Não) | Erros Cometidos | Feedback do Usuário |
+|:--------|:-----------------:|:----------------------:|:-------------------------------:|:----------------|:--------------------|
+| Usuário 1 | 45 | 4 | Sim | Nenhum | Tela simples, mas demorou um pouco para achar onde digitar o e-mail. |
+| Usuário 2 | 20 | 3 | Sim | Nenhum | Muito intuitivo, layout limpo. |
+| Usuário 3 | 30 | 3 | Sim | Nenhum | Layout claro, mas poderia ter contraste maior nos textos. |
+| Usuário 4 | 18 | 3 | Sim | Nenhum | loyout agradavel e bem rápido. |
+| Usuário 5 | 35 | 3 | Sim | Nenhum | Login bom, mas o botão poderia ser mais destacado. |
+| Usuário 6 | 50 | 4 | Sim | Nenhum | Dificuldade leve para ler o texto por conta da baixa visão. |
+| Usuário 7 | 60 | 5 | Não | Nenhum | Campos bem destacados. |
+| Usuário 8 | 25 | 3 | Sim | Nenhum | Layout agradável. |
 
 **Cenário 2**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
@@ -88,17 +88,18 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 7    |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8    |                    |                                 |                 |                        |                              |                     | 
 
-**Cenário 7**:         
+**Cenário 7**:  O usuário é um técnico agrícola que deseja registrar uma nova plantação em uma das áreas de plantio da própriedade agrícola.       
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3    |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 6    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 8    |                    |                                 |                 |                        |                              |                     | 
+|:----------|:----------------:|:-------:|:----------------:|:-----------------------------------|:------------------|
+| **Usuário 1** | 185             | 10      | Não              | Não encontrou o campo de foto       | Não encontrou o campo de foto e ficou insatisfeito. |
+| **Usuário 2** | 140             | 9       | Não              | Nenhum                               | Finalizei o cadastro, mas faltou a imagem. |
+| **Usuário 3** | 160             | 10      | Não              | Tentou clicar em áreas diferentes    | Os campos estão bem organizados; conseguiu finalizar, mas não teve acesso ao campo de imagem. |
+| **Usuário 4** | 125             | 8       | Não              | Nenhum                               | Formulário simples e direto. |
+| **Usuário 5** | 195             | 11      | Não              | Dificuldade para preencher com especificações | Ficou confuso com a imprecisão de algumas informações. |
+| **Usuário 6** | 215             | 13      | Não              | Dificuldade para ler os campos       | Conseguiu preencher, mas gostaria de letras mais visíveis. |
+| **Usuário 7** | 250             | 14      | Não              | Alguns erros de digitação             | Achou o processo meio confuso e ficou procurando onde anexar a foto. |
+| **Usuário 8** | 155             | 9       | Não              | Nenhum                               | O cadastro é rápido, mas ainda falta a opção de adicionar a imagem. |
+
 
 **Cenário 8**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
