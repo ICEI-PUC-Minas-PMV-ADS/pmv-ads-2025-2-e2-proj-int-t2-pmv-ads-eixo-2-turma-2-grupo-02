@@ -3,7 +3,20 @@
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
 Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
+<hr>
 
+| **Caso de Teste** | **CT01 – Criar usuário** |
+|:---:|:---:|
+| Requisito Associado | RF-001 – A aplicação deve permitir o gerenciamento de contas de usuários e seus níveis de permissão (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Gabriel |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/9e6212f4-088b-4568-9bc0-d4bb89934e2a
+
+
+<hr>
 <hr>
 
 | **Caso de Teste** | **CT02 – Efetuar login** |
