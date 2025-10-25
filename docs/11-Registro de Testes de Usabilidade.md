@@ -67,14 +67,14 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 5**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3    |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 6    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 8    |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1    |         20         |                 6               |         Sim        |            0            |                              |                     |      
+| Usuário 2    |         16         |                 6               |         Sim        |            0            |                              |                     |      
+| Usuário 3    |         18         |                 6               |         Sim        |            0            |                              |                     |  
+| Usuário 4    |         17         |                 6               |         Sim        |            0            |                              |                     | 
+| Usuário 5    |         19         |                 6               |         Sim        |            0            |                              |		              |
+| Usuário 6    |         32         |                 6               |         Sim        |            0            |                              |                     | 
+| Usuário 7    |         22         |                 6               |         Sim        |            0            |                              |                     | 
+| Usuário 8    |         20         |                 6               |         Sim        |            0            |                              |                     | 
 
 **Cenário 6**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
