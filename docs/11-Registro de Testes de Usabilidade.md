@@ -70,14 +70,14 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 5**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |         20         |                 6               |         Sim        |            0            |             Nenhum                |                     |      
-| Usuário 2    |         16         |                 6               |         Sim        |            0            |             Nenhum              |                     |      
-| Usuário 3    |         18         |                 6               |         Sim        |            0            |             Nenhum                  |                     |  
-| Usuário 4    |         17         |                 6               |         Sim        |            0            |             Nenhum            |                     | 
-| Usuário 5    |         19         |                 6               |         Sim        |            0            |                |		              |
-| Usuário 6    |         32         |                 6               |         Sim        |            0            |             |                     | 
-| Usuário 7    |         22         |                 6               |         Sim        |            0            |                        |                     | 
-| Usuário 8    |         20         |                 6               |         Sim        |            0            |                         |                     | 
+| Usuário 1    |         20         |                 6               |         Sim        |            0            | Simples e direto                             |
+| Usuário 2    |         16         |                 6               |         Sim        |            0            | Bem compreensivo                             |      
+| Usuário 3    |         18         |                 6               |         Sim        |            0            | Muito intuitivo                              |  
+| Usuário 4    |         17         |                 6               |         Sim        |            0            | Botão fácil de encontrar                     | 
+| Usuário 5    |         19         |                 6               |         Sim        |            0            | Agradável                                    |
+| Usuário 6    |         32         |                 6               |         Sim        |            0            | Gostaria que o tamanho da fonte fosse maior  |
+| Usuário 7    |         22         |                 6               |         Sim        |            0            | Bem organizado                               | 
+| Usuário 8    |         20         |                 6               |         Sim        |            0            | Fácil de entender e de usar                  | 
 
 **Cenário 6**:         
 | **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
