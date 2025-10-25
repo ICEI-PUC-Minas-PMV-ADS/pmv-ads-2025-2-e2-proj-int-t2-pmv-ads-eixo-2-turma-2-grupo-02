@@ -43,6 +43,18 @@ https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 
 <hr>
 
+| **Caso de Teste** 	| **CT07 – Gerenciamento de Insumos** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-003 – A aplicação deve permitir o gerenciamento de Insumos (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
+
+Registro de evidência: 
+https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
+
+
+<hr>
+
 
 ## Relatório de testes de software
 
