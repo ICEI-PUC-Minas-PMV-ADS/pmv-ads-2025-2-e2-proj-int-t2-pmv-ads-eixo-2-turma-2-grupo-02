@@ -282,7 +282,7 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 **Prioridade:** MÉDIA  
 
 <figure>
-<img width="1440" height="1024" alt="" src="https://github.com/user-attachments/assets/736094ab-3efd-49cb-aa63-b4b41849ee2c](https://github.com/user-attachments/assets/faff217f-130d-4046-bdd7-37c4bbea80a4)" />
+<img width="1440" height="1024" alt="" src="https://github.com/user-attachments/assets/faff217f-130d-4046-bdd7-37c4bbea80a4" />
 <figcaption>Tela de Relatório de Histórico de Safras</figcaption>
 </figure>
 <hr/>
@@ -298,7 +298,7 @@ Nesta seção, é **FUNDAMENTAL** indicar, para cada tela/wireframe proposto, qu
 
 
 <figure>
-<img width="1440" height="1024" alt="" src="https://github.com/user-attachments/assets/736094ab-3efd-49cb-aa63-b4b41849ee2c](https://github.com/user-attachments/assets/faff217f-130d-4046-bdd7-37c4bbea80a4)" />
+<img width="1440" height="1024" alt="" src="https://github.com/user-attachments/assets/736094ab-3efd-49cb-aa63-b4b41849ee2c" />
 <figcaption>Tela de Relatório de Histórico de Safras</figcaption>
 </figure>
 <hr/>
