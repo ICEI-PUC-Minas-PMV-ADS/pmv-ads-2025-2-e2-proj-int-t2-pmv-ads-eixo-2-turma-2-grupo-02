@@ -63,5 +63,5 @@ jobs:
         with:
           app-name: 'AgrInov'
           slot-name: 'Production'
-          package: ./.net-app
+          package: .
           
