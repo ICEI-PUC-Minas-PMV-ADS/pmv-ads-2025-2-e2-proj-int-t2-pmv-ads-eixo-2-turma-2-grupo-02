@@ -56,9 +56,9 @@ jobs:
         uses: azure/login@v2
         with:
           # 👇 Aqui você usa os nomes exatos dos secrets definidos no ambiente
-          client-id: ${{ secrets.clientidsecretname }}
-          tenant-id: ${{ secrets.tenantidsecretname }}
-          subscription-id: ${{ secrets.subscriptionidsecretname }}
+          client-id: ${{ secrets.CLIENTIDSECRETNAME }}
+          tenant-id: ${{ secrets.TENANTIDSECRETNAME }}
+          subscription-id: ${{ secrets.SUBSCRIPTIONIDSECRETNAME }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
