@@ -51,7 +51,7 @@ jobs:
 
       - name: Build with dotnet
 
-        run: dotnet build --configuration Release
+        run: dotnet build --project ./src/AgrInov --configuration Release
 
 
 
