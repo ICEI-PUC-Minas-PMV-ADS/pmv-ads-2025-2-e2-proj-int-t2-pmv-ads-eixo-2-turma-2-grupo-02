@@ -15,6 +15,7 @@ on:
     branches:
 
       - main
+      - infra/testdeploy
 
   workflow_dispatch:
 
