@@ -24,9 +24,11 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
+        working-directory: src/AgrInov
         run: dotnet build --configuration Release
 
       - name: dotnet publish
+        working-directory: src/AgrInov
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
@@ -61,5 +63,5 @@ jobs:
         with:
           app-name: 'AgrInov'
           slot-name: 'Production'
-          package: .
+          package: ./.net-app
           
