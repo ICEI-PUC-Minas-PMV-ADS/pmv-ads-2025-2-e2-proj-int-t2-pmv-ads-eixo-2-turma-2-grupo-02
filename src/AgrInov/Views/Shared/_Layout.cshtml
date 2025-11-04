@@ -60,6 +60,13 @@
                     <li class="nav-item">
                         <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Vendas" ? "active" : "")" asp-controller="Vendas" asp-action="Index">
                             <i class="fas fa-geo-alt-fill me-2"></i>Vendas
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Metas" ? "active" : "")" asp-controller="Metas" asp-action="Index">
+                            <i class="fa-solid fa-chart-pie me-2"></i>Metas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "NotaFiscal" ? "active" : "")" asp-controller="NotaFiscals" asp-action="Index">
+                            <i class="fas fa-file-invoice-dollar me-2"></i>Nota Fiscal
                         </a>
                     </li>
                 </ul>

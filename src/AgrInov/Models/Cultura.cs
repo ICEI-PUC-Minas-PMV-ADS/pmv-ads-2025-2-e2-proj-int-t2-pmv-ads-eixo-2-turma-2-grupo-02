@@ -13,5 +13,6 @@ namespace AgrInov.Models
         public string Nome { get; set; }
 
         public ICollection<Venda> Vendas { get; set; }
+        public ICollection<Meta> Metas { get; set; }
     }
 }
