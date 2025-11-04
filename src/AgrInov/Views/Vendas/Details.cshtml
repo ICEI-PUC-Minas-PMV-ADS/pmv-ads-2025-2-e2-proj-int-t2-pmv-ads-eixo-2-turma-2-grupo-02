@@ -1,0 +1,35 @@
+﻿@model AgrInov.Models.Venda
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="fs-3 mb-5">Vendas → Detalhes</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cultura)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cultura.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-outline-secondary">Voltar </a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark">Atualizar</a>
+</div>
