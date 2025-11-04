@@ -57,6 +57,11 @@
                             <i class="fas fa-geo-alt-fill me-2"></i>Propriedade Agricula
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Metas" ? "active" : "")" asp-controller="Metas" asp-action="Index">
+                            <i class="fa-solid fa-chart-pie me-2"></i>Metas
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <div class="p-3 border-top">

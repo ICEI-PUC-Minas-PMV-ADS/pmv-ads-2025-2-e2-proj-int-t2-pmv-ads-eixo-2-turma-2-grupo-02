@@ -1,0 +1,47 @@
+﻿@model AgrInov.Models.Meta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="fs-3 mb-5">Gerenciar Metas → Detalhes</h1>
+
+<div class="d-flex justify-content-end align-items-center gap-2 my-4">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark">Editar</a>
+</div>
+
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.DataInicio)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.DataInicio)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.DataFim)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.DataFim)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Quantidade)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Quantidade)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Cultura)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Cultura.Nome)
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="d-flex justify-content-start gap-1">
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+</div>
+
