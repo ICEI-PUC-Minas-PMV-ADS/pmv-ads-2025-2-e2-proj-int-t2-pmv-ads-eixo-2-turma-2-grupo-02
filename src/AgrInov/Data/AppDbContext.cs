@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using AgrInov.Models;
+﻿using AgrInov.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AgrInov.Data
@@ -13,6 +12,5 @@ namespace AgrInov.Data
         public DbSet<AreaDePlantio> AreasDePlantio { get; set; }
         public DbSet<Cargo> Cargos { get; set; }
         public DbSet<PropriedadeAgricula> PropriedadeAgricula { get; set; }
-        public DbSet<Imagem> Imagem { get; set; }
     }
 }
