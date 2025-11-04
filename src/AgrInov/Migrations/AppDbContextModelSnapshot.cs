@@ -85,31 +85,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Culturas");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.Imagem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<float>("Latitude")
-                        .HasColumnType("real");
-
-                    b.Property<float>("Longitude")
-                        .HasColumnType("real");
-
-                    b.Property<string>("dataCriacao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("imagem")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Imagem");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Insumo", b =>
                 {
                     b.Property<int>("Id")
