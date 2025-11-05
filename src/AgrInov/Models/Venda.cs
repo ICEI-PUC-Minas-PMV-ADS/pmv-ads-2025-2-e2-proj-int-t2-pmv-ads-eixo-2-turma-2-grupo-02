@@ -7,7 +7,6 @@ namespace AgrInov.Models
     public class Venda
     {
         [Key]
-        
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar um valor!")]
