@@ -1,0 +1,64 @@
+﻿@model AgrInov.Models.Plantaçao
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="fs-3 mb-4">Plantação → Atualizar</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group mb-3">
+                <label asp-for="DataInicio" class="control-label"></label>
+                <input asp-for="DataInicio" class="form-control" />
+                <span asp-validation-for="DataInicio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="DataFimPrevista" class="control-label"></label>
+                <input asp-for="DataFimPrevista" class="form-control" />
+                <span asp-validation-for="DataFimPrevista" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="AreaUtilizada" class="control-label"></label>
+                <input asp-for="AreaUtilizada" class="form-control" />
+                <span asp-validation-for="AreaUtilizada" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Producao" class="control-label"></label>
+                <input asp-for="Producao" class="form-control" />
+                <span asp-validation-for="Producao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-4">
+                <label asp-for="Saude" class="control-label"></label>
+                <input asp-for="Saude" class="form-control" />
+                <span asp-validation-for="Saude" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex gap-2">
+                <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+                <button type="submit" class="btn btn-dark">Atualizar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
