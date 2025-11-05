@@ -21,10 +21,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-}
-
 /* Logo Style */
 .agr-green {
   color: #28a745;
@@ -32,7 +28,7 @@ body {
 
 /* Sidebar Styles */
 .agr-sidebar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   height: 100vh;
@@ -43,7 +39,7 @@ body {
 }
 
 .agr-main-content {
-  margin-left: 250px;
+  flex: 1;
   min-height: 100vh;
 }
 
