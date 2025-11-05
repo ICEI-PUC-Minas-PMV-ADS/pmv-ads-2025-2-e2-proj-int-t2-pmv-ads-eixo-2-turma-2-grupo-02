@@ -1,0 +1,36 @@
+﻿@model AgrInov.Models.Venda
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="fs-3 mb-5">Vendas → Cadastrar Venda</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Valor" class="control-label"></label>
+                <input id="Valor" name="Valor" required data-val-required="Obrigatório informar um valor!" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CulturaId" class="control-label"></label>
+                <select asp-for="CulturaId" class="form-control" asp-items="ViewBag.CulturaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantidade" class="control-label"></label>
+                <input asp-for="Quantidade" class="form-control" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+                <input type="submit" value="Cadastrar" class="btn btn-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

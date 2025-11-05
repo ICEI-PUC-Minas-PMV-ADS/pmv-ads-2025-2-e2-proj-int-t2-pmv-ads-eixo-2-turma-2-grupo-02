@@ -12,6 +12,7 @@ namespace AgrInov.Data
         public DbSet<AreaDePlantio> AreasDePlantio { get; set; }
         public DbSet<Cargo> Cargos { get; set; }
         public DbSet<PropriedadeAgricula> PropriedadeAgricula { get; set; }
+        public DbSet<Venda> Vendas { get; set; }
         public DbSet<Meta> Meta { get; set; }
         public DbSet<AgrInov.Models.NotaFiscal> NotaFiscal { get; set; }
     }

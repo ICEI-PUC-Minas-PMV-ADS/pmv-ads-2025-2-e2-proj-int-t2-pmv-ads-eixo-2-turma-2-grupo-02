@@ -12,6 +12,7 @@ namespace AgrInov.Models
         [Required(ErrorMessage = "Obrigatório informar o nome!")]
         public string Nome { get; set; }
 
+        public ICollection<Venda> Vendas { get; set; }
         public ICollection<Meta> Metas { get; set; }
     }
 }
