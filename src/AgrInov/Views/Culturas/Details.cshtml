@@ -4,20 +4,25 @@
     ViewData["Title"] = "Details";
 }
 
-<h1 class="fs-3 mb-5">Cultura → Detalhes</h1>
-<div>
-    <h4>Cultura</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-    </dl>
+<h1 class="fs-3 mb-5">Culturas → Detalhes</h1>
+
+<div class="d-flex justify-content-end align-items-center gap-2 my-4">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark">Editar</a>
 </div>
+
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+        </dl>
+    </div>
+</div>
+
 <div>
-    <a asp-action="Index" class="btn btn-outline-secondary">Voltar </a>
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark">Edit</a>
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
 </div>
