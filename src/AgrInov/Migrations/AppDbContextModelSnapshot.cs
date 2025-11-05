@@ -146,12 +146,12 @@ namespace AgrInov.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("DataOperacao")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Nfe")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("dataOperacao")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -248,6 +248,8 @@ namespace AgrInov.Migrations
                     b.HasIndex("CulturaId");
 
                     b.ToTable("Vendas");
+                });
+
             modelBuilder.Entity("AgrInov.Models.Meta", b =>
                 {
                     b.HasOne("AgrInov.Models.Cultura", "Cultura")
@@ -281,10 +283,9 @@ namespace AgrInov.Migrations
 
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
-                    b.Navigation("Vendas");
-            modelBuilder.Entity("AgrInov.Models.Cultura", b =>
-                {
                     b.Navigation("Metas");
+
+                    b.Navigation("Vendas");
                 });
 #pragma warning restore 612, 618
         }

@@ -10,13 +10,18 @@ namespace AgrInov.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.RenameColumn(
+                name: "dataOperacao",
+                table: "NotaFiscal",
+                newName: "DataOperacao");
+
             migrationBuilder.CreateTable(
                 name: "Vendas",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Valor = table.Column<double>(type: "float", nullable: false),
+                    Valor = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Quantidade = table.Column<int>(type: "int", nullable: false),
                     CulturaId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -42,6 +47,11 @@ namespace AgrInov.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Vendas");
+
+            migrationBuilder.RenameColumn(
+                name: "DataOperacao",
+                table: "NotaFiscal",
+                newName: "dataOperacao");
         }
     }
 }
