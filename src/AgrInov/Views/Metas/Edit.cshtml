@@ -1,0 +1,47 @@
+﻿@model AgrInov.Models.Meta
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="fs-3 mb-5">Metas → Atualizar</h1>
+
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <form asp-action="Edit" class="d-flex flex-column gap-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="DataInicio" class="control-label"></label>
+                <input asp-for="DataInicio" class="form-control" />
+                <span asp-validation-for="DataInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataFim" class="control-label"></label>
+                <input asp-for="DataFim" class="form-control" />
+                <span asp-validation-for="DataFim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantidade" class="control-label"></label>
+                <input asp-for="Quantidade" class="form-control" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CulturaId" class="control-label"></label>
+                <select asp-for="CulturaId" class="form-control" asp-items="ViewBag.CulturaId"></select>
+                <span asp-validation-for="CulturaId" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Atualizar" class="btn btn-dark w-100" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

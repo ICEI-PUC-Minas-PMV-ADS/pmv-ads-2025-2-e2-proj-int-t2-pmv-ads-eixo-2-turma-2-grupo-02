@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<AgrInov.Models.Cargo>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Cargos";
 }
 
 
@@ -16,7 +16,7 @@
             </span>
         </div>
     </form>
-    <a asp-action="Create" class="btn btn-dark">+ Cadastrar novo usuário</a>
+    <a asp-action="Create" class="btn btn-dark">+ Cadastrar novo cargo</a>
 </div>
 <table class="table">
     <thead>
@@ -40,9 +40,9 @@
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
             <td class="text-end">
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit me-1"></i>Atualizar</a>
-                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye me-1"></i>Visualizar</a>
-                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash me-1"></i>Remover</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit"></i> Atualizar</a>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye"></i> Visualizar</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash"></i> Remover</a>
             </td>
         </tr>
 }

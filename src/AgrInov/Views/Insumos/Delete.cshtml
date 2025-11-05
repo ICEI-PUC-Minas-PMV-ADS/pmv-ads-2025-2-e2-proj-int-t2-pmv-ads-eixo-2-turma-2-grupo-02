@@ -6,33 +6,40 @@
 
 <h1 class="fs-3 mb-5">Insumos → Remover</h1>
 
-<h3>Tem certeza de que deseja excluir?</h3>
-<div>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantidade)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantidade)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UnidadeMedida)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UnidadeMedida)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <a asp-action="Index" class="btn btn-outline-secondary">Voltar </a> |
-        <input type="submit" value="Remover" class="btn btn-danger" />
-    </form>
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <div class="mb-3">
+            <h3 class="mb-0">Deseja remover este insumo?</h3>
+            <span class="fs-6">Essa ação não poderá ser desfeita</span>
+        </div>
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Quantidade)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Quantidade)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.UnidadeMedida)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.UnidadeMedida)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Remover" class="btn btn-danger" />
+        </form>
+    </div>
+</div>
+
+<div class="d-flex justify-content-start gap-1">
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
 </div>
