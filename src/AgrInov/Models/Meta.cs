@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AgrInov.Models
@@ -6,6 +7,7 @@ namespace AgrInov.Models
     [Table("Metas")]
     public class Meta
     {
+        [Key]
         public int Id { get; set; }
 
         [DisplayName("Data de início")]
