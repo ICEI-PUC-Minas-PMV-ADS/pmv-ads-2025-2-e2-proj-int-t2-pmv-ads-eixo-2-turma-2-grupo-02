@@ -21,9 +21,25 @@ A tabela a seguir é um exemplo de como ela deverá ser preenchida considerando 
 
 |ID    | Descrição do Requisito  | Artefatos produzidos | Aluno(a) responsável |
 |------|-----------------------------------------|----|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| |  |
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio     |  |  |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas |  |  |
+|RF-001| A aplicação deve permitir o gerenciamento de contas de usuários e seus níveis de permissão (CRUD) | src/AgrInov/Models/Usuario.cs - src/AgrInov/Models/Cargo.cs | Lucas e Tiago |
+|RF-002| A aplicação deve permitir que os usuários façam login | src/AgrInov/Controllers/AuthController.cs | Pamela |
+|RF-003| A aplicação deve permitir o gerenciamento das áreas de plantio (CRUD) | src/AgrInov/Models/AreaDePlantio.cs | Gabriel |
+|RF-004| A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD) | src/AgrInov/Models/Cultura.cs | Tiago |
+|RF-005| A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área |  |  |
+|RF-006| A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos) |  |  |
+|RF-007| A aplicação deve permitir o gerenciamento do registro de aplicação de insumos (fertilizantes, sementes, água, defensivos) em cada área de plantio (CRUD) | src/AgrInov/Models/Insumo.cs | Matheus |
+|RF-008| A aplicação deve emitir alertas ao agricultor sobre riscos de clima adverso ou presença de pragas |  |  |
+|RF-009| A aplicação deve permitir o gerenciamento de imagens da fazenda (CRUD) |  |  |
+|RF-010| A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD) |  |  |
+|RF-011| A aplicação deve permitir a comparação entre dados de safras anteriores, mostrando evolução de produtividade |  |  |
+|RF-012| A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido |  |  |
+|RF-013| A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas sobre as plantações |  |  |
+|RF-014| A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo) |  |  |
+|RF-015| A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD) |  |  |
+|RF-016| A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas |  |  |
+|RF-017| A aplicação deve permitir o download dos relatórios |  |  |
+|RF-018| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias |  |  |
+|RF-019| A aplicação deve permitir o gerenciamento da fazenda (CRUD) | src/AgrInov/Models/PropriedadePossuiAreaPlantio.cs  | Mario |
 
 
 # Instruções de acesso

@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251105001022_Nota Fiscal Fix")]
+    partial class NotaFiscalFix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -226,30 +229,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.Venda", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CulturaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CulturaId");
-
-                    b.ToTable("Vendas");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Meta", b =>
                 {
                     b.HasOne("AgrInov.Models.Cultura", "Cultura")
@@ -270,22 +249,9 @@ namespace AgrInov.Migrations
                     b.Navigation("Cargo");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.Venda", b =>
-                {
-                    b.HasOne("AgrInov.Models.Cultura", "Cultura")
-                        .WithMany("Vendas")
-                        .HasForeignKey("CulturaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cultura");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
                     b.Navigation("Metas");
-
-                    b.Navigation("Vendas");
                 });
 #pragma warning restore 612, 618
         }
