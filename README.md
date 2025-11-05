@@ -29,8 +29,8 @@ O objetivo geral deste projeto é criar uma aplicação web Back-end que utilize
 * Ambiente: produção / homologação
 
 **Usuário(s) de teste (se houver):**
-* Login: usuario_teste
-* Senha: senha_teste
+* Login: teste@teste.com
+* Senha: 123123
 
 # Documentação
 
