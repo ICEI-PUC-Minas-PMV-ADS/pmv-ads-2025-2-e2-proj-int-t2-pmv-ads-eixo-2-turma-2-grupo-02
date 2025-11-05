@@ -16,8 +16,11 @@
     {
         <div class="d-flex position-relative">
             <div id="agr-mobile-header" class="d-flex d-lg-none">
-                    <div id="agr-sidebar-show">
-                    <i class="fa-solid fa-bars"></i>
+                <div id="agr-sidebar-show">
+                    <i class="fa-solid fa-bars fs-3"></i>
+                </div>
+                <div class="agr-green mb-0">
+                    <i class="fas fa-leaf"></i> AgrInov
                 </div>
             </div>
             <div id="agr-sidebar" class="d-flex flex-column">
@@ -80,7 +83,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "NotaFiscal" ? "active" : "")" asp-controller="NotaFiscals" asp-action="Index">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "NotaFiscals" ? "active" : "")" asp-controller="NotaFiscals" asp-action="Index">
                                 <i class="fas fa-file-invoice-dollar"></i> Nota Fiscal
                             </a>
                         </li>

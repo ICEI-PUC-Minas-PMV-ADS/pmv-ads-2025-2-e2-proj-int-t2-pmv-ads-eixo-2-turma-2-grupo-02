@@ -6,10 +6,9 @@
 
 <h1 class="fs-3 mb-5">Notas Fiscais → Atualizar</h1>
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <form asp-action="Edit" class="d-flex flex-column gap-3">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -27,17 +26,16 @@
                 <input asp-for="DataOperacao" class="form-control" />
                 <span asp-validation-for="DataOperacao" class="text-danger"></span>
             </div>
-            <br /><br />
-
-            <div class="form-group">
-                <a asp-action="Index" class="btn btn-outline-secondary">Voltar </a>
-                <input type="submit" value="Atualizar" class="btn btn-dark" />
+            <div class="form-group mt-3">
+                <input type="submit" value="Atualizar" class="btn btn-dark w-100" />
             </div>
         </form>
     </div>
 </div>
 
-
+<div>
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
