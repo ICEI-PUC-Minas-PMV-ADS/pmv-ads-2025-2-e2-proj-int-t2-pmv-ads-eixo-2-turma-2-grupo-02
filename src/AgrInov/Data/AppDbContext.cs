@@ -15,5 +15,6 @@ namespace AgrInov.Data
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Meta> Meta { get; set; }
         public DbSet<AgrInov.Models.NotaFiscal> NotaFiscal { get; set; }
+        public DbSet<Plantacao> Plantacoes { get; set; }
     }
 }

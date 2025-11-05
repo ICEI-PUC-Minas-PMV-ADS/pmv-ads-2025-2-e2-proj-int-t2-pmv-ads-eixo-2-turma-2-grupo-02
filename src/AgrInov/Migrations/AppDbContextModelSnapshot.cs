@@ -158,6 +158,37 @@ namespace AgrInov.Migrations
                     b.ToTable("NotaFiscal");
                 });
 
+            modelBuilder.Entity("AgrInov.Models.Plantacao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<float>("AreaUtilizada")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("DataFimPrevista")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Producao")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Saude")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Plantacoes");
+                });
+
             modelBuilder.Entity("AgrInov.Models.PropriedadeAgricula", b =>
                 {
                     b.Property<int>("Id")

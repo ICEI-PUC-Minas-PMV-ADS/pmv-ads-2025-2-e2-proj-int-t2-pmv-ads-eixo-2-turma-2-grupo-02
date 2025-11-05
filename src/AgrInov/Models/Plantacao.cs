@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AgrInov.Models
 {
-    [Table("Plantações")]
-    public class Plantaçao
+    [Table("Plantacoes")]
+    public class Plantacao
     {
         [Key]
         public int Id { get; set; }

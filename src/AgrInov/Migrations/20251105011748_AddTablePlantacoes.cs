@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AgrInov.Migrations
 {
     /// <inheritdoc />
-    public partial class AddTablePlantaçao : Migration
+    public partial class AddTablePlantacoes : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Plantações",
+                name: "Plantacoes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -26,7 +26,7 @@ namespace AgrInov.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Plantações", x => x.Id);
+                    table.PrimaryKey("PK_Plantacoes", x => x.Id);
                 });
         }
 
@@ -34,7 +34,7 @@ namespace AgrInov.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Plantações");
+                name: "Plantacoes");
         }
     }
 }
