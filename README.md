@@ -25,10 +25,10 @@ O objetivo geral deste projeto é criar uma aplicação web Back-end que utilize
 
 **Acesso rápido (produção)**
 * URL da aplicação: [https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net](https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net)
-* Status: online / instável / em manutenção (atualize conforme o caso)
-* Ambiente: produção / homologação
+* Status: online
+* Ambiente: homologação
 
-**Usuário(s) de teste (se houver):**
+**Usuário(s) de teste:**
 * Login: teste@teste.com
 * Senha: 123123
 
