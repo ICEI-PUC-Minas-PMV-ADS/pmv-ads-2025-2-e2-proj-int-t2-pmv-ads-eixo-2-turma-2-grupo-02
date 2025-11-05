@@ -10,22 +10,22 @@ using AgrInov.Models;
 
 namespace AgrInov.Controllers
 {
-    public class PlantaçaoController : Controller
+    public class PlantacoesController : Controller
     {
         private readonly AppDbContext _context;
 
-        public PlantaçaoController(AppDbContext context)
+        public PlantacoesController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: Plantaçao
+        // GET: Plantacoes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Plantações.ToListAsync());
+            return View(await _context.Plantacoes.ToListAsync());
         }
 
-        // GET: Plantaçao/Details/5
+        // GET: Plantacoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var plantaçao = await _context.Plantações
+            var plantacao = await _context.Plantacoes
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (plantaçao == null)
+            if (plantacao == null)
             {
                 return NotFound();
             }
 
-            return View(plantaçao);
+            return View(plantacao);
         }
 
-        // GET: Plantaçao/Create
+        // GET: Plantacoes/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Plantaçao/Create
+        // POST: Plantacoes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude")] Plantacao plantaçao)
+        public async Task<IActionResult> Create([Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude")] Plantacao plantacao)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(plantaçao);
+                _context.Add(plantacao);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(plantaçao);
+            return View(plantacao);
         }
 
-        // GET: Plantaçao/Edit/5
+        // GET: Plantacoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var plantaçao = await _context.Plantações.FindAsync(id);
-            if (plantaçao == null)
+            var plantacao = await _context.Plantacoes.FindAsync(id);
+            if (plantacao == null)
             {
                 return NotFound();
             }
-            return View(plantaçao);
+            return View(plantacao);
         }
 
-        // POST: Plantaçao/Edit/5
+        // POST: Plantacoes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude")] Plantacao plantaçao)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude")] Plantacao plantacao)
         {
-            if (id != plantaçao.Id)
+            if (id != plantacao.Id)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace AgrInov.Controllers
             {
                 try
                 {
-                    _context.Update(plantaçao);
+                    _context.Update(plantacao);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PlantaçaoExists(plantaçao.Id))
+                    if (!PlantacaoExists(plantacao.Id))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace AgrInov.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(plantaçao);
+            return View(plantacao);
         }
 
-        // GET: Plantaçao/Delete/5
+        // GET: Plantacoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,34 +124,34 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var plantaçao = await _context.Plantações
+            var plantacao = await _context.Plantacoes
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (plantaçao == null)
+            if (plantacao == null)
             {
                 return NotFound();
             }
 
-            return View(plantaçao);
+            return View(plantacao);
         }
 
-        // POST: Plantaçao/Delete/5
+        // POST: Plantacoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var plantaçao = await _context.Plantações.FindAsync(id);
-            if (plantaçao != null)
+            var plantacao = await _context.Plantacoes.FindAsync(id);
+            if (plantacao != null)
             {
-                _context.Plantações.Remove(plantaçao);
+                _context.Plantacoes.Remove(plantacao);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PlantaçaoExists(int id)
+        private bool PlantacaoExists(int id)
         {
-            return _context.Plantações.Any(e => e.Id == id);
+            return _context.Plantacoes.Any(e => e.Id == id);
         }
     }
 }
