@@ -46,3 +46,15 @@ button.accept-policy {
   white-space: nowrap;
   background-color: #fff;
 }
+
+/* Sidebar Styles */
+.agr-sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    z-index: 1000;
+}
