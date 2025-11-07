@@ -1,0 +1,59 @@
+@model AgrInov.Models.Imagem
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1 class="fs-3 mb-5">Imagem → Detalhes </h1>
+
+<div class="d-flex justify-content-end align-items-center gap-2 my-4">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark">Editar</a>
+</div>
+
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <dl class="row">
+                    <dt class="col-sm-4">Imagem</dt>
+                    <dd class="col-sm-8">
+                        @{
+                            string blobUrl = $"https://agrinovimg.blob.core.windows.net/agrinovimg/{Model.ImageUrl}.jpg";
+                        }
+                        <img src="@blobUrl" class="img-fluid" />
+                    </dd>
+
+                    <dt class="col-sm-4">Latitude</dt>
+                    <dd class="col-sm-8">
+                        @Model.Latitude.ToString("F6") 
+                    </dd>
+
+                    <dt class="col-sm-4">Longitude</dt>
+                    <dd class="col-sm-8">
+                        @Model.Longitude.ToString("F6") 
+                    </dd>
+
+                    <dt class="col-sm-4">Data da Foto</dt>
+                    <dd class="col-sm-8">
+                        @(Model.DataCriacao.ToString("dd/MM/yyyy HH:mm:ss"))
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="col-md-6 text-center">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="@Model.ImageUrl" alt="Imagem" class="img-fluid rounded shadow-sm" style="max-height: 400px;" />
+                }
+                else
+                {
+                    <p class="text-muted fst-italic mt-5">Nenhuma imagem disponível</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-start gap-2">
+    <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+</div>
