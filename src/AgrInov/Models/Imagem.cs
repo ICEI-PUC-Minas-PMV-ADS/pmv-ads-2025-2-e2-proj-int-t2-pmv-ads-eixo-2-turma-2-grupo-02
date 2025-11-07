@@ -7,15 +7,19 @@ namespace AgrInov.Models
     public class Imagem
     {
         [Key]
-        public int Id { get; set; }
+       public int Id { get; set; }
+
         
-        [Required(ErrorMessage = "O campo Nome é obrigatório")]
-        public string Image { get; set; }
+        [Required]
+        [Display(Name = "Arquivo da imagem")]
+        [NotMapped] 
+        public IFormFile Image { get; set; }
 
-        [Required(ErrorMessage = "O campo Descrição é obrigatório")]
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
+        [Display(Name = "URL da imagem")]
+        public string ImageUrl { get; set; }
 
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }       
         public DateTime DataCriacao { get; set; }
     }
 }
