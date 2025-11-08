@@ -17,21 +17,16 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Image)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
+         <dd class="col-sm-8">
+        @{
+            string blobUrl = $"https://agrinovimg.blob.core.windows.net/agrinovimg/{Model.ImageUrl}.jpg";
+        }
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <img src="@blobUrl" alt="Imagem" class="img-thumbnail mb-3" style="max-height: 300px;" />
+        }
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Latitude)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Latitude)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Longitude)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Longitude)
-        </dd>
+        
         
     </dl>
     
