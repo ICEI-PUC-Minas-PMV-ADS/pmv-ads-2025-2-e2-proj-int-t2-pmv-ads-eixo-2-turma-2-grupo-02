@@ -156,7 +156,44 @@ namespace AgrInov.Controllers
                 _context.Imagem.Remove(imagem);
             }
 
-            await _context.SaveChangesAsync();
+            try
+            {
+             
+                string connectionString = _configuration["AzureStorage:ConnectionString"];
+                string containerName = _configuration["AzureStorage:ContainerName"];
+
+              
+                var blobContainerClient = new BlobContainerClient(connectionString, containerName);
+                await blobContainerClient.CreateIfNotExistsAsync();
+
+      
+                string blobName;
+                if (imagem.ImageUrl.StartsWith("http"))
+                {
+                    
+                    blobName = Path.GetFileName(new Uri(imagem.ImageUrl).AbsolutePath);
+                }
+                else
+                {
+                
+                    blobName = imagem.ImageUrl;
+                }
+
+       
+                var blobClient = blobContainerClient.GetBlobClient(blobName+".jpg");
+                await blobClient.DeleteIfExistsAsync();
+
+                
+                _context.Imagem.Remove(imagem);
+                await _context.SaveChangesAsync();
+
+                TempData["SuccessMessage"] = "Imagem removida com sucesso.";
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Erro ao excluir imagem: {ex.Message}";
+            }
+
             return RedirectToAction(nameof(Index));
         }
 
