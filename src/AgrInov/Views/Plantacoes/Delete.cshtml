@@ -1,0 +1,63 @@
+﻿@model AgrInov.Models.Plantacao
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 class="fs-3 mb-5">Plantações → Remover</h1>
+
+<div class="mb-5">
+    <div class="agr-card p-5">
+        <div class="mb-3">
+            <h3 class="mb-0">Deseja remover esta plantação?</h3>
+            <span class="fs-6">Essa ação não poderá ser desfeita</span>
+        </div>
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.DataInicio)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.DataInicio)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.DataFimPrevista)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.DataFimPrevista)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.AreaUtilizada)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.AreaUtilizada)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Producao)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Producao)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Saude)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Saude)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Remover" class="btn btn-danger" />
+        </form>
+    </div>
+</div>
+
+<div class="d-flex justify-content-start gap-1">
+    <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
+</div>
