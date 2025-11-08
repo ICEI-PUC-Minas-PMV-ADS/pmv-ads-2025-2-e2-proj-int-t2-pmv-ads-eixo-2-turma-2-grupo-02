@@ -11,7 +11,7 @@ namespace AgrInov.Models
 
         
         [Required]
-        [Display(Name = "Arquivo da imagem")]
+        [Display(Name = "Imagem")]
         [NotMapped] 
         public IFormFile Image { get; set; }
 
