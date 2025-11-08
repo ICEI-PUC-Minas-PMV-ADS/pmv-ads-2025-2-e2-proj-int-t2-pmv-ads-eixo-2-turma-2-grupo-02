@@ -38,7 +38,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
+               @{
+                // 👇 Constrói a URL da imagem a partir do nome salvo
+                string blobUrl = $"https://agrinovimg.blob.core.windows.net/agrinovimg/{item.ImageUrl}.jpg";
+                }
+
+                @if (!string.IsNullOrEmpty(item.ImageUrl))
+                {
+                    <img src="@blobUrl" alt="Imagem" class="img-thumbnail" style="max-height: 120px;" />
+                }
+                else
+                {
+                    <span class="text-muted">Sem imagem</span>
+                 }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Latitude)
