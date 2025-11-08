@@ -8,7 +8,6 @@ namespace AgrInov.Models
     {
         [Key]
         [ForeignKey("PropriedadeAgriculaId")]
-
         public int? PropriedadeAgriculaId { get; set; }
 
         [Key]
