@@ -92,6 +92,11 @@
                                 <i class="fa-solid fa-tree"></i> Plantações
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Imagem" ? "active" : "")" asp-controller="Imagem" asp-action="Index">
+                                <i class="fas fa-images me-2"></i>Imagem
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="border-top">
