@@ -46,6 +46,14 @@ namespace AgrInov.Controllers
             if (!ModelState.IsValid)
                 return View(imagem);
 
+
+            var extension = Path.GetExtension(imagem.Image.FileName).ToLowerInvariant();
+            if (extension != ".jpg")
+            {
+                ModelState.AddModelError("Image", "Somente imagens JPG são permitidas.");
+                return View(imagem);
+            }
+
             if (imagem.Image != null && imagem.Image.Length > 0)
             {
             
@@ -64,13 +72,13 @@ namespace AgrInov.Controllers
 
                 
                 string connectionString = _configuration["AzureStorage:ConnectionString"] ?? Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING");
-                string containerName = _configuration["AzureStorage:ContainerName"] ?? Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING");
+                string containerName = _configuration["AzureStorage:ContainerName"] ?? Environment.GetEnvironmentVariable("AZURE_CONTAINER_NAME");
 
                 var blobContainerClient = new BlobContainerClient(connectionString, containerName);
                 await blobContainerClient.CreateIfNotExistsAsync();
 
                 string fileName = Guid.NewGuid().ToString();
-                string fileNameWithExtension = fileName + Path.GetExtension(imagem.Image.FileName).ToLower();
+                string fileNameWithExtension = fileName + extension;
                 var blobClient = blobContainerClient.GetBlobClient(fileNameWithExtension);
 
                 await blobClient.UploadAsync(memoryStream, overwrite: true);
@@ -129,8 +137,8 @@ namespace AgrInov.Controllers
             try
             {
              
-                string connectionString = _configuration["AzureStorage:ConnectionString"];
-                string containerName = _configuration["AzureStorage:ContainerName"];
+                string connectionString = _configuration["AzureStorage:ConnectionString"] ?? Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING");
+                string containerName = _configuration["AzureStorage:ContainerName"] ?? Environment.GetEnvironmentVariable("AZURE_CONTAINER_NAME");
 
               
                 var blobContainerClient = new BlobContainerClient(connectionString, containerName);
