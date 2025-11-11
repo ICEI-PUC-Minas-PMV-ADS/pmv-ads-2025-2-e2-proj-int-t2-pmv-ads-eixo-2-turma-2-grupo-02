@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container-xxl p-0 px-lg-2">
-    @if (Context.Session.GetString("UsuarioId") != null)
+    @if (User.Identity.IsAuthenticated)
     {
         <div class="d-flex position-relative">
             <div id="agr-mobile-header" class="d-flex d-lg-none">
@@ -33,7 +33,7 @@
                             <i class="fa-solid fa-xmark"></i>
                         </div>
                     </div>
-                    <small class="text-muted">Olá, @Context.Session.GetString("UsuarioNome")</small>
+                    <small class="text-muted">Olá, @User.Identity.Name</small>
                 </div>
                 <nav class="flex-grow-1">
                     <ul class="nav flex-column">

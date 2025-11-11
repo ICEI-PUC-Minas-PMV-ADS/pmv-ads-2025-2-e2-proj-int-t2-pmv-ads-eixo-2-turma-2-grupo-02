@@ -2,6 +2,9 @@ using AgrInov.Data;
 using AgrInov.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using BCrypt.Net;
 
 namespace AgrInov.Controllers
 {
@@ -30,14 +33,31 @@ namespace AgrInov.Controllers
             if (usuario == null)
             {
                 ViewBag.Erro = "Email ou senha inválidos";
+                return View();
             }
 
             bool senhaOk = BCrypt.Net.BCrypt.Verify(senha, usuario.Senha);
 
-            if(senhaOk)
+            if (senhaOk)
             {
-                HttpContext.Session.SetString("UsuarioId", usuario.Id.ToString());
-                HttpContext.Session.SetString("UsuarioNome", usuario.Nome);
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, usuario.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                    new Claim(ClaimTypes.Email, usuario.Email)
+                };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, "login");
+                var principal = new ClaimsPrincipal(usuarioIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.AddHours(8),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, props);
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -73,8 +93,24 @@ namespace AgrInov.Controllers
                 _context.Usuarios.Add(usuario);
                 await _context.SaveChangesAsync();
 
-                HttpContext.Session.SetString("UsuarioId", usuario.Id.ToString());
-                HttpContext.Session.SetString("UsuarioNome", usuario.Nome);
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, usuario.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                    new Claim(ClaimTypes.Email, usuario.Email)
+                };
+
+                var usuarioIdentity = new ClaimsIdentity(claims, "login");
+                var principal = new ClaimsPrincipal(usuarioIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.AddHours(8),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, props);
                 return RedirectToAction("Index", "Home");
             }
 
@@ -82,9 +118,9 @@ namespace AgrInov.Controllers
         }
 
         // Logout
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout()
         {
-            HttpContext.Session.Clear();
+            await HttpContext.SignOutAsync();
             return RedirectToAction("Login");
         }
     }
