@@ -13,6 +13,7 @@ using System.IO;
 using AgrInov.Models;
 using AgrInov.Utils;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Identity.Client;
 namespace AgrInov.Controllers
 
 {
@@ -62,8 +63,8 @@ namespace AgrInov.Controllers
                 memoryStream.Position = 0;
 
                 
-                string connectionString = _configuration["AzureStorage:ConnectionString"];
-                string containerName = _configuration["AzureStorage:ContainerName"];
+                string connectionString = _configuration["AzureStorage:ConnectionString"] ?? Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING");
+                string containerName = _configuration["AzureStorage:ContainerName"] ?? Environment.GetEnvironmentVariable("AZURE_CONNECTION_STRING");
 
                 var blobContainerClient = new BlobContainerClient(connectionString, containerName);
                 await blobContainerClient.CreateIfNotExistsAsync();
@@ -84,37 +85,6 @@ namespace AgrInov.Controllers
         }
 
 
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-                return NotFound();
-
-            var imagem = await _context.Imagem.FindAsync(id);
-
-            if (imagem == null)
-                return NotFound();
-
-
-            return View();
-        }
-
-
-        [HttpPost]
-        public async Task<IActionResult> Edit(int id, Imagem imagem)
-        {
-            if (id != imagem.Id)
-                return NotFound();
-
-            if (ModelState.IsValid)
-            {
-                _context.Imagem.Update(imagem);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
-
-            }
-            return View();
-
-        }
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
