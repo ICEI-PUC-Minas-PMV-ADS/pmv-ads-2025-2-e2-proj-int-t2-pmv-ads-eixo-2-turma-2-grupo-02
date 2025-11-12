@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - AgrInov</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AgrInov.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="~/lib/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
     <div class="container-xxl p-0 px-lg-2">
-    @if (Context.Session.GetString("UsuarioId") != null)
+    @if (User.Identity.IsAuthenticated)
     {
         <div class="d-flex position-relative">
             <div id="agr-mobile-header" class="d-flex d-lg-none">
@@ -33,7 +34,7 @@
                             <i class="fa-solid fa-xmark"></i>
                         </div>
                     </div>
-                    <small class="text-muted">Olá, @Context.Session.GetString("UsuarioNome")</small>
+                    <small class="text-muted">Olá, @User.Identity.Name</small>
                 </div>
                 <nav class="flex-grow-1">
                     <ul class="nav flex-column">
@@ -90,6 +91,11 @@
                         <li class="nav-item">
                             <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Plantacoes" ? "active" : "")" asp-controller="Plantacoes" asp-action="Index">
                                 <i class="fa-solid fa-tree"></i> Plantações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Imagem" ? "active" : "")" asp-controller="Imagem" asp-action="Index">
+                                <i class="fas fa-images me-2"></i>Imagem
                             </a>
                         </li>
                     </ul>

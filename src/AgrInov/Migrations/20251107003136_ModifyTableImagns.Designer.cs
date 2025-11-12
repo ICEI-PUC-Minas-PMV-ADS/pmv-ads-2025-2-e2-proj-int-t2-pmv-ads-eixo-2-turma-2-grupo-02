@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251107003136_ModifyTableImagns")]
+    partial class ModifyTableImagns
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -132,88 +135,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Insumos");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.Meta", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CulturaId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DataFim")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataInicio")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CulturaId");
-
-                    b.ToTable("Metas");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.NotaFiscal", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Chave")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DataOperacao")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Nfe")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("NotaFiscal");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Plantacao", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<float>("AreaUtilizada")
-                        .HasColumnType("real");
-
-                    b.Property<DateTime>("DataFimPrevista")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataInicio")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Producao")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Saude")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Plantacoes");
-                });
-
             modelBuilder.Entity("AgrInov.Models.PropriedadeAgricula", b =>
                 {
                     b.Property<int>("Id")
@@ -282,41 +203,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.Venda", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CulturaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CulturaId");
-
-                    b.ToTable("Vendas");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Meta", b =>
-                {
-                    b.HasOne("AgrInov.Models.Cultura", "Cultura")
-                        .WithMany("Metas")
-                        .HasForeignKey("CulturaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cultura");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Usuario", b =>
                 {
                     b.HasOne("AgrInov.Models.Cargo", "Cargo")
@@ -324,24 +210,6 @@ namespace AgrInov.Migrations
                         .HasForeignKey("CargoId");
 
                     b.Navigation("Cargo");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Venda", b =>
-                {
-                    b.HasOne("AgrInov.Models.Cultura", "Cultura")
-                        .WithMany("Vendas")
-                        .HasForeignKey("CulturaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cultura");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Cultura", b =>
-                {
-                    b.Navigation("Metas");
-
-                    b.Navigation("Vendas");
                 });
 #pragma warning restore 612, 618
         }
