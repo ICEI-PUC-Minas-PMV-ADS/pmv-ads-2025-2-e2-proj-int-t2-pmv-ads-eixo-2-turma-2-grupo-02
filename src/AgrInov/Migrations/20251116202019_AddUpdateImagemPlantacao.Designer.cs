@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251116202019_AddUpdateImagemPlantacao")]
+    partial class AddUpdateImagemPlantacao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -359,12 +362,6 @@ namespace AgrInov.Migrations
                         .HasForeignKey("ImagemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("AgrInov.Models.Plantacao", null)
-                        .WithMany("ImagensPlantacoes")
-                        .HasForeignKey("PlantacaoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
@@ -375,11 +372,6 @@ namespace AgrInov.Migrations
                 });
 
             modelBuilder.Entity("AgrInov.Models.Imagem", b =>
-                {
-                    b.Navigation("ImagensPlantacoes");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Plantacao", b =>
                 {
                     b.Navigation("ImagensPlantacoes");
                 });

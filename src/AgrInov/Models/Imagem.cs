@@ -21,5 +21,7 @@ namespace AgrInov.Models
         public double Latitude { get; set; }
         public double Longitude { get; set; }       
         public DateTime DataCriacao { get; set; }
+
+        public ICollection<ImagemPlantacao> ImagensPlantacoes  { get; set; }
     }
 }

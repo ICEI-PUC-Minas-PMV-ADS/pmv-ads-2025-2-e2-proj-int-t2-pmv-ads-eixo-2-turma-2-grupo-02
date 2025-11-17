@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251116193825_AddUpdateTableImagemPlantacao")]
+    partial class AddUpdateTableImagemPlantacao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -316,8 +319,6 @@ namespace AgrInov.Migrations
 
                     b.HasKey("PlantacaoId", "ImagemId");
 
-                    b.HasIndex("ImagemId");
-
                     b.ToTable("ImagemPlantacao");
                 });
 
@@ -352,36 +353,11 @@ namespace AgrInov.Migrations
                     b.Navigation("Cultura");
                 });
 
-            modelBuilder.Entity("ImagemPlantacao", b =>
-                {
-                    b.HasOne("AgrInov.Models.Imagem", null)
-                        .WithMany("ImagensPlantacoes")
-                        .HasForeignKey("ImagemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AgrInov.Models.Plantacao", null)
-                        .WithMany("ImagensPlantacoes")
-                        .HasForeignKey("PlantacaoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
                     b.Navigation("Metas");
 
                     b.Navigation("Vendas");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Imagem", b =>
-                {
-                    b.Navigation("ImagensPlantacoes");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Plantacao", b =>
-                {
-                    b.Navigation("ImagensPlantacoes");
                 });
 #pragma warning restore 612, 618
         }

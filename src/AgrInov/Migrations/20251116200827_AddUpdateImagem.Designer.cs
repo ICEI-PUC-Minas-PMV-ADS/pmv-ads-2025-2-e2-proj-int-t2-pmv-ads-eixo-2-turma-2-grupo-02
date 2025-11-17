@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251116200827_AddUpdateImagem")]
+    partial class AddUpdateImagem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,6 +102,9 @@ namespace AgrInov.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ImagemId")
+                        .HasColumnType("int");
+
                     b.Property<double>("Latitude")
                         .HasColumnType("float");
 
@@ -106,6 +112,8 @@ namespace AgrInov.Migrations
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ImagemId");
 
                     b.ToTable("Imagens");
                 });
@@ -316,9 +324,14 @@ namespace AgrInov.Migrations
 
                     b.HasKey("PlantacaoId", "ImagemId");
 
-                    b.HasIndex("ImagemId");
-
                     b.ToTable("ImagemPlantacao");
+                });
+
+            modelBuilder.Entity("AgrInov.Models.Imagem", b =>
+                {
+                    b.HasOne("AgrInov.Models.Imagem", null)
+                        .WithMany("Imagens")
+                        .HasForeignKey("ImagemId");
                 });
 
             modelBuilder.Entity("AgrInov.Models.Meta", b =>
@@ -352,21 +365,6 @@ namespace AgrInov.Migrations
                     b.Navigation("Cultura");
                 });
 
-            modelBuilder.Entity("ImagemPlantacao", b =>
-                {
-                    b.HasOne("AgrInov.Models.Imagem", null)
-                        .WithMany("ImagensPlantacoes")
-                        .HasForeignKey("ImagemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AgrInov.Models.Plantacao", null)
-                        .WithMany("ImagensPlantacoes")
-                        .HasForeignKey("PlantacaoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
                     b.Navigation("Metas");
@@ -376,12 +374,7 @@ namespace AgrInov.Migrations
 
             modelBuilder.Entity("AgrInov.Models.Imagem", b =>
                 {
-                    b.Navigation("ImagensPlantacoes");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Plantacao", b =>
-                {
-                    b.Navigation("ImagensPlantacoes");
+                    b.Navigation("Imagens");
                 });
 #pragma warning restore 612, 618
         }
