@@ -37,6 +37,7 @@ namespace AgrInov.Controllers
         public async Task<IActionResult> Login(string email, string senha)
         {
             var usuario = await _context.Usuarios
+                .Include(u => u.Cargo)
                 .FirstOrDefaultAsync(u => u.Email == email);
 
             if (usuario == null)
@@ -53,7 +54,8 @@ namespace AgrInov.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.Nome),
                     new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Email, usuario.Email)
+                    new Claim(ClaimTypes.Email, usuario.Email),
+                    new Claim(ClaimTypes.Role, usuario.Cargo.Nome)
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
