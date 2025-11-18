@@ -18,8 +18,17 @@ namespace AgrInov.Controllers
         }
 
         // GET: Login
-        public IActionResult Login()
+        public async Task<IActionResult> Login()
         {
+            var temUsuarios = await _context.Usuarios.AnyAsync();
+            
+            // Se não há usuários, redireciona para cadastro
+            if (!temUsuarios)
+            {
+                return RedirectToAction("Cadastro");
+            }
+            
+            ViewBag.TemUsuarios = temUsuarios;
             return View();
         }
 
@@ -69,8 +78,15 @@ namespace AgrInov.Controllers
         }
 
         // GET: Cadastro
-        public IActionResult Cadastro()
+        public async Task<IActionResult> Cadastro()
         {
+            // Se já há usuários, bloqueia acesso ao cadastro
+            var temUsuarios = await _context.Usuarios.AnyAsync();
+            if (temUsuarios)
+            {
+                return RedirectToAction("Login");
+            }
+            
             return View();
         }
 
