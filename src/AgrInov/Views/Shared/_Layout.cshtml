@@ -35,6 +35,7 @@
                         </div>
                     </div>
                     <small class="text-muted">Olá, @User.Identity.Name</small>
+                    <small class="text-muted d-block">@User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value</small>
                 </div>
                 <nav class="flex-grow-1">
                     <ul class="nav flex-column">
@@ -43,61 +44,73 @@
                                 <i class="fas fa-home"></i> Home
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "PropriedadeAgricula" ? "active" : "")" asp-controller="PropriedadeAgricula" asp-action="Index">
-                                <i class="fa-solid fa-tractor"></i> Propriedade Agricula
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Usuarios" ? "active" : "")" asp-controller="Usuarios" asp-action="Index">
-                                <i class="fas fa-users"></i> Usuários
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Cargos" ? "active" : "")" asp-controller="Cargos" asp-action="Index">
-                                <i class="fas fa-briefcase"></i> Cargos
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Culturas" ? "active" : "")" asp-controller="Culturas" asp-action="Index">
-                                <i class="fas fa-seedling"></i> Culturas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Insumos" ? "active" : "")" asp-controller="Insumos" asp-action="Index">
-                                <i class="fas fa-boxes"></i> Insumos
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "AreasDePlantios" ? "active" : "")" asp-controller="AreasDePlantios" asp-action="Index">
-                                <i class="fas fa-map"></i> Área de plantio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Vendas" ? "active" : "")" asp-controller="Vendas" asp-action="Index">
-                                <i class="fa-solid fa-dollar-sign"></i> Vendas
-                             </a>
-                        </li>
+                        @if (User.IsInRole("TI"))
+                        {
                             <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Metas" ? "active" : "")" asp-controller="Metas" asp-action="Index">
-                                <i class="fa-solid fa-chart-pie"></i> Metas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "NotaFiscals" ? "active" : "")" asp-controller="NotaFiscals" asp-action="Index">
-                                <i class="fas fa-file-invoice-dollar"></i> Nota Fiscal
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Plantacoes" ? "active" : "")" asp-controller="Plantacoes" asp-action="Index">
-                                <i class="fa-solid fa-tree"></i> Plantações
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Imagem" ? "active" : "")" asp-controller="Imagem" asp-action="Index">
-                                <i class="fas fa-images me-2"></i>Imagem
-                            </a>
-                        </li>
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Usuarios" ? "active" : "")" asp-controller="Usuarios" asp-action="Index">
+                                    <i class="fas fa-users"></i> Usuários
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Cargos" ? "active" : "")" asp-controller="Cargos" asp-action="Index">
+                                    <i class="fas fa-briefcase"></i> Cargos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "PropriedadeAgricula" ? "active" : "")" asp-controller="PropriedadeAgricula" asp-action="Index">
+                                    <i class="fas fa-home"></i> Propriedade Agrícola
+                                </a>
+                            </li>
+                        }
+                        @if (User.IsInRole("TI") || User.IsInRole("Técnico Agrícola"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Imagem" ? "active" : "")" asp-controller="Imagem" asp-action="Index">
+                                    <i class="fas fa-images"></i> Imagens
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Culturas" ? "active" : "")" asp-controller="Culturas" asp-action="Index">
+                                    <i class="fas fa-seedling"></i> Culturas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "AreasDePlantios" ? "active" : "")" asp-controller="AreasDePlantios" asp-action="Index">
+                                    <i class="fas fa-map"></i> Área de plantio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Plantacoes" ? "active" : "")" asp-controller="Plantacoes" asp-action="Index">
+                                    <i class="fa-solid fa-tree"></i> Plantações
+                                </a>
+                            </li>
+                        }
+                        @if (User.IsInRole("TI") || User.IsInRole("Técnico Agrícola") || User.IsInRole("Gestor"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Insumos" ? "active" : "")" asp-controller="Insumos" asp-action="Index">
+                                    <i class="fas fa-boxes"></i> Insumos
+                                </a>
+                            </li>
+                        }
+                        @if (User.IsInRole("TI") || User.IsInRole("Gestor"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Vendas" ? "active" : "")" asp-controller="Vendas" asp-action="Index">
+                                    <i class="fa-solid fa-dollar-sign"></i> Vendas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Metas" ? "active" : "")" asp-controller="Metas" asp-action="Index">
+                                    <i class="fa-solid fa-chart-pie"></i> Metas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "NotaFiscals" ? "active" : "")" asp-controller="NotaFiscals" asp-action="Index">
+                                    <i class="fas fa-file-invoice-dollar"></i> Nota Fiscal
+                                </a>
+                            </li>
+                        }
                     </ul>
                 </nav>
                 <div class="border-top">
