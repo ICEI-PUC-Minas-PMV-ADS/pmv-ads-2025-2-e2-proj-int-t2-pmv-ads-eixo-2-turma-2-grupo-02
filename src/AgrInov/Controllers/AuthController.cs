@@ -54,9 +54,13 @@ namespace AgrInov.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.Nome),
                     new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Email, usuario.Email),
-                    new Claim(ClaimTypes.Role, usuario.Cargo.Nome)
+                    new Claim(ClaimTypes.Email, usuario.Email)
                 };
+                
+                if (usuario.Cargo != null)
+                {
+                    claims.Add(new Claim(ClaimTypes.Role, usuario.Cargo.Nome));
+                }
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
                 var principal = new ClaimsPrincipal(usuarioIdentity);
@@ -107,6 +111,16 @@ namespace AgrInov.Controllers
                     return View(usuario);
                 }
 
+                // Se é o primeiro usuário, cria cargo TI e atribui ao usuário
+                var cargoTI = await _context.Cargos.FirstOrDefaultAsync(c => c.Nome == "TI");
+                if (cargoTI == null)
+                {
+                    cargoTI = new Cargo { Nome = "TI", Descricao = "Tecnologia da Informação" };
+                    _context.Cargos.Add(cargoTI);
+                    await _context.SaveChangesAsync();
+                }
+                
+                usuario.CargoId = cargoTI.Id;
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Usuarios.Add(usuario);
                 await _context.SaveChangesAsync();
@@ -115,7 +129,8 @@ namespace AgrInov.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.Nome),
                     new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Email, usuario.Email)
+                    new Claim(ClaimTypes.Email, usuario.Email),
+                    new Claim(ClaimTypes.Role, "TI")
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
