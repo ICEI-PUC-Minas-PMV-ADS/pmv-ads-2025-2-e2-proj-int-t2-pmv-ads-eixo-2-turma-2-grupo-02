@@ -22,7 +22,11 @@ namespace AgrInov.Controllers
         // GET: Plantacoes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Plantacoes.ToListAsync());
+            var plantacoes = await _context.Plantacoes
+                .Include(p => p.Cultura)
+                .ToListAsync();
+
+            return View(plantacoes);
         }
 
         // GET: Plantacoes/Details/5
@@ -34,6 +38,7 @@ namespace AgrInov.Controllers
             }
 
             var plantacao = await _context.Plantacoes
+                .Include(p => p.Cultura)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (plantacao == null)
             {
@@ -46,6 +51,7 @@ namespace AgrInov.Controllers
         // GET: Plantacoes/Create
         public IActionResult Create()
         {
+            ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome");
             return View();
         }
 
@@ -54,7 +60,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude")] Plantacao plantacao)
+        public async Task<IActionResult> Create([Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude,CulturaId")] Plantacao plantacao)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +68,7 @@ namespace AgrInov.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome", plantacao.CulturaId);
             return View(plantacao);
         }
 
@@ -73,7 +80,10 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var plantacao = await _context.Plantacoes.FindAsync(id);
+            var plantacao = await _context.Plantacoes
+                .Include(p => p.Cultura)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
             if (plantacao == null)
             {
                 return NotFound();
@@ -97,7 +107,20 @@ namespace AgrInov.Controllers
             {
                 try
                 {
-                    _context.Update(plantacao);
+                    var plantacaoExistente = await _context.Plantacoes.FindAsync(id);
+
+                    if (plantacaoExistente == null)
+                    {
+                        return NotFound();
+                    }
+
+                    plantacaoExistente.DataInicio = plantacao.DataInicio;
+                    plantacaoExistente.DataFimPrevista = plantacao.DataFimPrevista;
+                    plantacaoExistente.AreaUtilizada = plantacao.AreaUtilizada;
+                    plantacaoExistente.Status = plantacao.Status;
+                    plantacaoExistente.Producao = plantacao.Producao;
+                    plantacaoExistente.Saude = plantacao.Saude;
+
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -125,6 +148,7 @@ namespace AgrInov.Controllers
             }
 
             var plantacao = await _context.Plantacoes
+                .Include(p => p.Cultura)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (plantacao == null)
             {
