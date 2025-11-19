@@ -22,6 +22,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Cultura)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.DataInicio)
             </th>
             <th>
@@ -45,6 +48,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cultura.Nome)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DataInicio)
             </td>
