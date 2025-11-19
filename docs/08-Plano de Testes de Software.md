@@ -165,7 +165,7 @@
 | Objetivo do Teste 	| Baixar Relatórios de Insumos |
 | Passos 	| - Vá atá aba de relatório <br> -  Clique na aba de Relatórios de Insumos<br> - Baixe o relatório clicando no campo de download <br>  |
 |Critério de Êxito | - O download feito com sucesso. |
-| **Caso de Teste** 	| **CT28 – Cadastrar perfil** 	|
+| **Caso de Teste** 	| **CT28 – Previsão do clima** 	|
 |	Requisito Associado 	|RF-018  A aplicação deve fornecer uma previsão do clima dos próximos 7 dias.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar a Plataforma <br> - Acessar a página de Relatório <br>- Clicar em relatório de Clima <br>|

@@ -18,8 +18,17 @@ namespace AgrInov.Controllers
         }
 
         // GET: Login
-        public IActionResult Login()
+        public async Task<IActionResult> Login()
         {
+            var temUsuarios = await _context.Usuarios.AnyAsync();
+            
+            // Se não há usuários, redireciona para cadastro
+            if (!temUsuarios)
+            {
+                return RedirectToAction("Cadastro");
+            }
+            
+            ViewBag.TemUsuarios = temUsuarios;
             return View();
         }
 
@@ -28,6 +37,7 @@ namespace AgrInov.Controllers
         public async Task<IActionResult> Login(string email, string senha)
         {
             var usuario = await _context.Usuarios
+                .Include(u => u.Cargo)
                 .FirstOrDefaultAsync(u => u.Email == email);
 
             if (usuario == null)
@@ -46,6 +56,11 @@ namespace AgrInov.Controllers
                     new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
                     new Claim(ClaimTypes.Email, usuario.Email)
                 };
+                
+                if (usuario.Cargo != null)
+                {
+                    claims.Add(new Claim(ClaimTypes.Role, usuario.Cargo.Nome));
+                }
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");
                 var principal = new ClaimsPrincipal(usuarioIdentity);
@@ -69,8 +84,15 @@ namespace AgrInov.Controllers
         }
 
         // GET: Cadastro
-        public IActionResult Cadastro()
+        public async Task<IActionResult> Cadastro()
         {
+            // Se já há usuários, bloqueia acesso ao cadastro
+            var temUsuarios = await _context.Usuarios.AnyAsync();
+            if (temUsuarios)
+            {
+                return RedirectToAction("Login");
+            }
+            
             return View();
         }
 
@@ -89,6 +111,16 @@ namespace AgrInov.Controllers
                     return View(usuario);
                 }
 
+                // Se é o primeiro usuário, cria cargo TI e atribui ao usuário
+                var cargoTI = await _context.Cargos.FirstOrDefaultAsync(c => c.Nome == "TI");
+                if (cargoTI == null)
+                {
+                    cargoTI = new Cargo { Nome = "TI", Descricao = "Tecnologia da Informação" };
+                    _context.Cargos.Add(cargoTI);
+                    await _context.SaveChangesAsync();
+                }
+                
+                usuario.CargoId = cargoTI.Id;
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Usuarios.Add(usuario);
                 await _context.SaveChangesAsync();
@@ -97,7 +129,8 @@ namespace AgrInov.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.Nome),
                     new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Email, usuario.Email)
+                    new Claim(ClaimTypes.Email, usuario.Email),
+                    new Claim(ClaimTypes.Role, "TI")
                 };
 
                 var usuarioIdentity = new ClaimsIdentity(claims, "login");

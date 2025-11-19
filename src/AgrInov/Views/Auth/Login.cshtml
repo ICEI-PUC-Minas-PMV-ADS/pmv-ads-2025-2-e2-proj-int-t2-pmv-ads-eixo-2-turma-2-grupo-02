@@ -43,12 +43,15 @@
                         </button>
                     </form>
                     
-                    <div class="text-center">
-                        <p class="text-muted mb-0">Não tem conta?</p>
-                        <a href="@Url.Action("Cadastro", "Auth")" class="text-decoration-none agr-green fw-bold">
-                            Cadastre-se aqui
-                        </a>
-                    </div>
+                    @if (ViewBag.TemUsuarios == false)
+                    {
+                        <div class="text-center">
+                            <p class="text-muted mb-0">Não tem conta?</p>
+                            <a href="@Url.Action("Cadastro", "Auth")" class="text-decoration-none agr-green fw-bold">
+                                Cadastre-se aqui
+                            </a>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
