@@ -22,5 +22,6 @@ namespace AgrInov.Models
 
         public ICollection<Venda> Vendas { get; set; }
         public ICollection<Meta> Metas { get; set; }
+        public ICollection<Insumo> Insumos { get; set; }
     }
 }
