@@ -67,6 +67,40 @@ Registro de evidência:
 
 https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
 
+<hr>
+
+| **Caso de Teste** 	| **CT28 – Previsão do clima** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-018 A aplicação deve fornecer uma previsão do clima dos próximos 5 dias. |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Tiago |
+
+Registro de evidência: 
+
+
+<hr>
+
+| **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-019 A aplicação deve permitir o gerenciamento da fazenda (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Tiago |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/2be37324-7ce0-4352-90a1-c206b5ee30f0
+
+<hr>
+
+| **Caso de Teste** 	| **CT30 – Atualizar propriedade agrícola** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-019 A aplicação deve permitir o gerenciamento da fazenda (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Tiago |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/2bccfb7e-eaac-4577-a09d-05382505651b
 
 
 
