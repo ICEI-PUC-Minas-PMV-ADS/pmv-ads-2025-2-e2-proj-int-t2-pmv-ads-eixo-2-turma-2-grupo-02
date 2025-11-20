@@ -1,3 +1,4 @@
+#nullable enable
 namespace AgrInov.Models
 {
     public class ErrorViewModel
@@ -7,3 +8,4 @@ namespace AgrInov.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+#nullable restore

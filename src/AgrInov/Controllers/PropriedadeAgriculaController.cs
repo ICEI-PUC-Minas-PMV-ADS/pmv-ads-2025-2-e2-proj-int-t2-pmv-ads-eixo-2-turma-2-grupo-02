@@ -12,14 +12,11 @@ using System.Text.Json;
 
 namespace AgrInov.Controllers
 {
-    public class PropriedadeAgriculaController : Controller
+    public class PropriedadeAgriculaController(AppDbContext context) : Controller
     {
-        private readonly AppDbContext _context;
-
-        public PropriedadeAgriculaController(AppDbContext context)
-        {
-            _context = context;
-        }
+        private readonly AppDbContext _context = context;
+        // Cache da configuração do JsonSerializerOptions
+        private static readonly JsonSerializerOptions _jsonOptions = new() { PropertyNameCaseInsensitive = true };
 
         // GET: PropriedadeAgricula/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -44,20 +41,18 @@ namespace AgrInov.Controllers
                     string apiKey = "69343337";
                     string url = $"https://api.hgbrasil.com/weather?key={apiKey}&city_name={cidadeCodificada}&format=json-cors";
 
-                    using (var httpClient = new HttpClient())
+                    using var httpClient = new HttpClient();
+                    var response = await httpClient.GetAsync(url);
+                    if (response.IsSuccessStatusCode)
                     {
-                        var response = await httpClient.GetAsync(url);
-                        if (response.IsSuccessStatusCode)
-                        {
-                            string json = await response.Content.ReadAsStringAsync();
-                            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-                            var dados = JsonSerializer.Deserialize<AgrInov.Models.PrevisaoRaiz>(json, options);
+                        string json = await response.Content.ReadAsStringAsync();
+                        // Usa a instância cacheada de JsonSerializerOptions
+                        var dados = JsonSerializer.Deserialize<AgrInov.Models.PrevisaoRaiz>(json, _jsonOptions);
 
-                            if (dados?.results?.forecast != null)
-                            {
-                                ViewBag.PrevisaoDoTempo = dados.results.forecast.Take(5).ToList();
-                                ViewBag.CidadeClima = dados.results.city_name;
-                            }
+                        if (dados?.results?.forecast != null)
+                        {
+                            ViewBag.PrevisaoDoTempo = dados.results.forecast.Take(5).ToList();
+                            ViewBag.CidadeClima = dados.results.city_name;
                         }
                     }
                 }
