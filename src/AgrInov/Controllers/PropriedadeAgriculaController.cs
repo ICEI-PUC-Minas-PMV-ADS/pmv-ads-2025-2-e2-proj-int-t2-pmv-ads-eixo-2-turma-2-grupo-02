@@ -53,7 +53,7 @@ namespace AgrInov.Controllers
                 return NotFound();
 
 
-            return View();
+            return View(propriedade);
         }
 
 
@@ -70,7 +70,7 @@ namespace AgrInov.Controllers
                 return RedirectToAction("Index");
 
             }
-            return View();
+            return View(propriedade);
 
         }
         public async Task<IActionResult> Details(int? id)
