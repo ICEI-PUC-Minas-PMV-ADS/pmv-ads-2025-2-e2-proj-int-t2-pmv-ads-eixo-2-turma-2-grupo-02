@@ -12,6 +12,27 @@
 
 <div id="map" class="agr-map"></div>
 
+@{
+    var alertas = new List<(string tipo, string icone, string titulo, string mensagem)>
+    {
+        ("warning", "fas fa-exclamation-triangle", "Alerta Climático", "Previsão de chuvas intensas nos próximos 3 dias. Considere proteger as mudas jovens."),
+        ("danger", "fas fa-bug", "Detecção de Pragas", "Possível presença de pulgões detectada na área. Recomenda-se inspeção imediata."),
+        ("info", "fas fa-thermometer-half", "Temperatura Elevada", "Temperaturas acima de 35°C previstas. Aumente a frequência de irrigação."),
+        ("warning", "fas fa-wind", "Ventos Fortes", "Ventos de até 60 km/h previstos. Verifique a estabilidade das estruturas de suporte."),
+        ("danger", "fas fa-spider", "Risco de Fungos", "Condições de umidade favoráveis ao desenvolvimento de fungos. Monitore sinais de doenças."),
+        ("success", "fas fa-sun", "Condições Ideais", "Condições climáticas favoráveis para o crescimento. Mantenha o cronograma de cuidados.")
+    };
+    
+    var random = new Random();
+    var alertaSelecionado = alertas[random.Next(alertas.Count)];
+}
+
+<div class="alert alert-@alertaSelecionado.tipo alert-dismissible fade show mb-4" role="alert">
+    <i class="@alertaSelecionado.icone me-2"></i>
+    <strong>@alertaSelecionado.titulo:</strong> @alertaSelecionado.mensagem
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+</div>
+
 <div class="mb-5">
     <div class="agr-card p-5">
         <dl class="row">
