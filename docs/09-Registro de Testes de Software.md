@@ -51,6 +51,10 @@ https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 
 Registro de evidência: 
 
+
+https://github.com/user-attachments/assets/fca322e0-1a35-46ff-848c-c313e7eeeb6f
+
+
 <ht>
 
 | **Caso de Teste** 	| **CT07 – Gerenciamento de Insumos** 	|
