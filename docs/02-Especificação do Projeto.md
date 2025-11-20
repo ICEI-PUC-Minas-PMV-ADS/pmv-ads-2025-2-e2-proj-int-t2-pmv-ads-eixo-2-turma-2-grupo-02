@@ -106,7 +106,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-015| A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). | MÉDIA |
 |RF-016| A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas. | MÉDIA |
 |RF-017| A aplicação deve permitir o download dos relatórios. | BAIXA |
-|RF-018| A aplicação deve fornecer uma previsão do clima dos próximos 7 dias. | BAIXA |
+|RF-018| A aplicação deve fornecer uma previsão do clima dos próximos 5 dias. | BAIXA |
 |RF-019| A aplicação deve permitir o gerenciamento da fazenda (CRUD). | ALTA |
 
 

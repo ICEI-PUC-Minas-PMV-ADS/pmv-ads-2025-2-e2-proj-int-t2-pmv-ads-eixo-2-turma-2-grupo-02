@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251120180139_AddFieldRotacaoOnTableCultura")]
+    partial class AddFieldRotacaoOnTableCultura
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -125,12 +128,6 @@ namespace AgrInov.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CulturaId")
-                        .HasColumnType("int");
-
-                    b.Property<float>("Custo")
-                        .HasColumnType("real");
-
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
@@ -140,12 +137,7 @@ namespace AgrInov.Migrations
                     b.Property<string>("UnidadeMedida")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("Utilizado")
-                        .HasColumnType("real");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("CulturaId");
 
                     b.ToTable("Insumos");
                 });
@@ -329,15 +321,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Vendas");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.Insumo", b =>
-                {
-                    b.HasOne("AgrInov.Models.Cultura", "Cultura")
-                        .WithMany("Insumos")
-                        .HasForeignKey("CulturaId");
-
-                    b.Navigation("Cultura");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Meta", b =>
                 {
                     b.HasOne("AgrInov.Models.Cultura", "Cultura")
@@ -380,8 +363,6 @@ namespace AgrInov.Migrations
 
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
-                    b.Navigation("Insumos");
-
                     b.Navigation("Metas");
 
                     b.Navigation("Vendas");
