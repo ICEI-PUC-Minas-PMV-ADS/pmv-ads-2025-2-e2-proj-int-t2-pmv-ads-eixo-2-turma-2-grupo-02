@@ -15,5 +15,6 @@ namespace AgrInov.Models
         public int Producao { get; set; }
         public string Saude  { get; set; }
 
+        public ICollection<ImagemPlantacao> ImagensPlantacoes  { get; set; }
     }
 }
