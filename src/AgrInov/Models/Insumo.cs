@@ -13,5 +13,13 @@ namespace AgrInov.Models
         public float Quantidade { get; set; }
         [DisplayName("Unidade Medida")]
         public string UnidadeMedida { get; set; }
+        public float Utilizado { get; set; }
+        public float Custo { get; set; }
+
+        [DisplayName("Cultura")]
+        public int? CulturaId { get; set; }
+
+        [ForeignKey("CulturaId")]
+        public Cultura? Cultura { get; set; }
     }
 }

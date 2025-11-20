@@ -22,7 +22,7 @@ namespace AgrInov.Controllers
         // GET: Insumos
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Insumos.ToListAsync());
+            return View(await (_context.Insumos.Include(v => v.Cultura)).ToListAsync());
         }
 
         // GET: Insumos/Details/5
@@ -33,8 +33,7 @@ namespace AgrInov.Controllers
                 return NotFound();
             }
 
-            var insumos = await _context.Insumos
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var insumos = await (_context.Insumos.Include(v => v.Cultura)).FirstOrDefaultAsync(m => m.Id == id);
             if (insumos == null)
             {
                 return NotFound();
@@ -46,6 +45,7 @@ namespace AgrInov.Controllers
         // GET: Insumos/Create
         public IActionResult Create()
         {
+            ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome");
             return View();
         }
 
@@ -54,7 +54,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,UnidadeMedida")] Insumo insumos)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,UnidadeMedida,Utilizado,Custo,CulturaId")] Insumo insumos)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +62,7 @@ namespace AgrInov.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome", insumos.CulturaId);
             return View(insumos);
         }
 
@@ -78,6 +79,7 @@ namespace AgrInov.Controllers
             {
                 return NotFound();
             }
+            ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome", insumos.CulturaId);
             return View(insumos);
         }
 
@@ -86,7 +88,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Quantidade,UnidadeMedida")] Insumo insumos)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Quantidade,UnidadeMedida,Utilizado,Custo,CulturaId")] Insumo insumos)
         {
             if (id != insumos.Id)
             {
@@ -113,6 +115,8 @@ namespace AgrInov.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome", insumos.CulturaId);
+
             return View(insumos);
         }
 
