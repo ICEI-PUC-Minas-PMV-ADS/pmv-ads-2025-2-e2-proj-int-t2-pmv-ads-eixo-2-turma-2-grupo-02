@@ -114,7 +114,7 @@ body {
     width: 250px;
     background-color: #f8f9fa;
     border-right: 1px solid #dee2e6;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 #agr-sidebar .nav-link {
