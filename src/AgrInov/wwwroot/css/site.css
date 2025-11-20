@@ -64,6 +64,31 @@ body {
     opacity: 0.7;
 }
 
+.agr-map .metric-selector {
+    padding: 8px 10px;
+    font-size: 13px;
+    background: white;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.agr-map .metric-selector a {
+    text-decoration: none;
+    color: #555;
+    padding: 2px 4px;
+    transition: all 0.2s;
+}
+
+.agr-map .metric-selector a:hover {
+    color: #28a745;
+}
+
+.agr-map .metric-selector a.active {
+    color: #28a745;
+    font-weight: bold;
+}
+
 /* Mobile Header Styles */
 #agr-mobile-header {
     position: fixed;
