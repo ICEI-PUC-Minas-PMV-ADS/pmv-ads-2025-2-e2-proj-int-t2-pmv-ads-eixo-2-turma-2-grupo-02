@@ -85,7 +85,9 @@ https://github.com/user-attachments/assets/00e0b0ab-9295-4357-9f0a-4816838a686e
 
 Registro de evidência: 
 
-aaaaaaaaaaaaaaaa
+https://github.com/user-attachments/assets/efb60780-3d0c-4a2d-abfe-1bb4a940c77d
+
+
 <hr>
 
 | **Caso de Teste** 	| **CT21 – Atualizar Meta de Produção**	|
@@ -96,7 +98,7 @@ aaaaaaaaaaaaaaaa
 
 Registro de evidência: 
 
-aaaaaaaaaaaaaaaa
+https://github.com/user-attachments/assets/df5423ea-8733-48a7-92aa-3b17e010af58
 <hr>
 
 
@@ -110,7 +112,8 @@ aaaaaaaaaaaaaaaa
 
 Registro de evidência: 
 
-aaaaaaaaaaaaaaaa
+https://github.com/user-attachments/assets/d66a7cca-24ad-416b-b25a-4b442ebfe39b
+
 <hr>
 
 
