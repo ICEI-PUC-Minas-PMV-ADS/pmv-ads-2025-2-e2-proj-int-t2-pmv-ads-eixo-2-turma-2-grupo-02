@@ -25,5 +25,6 @@ namespace AgrInov.Models
         [DisplayName("Localização")]
         public string Localizacao { get; set; }
 
+        public ICollection<ImagemPropriedade> ImagemPropriedade  { get; set; }
     }
 }

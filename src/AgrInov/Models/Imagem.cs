@@ -23,5 +23,7 @@ namespace AgrInov.Models
         public DateTime DataCriacao { get; set; }
 
         public ICollection<ImagemPlantacao> ImagensPlantacoes  { get; set; }
+
+        public ICollection<ImagemPropriedade> ImagemPropriedade  { get; set; }
     }
 }
