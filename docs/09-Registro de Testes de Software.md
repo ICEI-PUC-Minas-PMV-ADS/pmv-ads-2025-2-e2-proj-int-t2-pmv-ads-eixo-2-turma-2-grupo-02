@@ -43,6 +43,20 @@ https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 
 <hr>
 
+| **Caso de Teste** 	| **CT06 – Saúde das plantações** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-006	- A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência: 
+
+
+https://github.com/user-attachments/assets/fca322e0-1a35-46ff-848c-c313e7eeeb6f
+
+
+<ht>
+
 | **Caso de Teste** 	| **CT07 – Gerenciamento de Insumos** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-003 – A aplicação deve permitir o gerenciamento de Insumos (CRUD). |
