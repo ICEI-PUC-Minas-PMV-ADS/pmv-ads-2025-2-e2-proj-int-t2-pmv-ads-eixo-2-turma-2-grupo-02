@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/9e6212f4-088b-4568-9bc0-d4bb89934e2a
 
 
 <hr>
-<hr>
+
 
 | **Caso de Teste** | **CT02 – Efetuar login** |
 |:---:|:---:|
@@ -68,18 +68,122 @@ Registro de evidência:
 https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
 
 
+
+
+<hr>
+
+| **Caso de Teste** 	| **CT19 – Recomendações sobre otimização da produção**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-014	- A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
+
+Registro de evidência: 
+
+
+https://github.com/user-attachments/assets/00e0b0ab-9295-4357-9f0a-4816838a686e
+
+
+
+
 <hr>
 
 
-## Relatório de testes de software
 
-Apresente e discuta detalhadamente os resultados obtidos nos testes realizados, destacando tanto os pontos fortes quanto as fragilidades identificadas na solução. Explique como os aspectos positivos contribuem para o desempenho e a usabilidade do sistema, e como os pontos fracos impactam sua eficácia.
 
-Descreva as principais falhas detectadas durante os testes, fornecendo exemplos concretos e evidências que sustentem essas observações. Explicite os impactos dessas falhas na experiência do usuário, na funcionalidade do sistema e nos objetivos do projeto.
+| **Caso de Teste** 	| **CT20 – Cadastrar Meta de Produção**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
 
-Com base nessas análises, detalhe as estratégias que o grupo pretende adotar para corrigir as deficiências e aprimorar a solução nas próximas iterações. Inclua ações específicas, como ajustes no código, modificações na interface, otimizações de desempenho ou melhorias na acessibilidade e usabilidade.
+Registro de evidência: 
 
-Por fim, apresente e/ou proponha as melhorias a partir dos testes realizados, destacando os ganhos obtidos e como essas alterações contribuem para a evolução do projeto.
+https://github.com/user-attachments/assets/efb60780-3d0c-4a2d-abfe-1bb4a940c77d
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+
+<hr>
+
+| **Caso de Teste** 	| **CT21 – Atualizar Meta de Produção**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/df5423ea-8733-48a7-92aa-3b17e010af58
+<hr>
+
+
+
+
+| **Caso de Teste** 	| **CT22 – Remover Meta de Produção**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/d66a7cca-24ad-416b-b25a-4b442ebfe39b
+
+<hr>
+
+
+| **Caso de Teste** 	| **CT23 – Visualizar Gráfico**	|
+|:---:	|:---:	|
+|	Requisito Associado 	|  RF-016 A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas.||
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
+
+Registro de evidência: 
+
+aaaaaaaaaaaaaaaa
+<hr>
+
+
+
+| **Caso de Teste** | **CT24 – Download Gráfico 1** |
+|:---:|:---:|
+| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
+| Resultados obtidos | Aprovado |
+| Responsável pela execução do caso de Teste | Pamela |
+
+Registro de evidência:
+
+aaaaaaaaaaaaaaaa
+<hr>
+
+| **Caso de Teste** | **CT25 – Download Gráfico 2** |
+|:---:|:---:|
+| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
+| Resultados obtidos | Aprovado |
+| Responsável pela execução do caso de Teste | Pamela |
+
+Registro de evidência:
+
+aaaaaaaaaaaaaaaa
+<hr>
+
+| **Caso de Teste** | **CT26 – Download Gráfico 3** |
+|:---:|:---:|
+| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
+| Resultados obtidos | Aprovado |
+| Responsável pela execução do caso de Teste | Pamela |
+
+Registro de evidência:
+
+aaaaaaaaaaaaaaaa
+<hr>
+
+| **Caso de Teste** | **CT27 – Download Gráfico 4** |
+|:---:|:---:|
+| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
+| Resultados obtidos | Aprovado |
+| Responsável pela execução do caso de Teste | Pamela |
+
+Registro de evidência:
+
+aaaaaaaaaaaaaaaa
+<hr>

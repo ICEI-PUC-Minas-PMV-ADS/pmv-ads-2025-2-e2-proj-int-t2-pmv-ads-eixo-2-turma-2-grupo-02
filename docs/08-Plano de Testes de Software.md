@@ -123,22 +123,22 @@
 | **Caso de Teste** 	| **CT19 – Recomendações sobre otimização da produção**	|
 |Requisito Associado | RF-014	- A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). |
 | Objetivo do Teste 	| Verificar se o usuário consegue visualizar as recomendações para otmização da produção |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como técnico agrícola <br> - Clicar no botão "Recomendação para otimização da produção" <br> -  Visualizar as recomendações. | 
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/Plantacoes/Index<br> - Faça login como técnico agrícola <br> - Clicar no módulo de Plantações <br> - Clicar em alguma plantação <br> - Deverá ser exibido os campos preenchidos com a as boas práticas e as recomendações da rotação de cultura | 
 |Critério de Êxito | - As recomendações de otimizações serem exibidas. |
 | **Caso de Teste** 	| **CT20 – Cadastrar meta de produção**	|
 |Requisito Associado | RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
 | Objetivo do Teste 	| Verificar se o usuário consegue cadastrar uma meta de produção |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Clicar em "CADASTRAR META DE PRODUÇÃO" <br> - Preencher os campos obrigatórios (Data Início, Data Fim, Cultura e Quantidade) <br> - Clicar em "Cadastrar" | 
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/Metas/Index<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Clicar em "CADASTRAR META DE PRODUÇÃO" <br> - Preencher os campos obrigatórios (Data Início, Data Fim, Cultura e Quantidade) <br> - Clicar em "Cadastrar" | 
 |Critério de Êxito | - A meta é cadastrada com sucesso. |
 | **Caso de Teste** 	| **CT21 – Atualizar meta de produção**	|
 |Requisito Associado | RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
 | Objetivo do Teste 	| Verificar se o usuário consegue atualizar uma meta de produção cadastrada |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Selecionar uma meta de produção cadastrada e clicar em "Atualizar" <br> - Alterar algum dos campos e clicar em "Atualizar" | 
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/Metas/Index<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Selecionar uma meta de produção cadastrada e clicar em "Atualizar" <br> - Alterar algum dos campos e clicar em "Atualizar" | 
 |Critério de Êxito | - A meta é atualizada com sucesso. |
 | **Caso de Teste** 	| **CT22 – Remover meta de produção**	|
 |Requisito Associado | RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
 | Objetivo do Teste 	| Verificar se o usuário consegue remover uma meta de produção cadastrada |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Selecionar a meta de produção criada e clicar em "REMOVER" <br> - Clicar em "Confirmar" no modal de remoção | 
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/Metas/Index<br> - Faça login como gestor <br> - Clicar no botão "Gerenciar metas de  produção" <br> - Selecionar a meta de produção criada e clicar em "REMOVER" <br> - Clicar em "Confirmar" no modal de remoção | 
 |Critério de Êxito | - A meta é removida com sucesso. |
 | **Caso de Teste** 	| **CT23 – Visualizar Gráfico** 	|
 |	Requisito Associado 	| RF-016 A aplicação deve permitir visualizar relatórios comparativos entre o desempenho real e as metas estabelecidas.|
