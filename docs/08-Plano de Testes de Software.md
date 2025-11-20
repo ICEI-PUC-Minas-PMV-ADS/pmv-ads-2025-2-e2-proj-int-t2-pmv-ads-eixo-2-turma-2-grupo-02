@@ -30,12 +30,12 @@
 
 ---
 
-| **Caso de Teste** | **CT04 – Selecionar cultura em uma plantação** |
+| **Caso de Teste** | **CT04 – Cadastrar cultura** |
 |:---:|:---:|
 | Requisito Associado | RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
-| Objetivo do Teste | Garantir que o usuário consiga cadastrar uma cultura a uma plantação. |
-| Passos |  - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/ <br> - Efetuar login <br> - Selecionar “Plantações” <br> - Clique em "cadastrar nova plantação" <br> - Cadastre a plantação e selecione a cultura <br> - Clicar em “Salvar” |
-| Critério de Êxito | A plantação deve ser cadastrada e a cultura vinculado corretamente . |
+| Objetivo do Teste | Garantir que o usuário consiga cadastrar uma cultura. |
+| Passos |  - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/ <br> - Efetuar login <br> - Selecionar “Culturas” <br> - Clicar em "Cadastrar nova cultura" <br> - Preencher os campos "Nome", "Boas práticas" e "Recomendação de rotação. <br> - Clicar em “Cadastrar” |
+| Critério de Êxito | A cultura deve ser cadastrada com sucesso . |
 |   |   |
 | **Caso de Teste** 	| **CT05 – Rotação de cultura** 	|
 |	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
