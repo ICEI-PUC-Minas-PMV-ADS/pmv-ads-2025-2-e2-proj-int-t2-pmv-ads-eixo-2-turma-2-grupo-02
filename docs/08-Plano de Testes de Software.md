@@ -123,7 +123,7 @@
 | **Caso de Teste** 	| **CT19 – Recomendações sobre otimização da produção**	|
 |Requisito Associado | RF-014	- A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). |
 | Objetivo do Teste 	| Verificar se o usuário consegue visualizar as recomendações para otmização da produção |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Faça login como técnico agrícola <br> - Clicar no botão "Recomendação para otimização da produção" <br> -  Visualizar as recomendações. | 
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/Plantacoes/Index<br> - Faça login como técnico agrícola <br> - Clicar no módulo de Plantações <br> - Clicar em alguma plantação <br> - Deverá ser exibido os campos preenchidos com a as boas práticas e as recomendações da rotação de cultura | 
 |Critério de Êxito | - As recomendações de otimizações serem exibidas. |
 | **Caso de Teste** 	| **CT20 – Cadastrar meta de produção**	|
 |Requisito Associado | RF-015	- A aplicação deve permitir o gerenciamento de metas de produção para cada área de plantio e safra (CRUD). |
