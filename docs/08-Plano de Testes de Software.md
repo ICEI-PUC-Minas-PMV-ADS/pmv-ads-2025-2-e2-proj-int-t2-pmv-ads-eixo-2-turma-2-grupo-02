@@ -4,7 +4,7 @@
 |:---:|:---:|
 | Requisito Associado | RF-001 – A aplicação deve permitir o gerenciamento de contas de usuários e seus níveis de permissão (CRUD). |
 | Objetivo do Teste | Verificar se o administrador consegue cadastrar novos usuários. |
-| Passos | - Acessar a plataforma <br> - Efetuar login como administrador <br> - Acessar menu “Gerenciar Usuários” <br> - Clicar em “Novo Usuário” <br> - Preencher os dados obrigatórios (nome, email, senha, nível de permissão) <br> - Clicar em “Salvar” |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Efetuar login como administrador <br> - Acessar menu “Gerenciar Usuários” <br> - Clicar em “Novo Usuário” <br> - Preencher os dados obrigatórios (nome, email, senha, nível de permissão) <br> - Clicar em “Salvar” |
 | Critério de Êxito | O usuário deve ser cadastrado e listado com seu respectivo nível de permissão. |
 |   |   |
 
@@ -14,7 +14,7 @@
 |:---:|:---:|
 | Requisito Associado | RF-002 – A aplicação deve permitir que os usuários façam login. |
 | Objetivo do Teste | Verificar se o usuário consegue acessar o sistema com credenciais válidas. |
-| Passos | - Acessar a tela inicial <br> - Informar email e senha válidos <br> - Clicar em “Entrar” |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/ - Acessar a tela inicial <br> - Informar email e senha válidos <br> - Clicar em “Entrar” |
 | Critério de Êxito | O login deve ser realizado e o usuário direcionado à tela principal da aplicação. |
 |   |   |
 
@@ -24,7 +24,7 @@
 |:---:|:---:|
 | Requisito Associado | RF-003 – A aplicação deve permitir o gerenciamento das áreas de plantio (CRUD). |
 | Objetivo do Teste | Garantir que o usuário consiga cadastrar uma nova propriedade agrícola. |
-| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Acessar menu “Gerenciar Áreas de Plantio” <br> - Clicar em “Área de Plnatio” <br> - Preencher dados obrigatórios (Data ínicio, Data Fim prevista, Área Utilizadas e Status) <br> - Clicar em “Salvar” |
+| Passos |  - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/  <br> - Efetuar login <br> - Acessar menu “Gerenciar Áreas de Plantio” <br> - Clicar em “Área de Plnatio” <br> - Preencher dados obrigatórios (Data ínicio, Data Fim prevista, Área Utilizadas e Status) <br> - Clicar em “Salvar” |
 | Critério de Êxito | A área de plantio deve ser cadastrada corretamente e listada no sistema. |
 |   |   |
 
@@ -34,26 +34,26 @@
 |:---:|:---:|
 | Requisito Associado | RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
 | Objetivo do Teste | Garantir que o usuário consiga cadastrar uma nova cultura vinculada a uma área de plantio. |
-| Passos | - Acessar a plataforma <br> - Efetuar login <br> - Selecionar “Gerenciar Áreas de Plantio” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
+| Passos |  - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/  - Efetuar login <br> - Selecionar “Gerenciar Áreas de Plantio” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
 | Critério de Êxito | A cultura deve ser cadastrada e vinculada corretamente à área de plantio selecionada. |
 |   |   |
 | **Caso de Teste** 	| **CT05 – Rotação de cultura** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
 | Objetivo do Teste 	| Verificar se a aplicação fornece recomendações corretas de rotação de cultura |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Efetuar login <br> - Clicar em "Gerenciar Área de Plantio" <br> - Clicar em "Visualizar" <br> - Clicar em "Visualizar" <br> - Visualizar o campo "Recomendações de rotação de cultura" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Efetuar login <br> - Clicar em "Gerenciar Área de Plantio" <br> - Clicar em "Visualizar" <br> - Clicar em "Visualizar" <br> - Visualizar o campo "Recomendações de rotação de cultura" |
 |Critério de Êxito | - As recomendações foram feitas de forma correta |
 |  	|  	|
 | **Caso de Teste** 	| **CT06 – Saúde das plantações**	|
 |Requisito Associado | RF-006	- A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos). |
 | Objetivo do Teste 	| Verificar se o sistema fornece informações corretas sobre a saúde das plantações |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Efetuar login <br> - Clicar em "Gerenciar Área de Plantio" <br> - Clicar em "Visualizar" <br> - Clicar em "Visualizar" <br> - Visualizar o campo  "Saúde da plantação" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Efetuar login <br> - Clicar em "Gerenciar Área de Plantio" <br> - Clicar em "Visualizar" <br> - Clicar em "Visualizar" <br> - Visualizar o campo  "Saúde da plantação" |
 |Critério de Êxito | - As informações foram passadas de forma correta |
 |  	|  	|
 | **Caso de Teste** 	| **CT07 – Gerenciamento de insumos**	|
 |Requisito Associado | RF-007	- A aplicação deve permitir o gerenciamento do registro de aplicação de insumos (fertilizantes, sementes, água, defensivos) em cada área de plantio (CRUD). |
 | Objetivo do Teste 	| Verificar se o usuário consegue gerenciar corretamente os insumos |
-| Passos 	| - Acessar o endereço do site<br> - Efetuar login<br>  - clicar em "Gerenciar compra de insumos"<br> - Preencher os campos obrigatórios(Nome, Quantidade, Unidade de medida) <br> - Clicar em "Cadastrar"<br> - Clicar em "Atualizar"<br> - Atualizar os dados desejados<br> - Clicar em "Atualizar"<br> - Clicar em "Remover"<br> - Clicar em "Confirmar"<br> |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Efetuar login <br> - Clicar em "Gerenciar compra de insumos" <br> - Preencher os campos obrigatórios (Nome, Quantidade, Unidade de medida) <br> - Clicar em "Cadastrar" <br> - Clicar em "Atualizar" <br> - Atualizar os dados desejados <br> - Clicar em "Atualizar" <br> - Clicar em "Remover" <br> - Clicar em "Confirmar" |
 |Critério de Êxito | - O gerenciamento foi realizado com sucesso |
 
 
@@ -91,17 +91,17 @@
 | **Caso de Teste**       | **CT13 – Cadastrar uma nova venda**                                                                                                                                                          |
 | **Requisito Associado** | RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD).                                                                                           |
 | **Objetivo do Teste**   | Verificar se a aplicação permite cadastrar uma nova venda corretamente.                                                                                                                      |
-| **Passos**              | - Acessar o módulo **Gerenciar Vendas** <br> - Clicar em **Cadastrar Venda** <br> - Preencher os campos obrigatórios (receita, custo, plantio, data operação, chave de acesso NF-e e quantidade) <br> - Clicar em **Cadastrar** |
+| **Passos**              | - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Acessar o módulo **Gerenciar Vendas** <br> - Clicar em **Cadastrar Venda** <br> - Preencher os campos obrigatórios (receita, custo, plantio, data operação, chave de acesso NF-e e quantidade) <br> - Clicar em **Cadastrar** |
 | **Critério de Êxito**   | - A nova venda é exibida na listagem com os dados informados.                                                                                                                                |
 | **Caso de Teste**       | **CT14 – Atualizar uma venda existente**                                                                                                                                                  |
 | **Requisito Associado** | RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD).                                                                                        |
 | **Objetivo do Teste**   | Verificar se a aplicação permite atualizar as informações de uma venda existente.                                                                                                         |
-| **Passos**              | - Acessar o módulo **Gerenciar Vendas** <br> - Selecionar uma venda já cadastrada <br> - Clicar em **Atualizar** <br> - Alterar algum campo (ex.: quantidade ou plantio) <br> - Clicar em **Atualizar** |
+| **Passos**              | - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Acessar o módulo **Gerenciar Vendas** <br> - Selecionar uma venda já cadastrada <br> - Clicar em **Atualizar** <br> - Alterar algum campo (ex.: quantidade ou plantio) <br> - Clicar em **Atualizar** |
 | **Critério de Êxito**   | - A venda é atualizada e a alteração aparece corretamente na listagem.                                                                                                                    |
 | **Caso de Teste**       | **CT15 – Remover uma venda**                                                                                                             |
 | **Requisito Associado** | RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD).                                       |
 | **Objetivo do Teste**   | Verificar se a aplicação permite remover uma venda cadastrada.                                                                           |
-| **Passos**              | - Acessar o módulo **Gerenciar Vendas** <br> - Selecionar uma venda da listagem <br> - Clicar em **Remover** <br> - Confirmar a exclusão |
+| **Passos**              | - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Acessar o módulo **Gerenciar Vendas** <br> - Selecionar uma venda da listagem <br> - Clicar em **Remover** <br> - Confirmar a exclusão |
 | **Critério de Êxito**   | - A venda selecionada não aparece mais na listagem.                                                                                      |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 | **Caso de Teste**	| **CT16 – Visualizar dados de safras anteriores**	|
