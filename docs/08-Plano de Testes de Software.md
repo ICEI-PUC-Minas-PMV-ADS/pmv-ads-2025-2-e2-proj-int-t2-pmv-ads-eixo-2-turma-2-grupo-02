@@ -14,7 +14,7 @@
 |:---:|:---:|
 | Requisito Associado | RF-002 – A aplicação deve permitir que os usuários façam login. |
 | Objetivo do Teste | Verificar se o usuário consegue acessar o sistema com credenciais válidas. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/ - Acessar a tela inicial <br> - Informar email e senha válidos <br> - Clicar em “Entrar” |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/ <br>- Acessar a tela inicial <br> - Informar email e senha válidos <br> - Clicar em “Entrar” |
 | Critério de Êxito | O login deve ser realizado e o usuário direcionado à tela principal da aplicação. |
 |   |   |
 
@@ -30,18 +30,17 @@
 
 ---
 
-| **Caso de Teste** | **CT04 – Cadastrar cultura em uma área de plantio** |
+| **Caso de Teste** | **CT04 – Selecionar cultura em uma plantação** |
 |:---:|:---:|
 | Requisito Associado | RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
-| Objetivo do Teste | Garantir que o usuário consiga cadastrar uma nova cultura vinculada a uma área de plantio. |
-| Passos |  - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/  - Efetuar login <br> - Selecionar “Gerenciar Áreas de Plantio” <br> - Escolher a área de plantio desejada <br> - Clicar em “Adicionar Cultura” <br> - Preencher informações (espécie, variedade, data de plantio) <br> - Clicar em “Salvar” |
-| Critério de Êxito | A cultura deve ser cadastrada e vinculada corretamente à área de plantio selecionada. |
+| Objetivo do Teste | Garantir que o usuário consiga cadastrar uma cultura a uma plantação. |
+| Passos |  - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/ <br> - Efetuar login <br> - Selecionar “Plantações” <br> - Clique em "cadastrar nova plantação" <br> - Cadastre a plantação e selecione a cultura <br> - Clicar em “Salvar” |
+| Critério de Êxito | A plantação deve ser cadastrada e a cultura vinculado corretamente . |
 |   |   |
 | **Caso de Teste** 	| **CT05 – Rotação de cultura** 	|
-|:---:	|:---:	|
 |	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
 | Objetivo do Teste 	| Verificar se a aplicação fornece recomendações corretas de rotação de cultura |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Efetuar login <br> - Clicar em "Gerenciar Área de Plantio" <br> - Clicar em "Visualizar" <br> - Clicar em "Visualizar" <br> - Visualizar o campo "Recomendações de rotação de cultura" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Efetuar login <br> - Clicar em "Plantações" <br> - Clicar em "Visualizar" em uma das plantações <br> - Visualizar o campo "Recomendação de rotação" |
 |Critério de Êxito | - As recomendações foram feitas de forma correta |
 |  	|  	|
 | **Caso de Teste** 	| **CT06 – Saúde das plantações**	|
