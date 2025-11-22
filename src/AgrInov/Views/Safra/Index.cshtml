@@ -1,0 +1,93 @@
+@model AgrInov.Models.RelatorioSafraPageViewModel
+
+<h2 class="mb-4">Relatório de Safras</h2>
+
+<form method="get" asp-action="Index" class="mb-4">
+    <div class="row">
+        <div class="col-md-4">
+            <label class="form-label fw-bold">Selecione a cultura</label>
+            <select name="culturaId" class="form-select" onchange="this.form.submit()">
+                <option value="">-- Escolha a cultura --</option>
+                @foreach (var cultura in Model.Culturas)
+                {
+                    <option value="@cultura.Id" selected="@(Model.CulturaSelecionadaId == cultura.Id)">
+                        @cultura.Nome
+                    </option>
+                }
+            </select>
+        </div>
+    </div>
+</form>
+
+@if (Model.Resultados != null && Model.Resultados.Any())
+{
+    <h4 class="mb-3">Evolução da produção</h4>
+
+    <!-- GRÁFICO -->
+    <div class="card p-4 mb-4">
+        <canvas id="graficoProducao"></canvas>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Ano</th>
+                <th>Produção</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model.Resultados)
+            {
+                <tr>
+                    <td>@s.Ano</td>
+                    <td>@s.Producao</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Model.CulturaSelecionadaId != null)
+{
+    <p>Nenhum dado encontrado para esta cultura.</p>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const dados = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Resultados));
+
+        const anos = dados.map(x => x.Ano);
+        const producao = dados.map(x => x.Producao);
+
+        const ctx = document.getElementById('graficoProducao');
+
+        if (ctx && dados.length > 0) {
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: anos,
+                    datasets: [{
+                        label: 'Produção (kg)',
+                        data: producao,
+                        borderWidth: 3,
+                        borderColor: 'green',
+                        backgroundColor: 'rgba(0, 128, 0, 0.2)',
+                        fill: true,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                    }
+                }
+            });
+
+        }
+    </script>
+}
