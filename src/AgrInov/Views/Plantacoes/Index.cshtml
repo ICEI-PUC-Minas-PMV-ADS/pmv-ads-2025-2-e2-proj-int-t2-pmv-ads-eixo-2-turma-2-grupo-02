@@ -46,37 +46,38 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cultura.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataInicio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataFimPrevista)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AreaUtilizada)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Producao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Saude)
-            </td>
-            <td>
-                <div class="d-flex gap-2">
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-edit me-1"></i>Atualizar</a>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm"><i class="fas fa-eye me-1"></i>Visualizar</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fas fa-trash me-1"></i>Remover</a>
-                </div>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cultura.Nome)
+                </td>
+                <td>
+                    @item.DataInicio.ToShortDateString()
+                </td>
+                <td>
+                    @item.DataFimPrevista.ToShortDateString()
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AreaUtilizada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Producao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Saude)
+                </td>
+                <td>
+                    <div class="d-flex gap-2">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm"><i class="fas fa-edit me-1"></i>Atualizar</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm"><i class="fas fa-eye me-1"></i>Visualizar</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fas fa-trash me-1"></i>Remover</a>
+                    </div>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

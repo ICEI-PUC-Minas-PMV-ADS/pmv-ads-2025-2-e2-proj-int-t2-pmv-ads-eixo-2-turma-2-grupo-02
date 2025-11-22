@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using AgrInov.Data;
+﻿using AgrInov.Data;
 using AgrInov.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AgrInov.Controllers
 {
@@ -34,6 +29,8 @@ namespace AgrInov.Controllers
             }
 
             var areaDePlantio = await _context.AreasDePlantio
+                .Include(a => a.Plantacoes)
+                .ThenInclude(p => p.Cultura)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (areaDePlantio == null)
             {
@@ -54,7 +51,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status")] AreaDePlantio areaDePlantio)
+        public async Task<IActionResult> Create([Bind("Id,Nome,DataInicio,DataFimPrevista,AreaUtilizada,Status")] AreaDePlantio areaDePlantio)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +83,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status")] AreaDePlantio areaDePlantio)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DataInicio,DataFimPrevista,AreaUtilizada,Status")] AreaDePlantio areaDePlantio)
         {
             if (id != areaDePlantio.Id)
             {

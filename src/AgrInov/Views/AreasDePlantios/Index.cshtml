@@ -21,6 +21,7 @@
 <table class="table">
     <thead>
         <tr>
+            <th>@Html.DisplayNameFor(model => model.Nome)</th>
             <th>@Html.DisplayNameFor(model => model.DataInicio)</th>
             <th>@Html.DisplayNameFor(model => model.DataFimPrevista)</th>
             <th>@Html.DisplayNameFor(model => model.AreaUtilizada)</th>
@@ -29,18 +30,20 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item.DataInicio)</td>
-            <td>@Html.DisplayFor(modelItem => item.DataFimPrevista)</td>
-            <td>@Html.DisplayFor(modelItem => item.AreaUtilizada)</td>
-            <td>@Html.DisplayFor(modelItem => item.Status)</td>
-            <td class="text-end">
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit"></i> Atualizar</a>
-                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye"></i> Visualizar</a>
-                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash"></i> Remover</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataInicio)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataFimPrevista)</td>
+                <td>@Html.DisplayFor(modelItem => item.AreaUtilizada)</td>
+                <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                <td class="text-end">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit"></i> Atualizar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye"></i> Visualizar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fas fa-trash"></i> Remover</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
