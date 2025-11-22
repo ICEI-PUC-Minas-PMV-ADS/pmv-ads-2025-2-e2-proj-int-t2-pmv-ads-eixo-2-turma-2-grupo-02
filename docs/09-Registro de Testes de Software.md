@@ -229,10 +229,14 @@ https://github.com/user-attachments/assets/125b4ed6-d2fa-42d4-b40a-5a84f9dcc2ab
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-011	A aplicação deve permitir a comparação entre dados de safras anteriores, mostrando evolução de produtividade |
 | Resultados obtidos| Aprovado |
-|Responsável pela execução do caso de Teste |	AUTOR ??|
+|Responsável pela execução do caso de Teste |	Mateus |
 
 Registro de evidência: 
-<!-- TODO: LINK AQUI -->
+
+
+
+https://github.com/user-attachments/assets/86b05f4d-36e2-4df8-8d5a-a950f171531f
+
 
 
 <hr>
