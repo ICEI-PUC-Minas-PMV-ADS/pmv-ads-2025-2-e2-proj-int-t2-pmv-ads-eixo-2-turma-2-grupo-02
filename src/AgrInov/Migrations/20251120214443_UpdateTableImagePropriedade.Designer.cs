@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251120214443_UpdateTableImagePropriedade")]
+    partial class UpdateTableImagePropriedade
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,9 +42,6 @@ namespace AgrInov.Migrations
                     b.Property<DateTime>("DataInicio")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
@@ -59,6 +59,7 @@ namespace AgrInov.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Descricao")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
@@ -79,14 +80,6 @@ namespace AgrInov.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Recomendacao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Rotacao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -158,12 +151,6 @@ namespace AgrInov.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CulturaId")
-                        .HasColumnType("int");
-
-                    b.Property<float>("Custo")
-                        .HasColumnType("real");
-
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
@@ -173,12 +160,7 @@ namespace AgrInov.Migrations
                     b.Property<string>("UnidadeMedida")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("Utilizado")
-                        .HasColumnType("real");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("CulturaId");
 
                     b.ToTable("Insumos");
                 });
@@ -242,14 +224,8 @@ namespace AgrInov.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AreaDePlantioId")
-                        .HasColumnType("int");
-
                     b.Property<float>("AreaUtilizada")
                         .HasColumnType("real");
-
-                    b.Property<int?>("CulturaId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("DataFimPrevista")
                         .HasColumnType("datetime2");
@@ -267,10 +243,6 @@ namespace AgrInov.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AreaDePlantioId");
-
-                    b.HasIndex("CulturaId");
 
                     b.ToTable("Plantacoes");
                 });
@@ -396,15 +368,6 @@ namespace AgrInov.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
-                        
-            modelBuilder.Entity("AgrInov.Models.Insumo", b =>
-                {
-                    b.HasOne("AgrInov.Models.Cultura", "Cultura")
-                        .WithMany("Insumos")
-                        .HasForeignKey("CulturaId");
-
-                    b.Navigation("Cultura");
-                });
 
             modelBuilder.Entity("AgrInov.Models.Meta", b =>
                 {
@@ -413,21 +376,6 @@ namespace AgrInov.Migrations
                         .HasForeignKey("CulturaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Cultura");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Plantacao", b =>
-                {
-                    b.HasOne("AgrInov.Models.AreaDePlantio", "AreaDePlantio")
-                        .WithMany("Plantacoes")
-                        .HasForeignKey("AreaDePlantioId");
-
-                    b.HasOne("AgrInov.Models.Cultura", "Cultura")
-                        .WithMany()
-                        .HasForeignKey("CulturaId");
-
-                    b.Navigation("AreaDePlantio");
 
                     b.Navigation("Cultura");
                 });
@@ -452,15 +400,8 @@ namespace AgrInov.Migrations
                     b.Navigation("Cultura");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.AreaDePlantio", b =>
-                {
-                    b.Navigation("Plantacoes");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
-                    b.Navigation("Insumos");
-
                     b.Navigation("Metas");
 
                     b.Navigation("Vendas");

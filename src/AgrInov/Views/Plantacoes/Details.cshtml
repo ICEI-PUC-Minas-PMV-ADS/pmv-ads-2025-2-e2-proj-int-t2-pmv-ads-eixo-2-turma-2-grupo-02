@@ -23,7 +23,7 @@
         ("success", "fas fa-sun", "Condições Ideais", "Condições climáticas favoráveis para o crescimento. Mantenha o cronograma de cuidados.", false),
         ("info", "fas fa-calendar-times", "Finalização Próxima", $"A cultura {Model.Cultura?.Nome ?? "Soja"} da plantação #{Model.Id} está próxima do período de finalização. Para alterar a cultura, você precisa adicionar uma nova plantação clicando abaixo:", true)
     };
-    
+
     var random = new Random();
     var alertaSelecionado = alertas[random.Next(alertas.Count)];
 }
@@ -47,40 +47,46 @@
 <div class="mb-5">
     <div class="agr-card p-5">
         <dl class="row">
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AreaDePlantio)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AreaDePlantio.Nome)
+            </dd>
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.DataInicio)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.DataInicio)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.DataFimPrevista)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.DataFimPrevista)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.AreaUtilizada)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.AreaUtilizada)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Status)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Status)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Producao)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Producao)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Saude)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Saude)
             </dd>
             <dt class="col-sm-2">

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AgrInov.Data;
+using AgrInov.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using AgrInov.Data;
-using AgrInov.Models;
 
 namespace AgrInov.Controllers
 {
@@ -38,6 +34,7 @@ namespace AgrInov.Controllers
             }
 
             var plantacao = await _context.Plantacoes
+                .Include(p => p.AreaDePlantio)
                 .Include(p => p.Cultura)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (plantacao == null)
@@ -51,6 +48,7 @@ namespace AgrInov.Controllers
         // GET: Plantacoes/Create
         public IActionResult Create()
         {
+            ViewData["AreaDePlantioId"] = new SelectList(_context.AreasDePlantio, "Id", "Nome");
             ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome");
             return View();
         }
@@ -60,7 +58,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude,CulturaId")] Plantacao plantacao)
+        public async Task<IActionResult> Create([Bind("Id,AreaDePlantioId,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude,CulturaId")] Plantacao plantacao)
         {
             if (ModelState.IsValid)
             {
@@ -68,6 +66,7 @@ namespace AgrInov.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["AreaDePlantioId"] = new SelectList(_context.AreasDePlantio, "Id", "Nome", plantacao.AreaDePlantioId);
             ViewData["CulturaId"] = new SelectList(_context.Culturas, "Id", "Nome", plantacao.CulturaId);
             return View(plantacao);
         }
@@ -88,6 +87,8 @@ namespace AgrInov.Controllers
             {
                 return NotFound();
             }
+
+            ViewData["AreaDePlantioId"] = new SelectList(_context.AreasDePlantio, "Id", "Nome");
             return View(plantacao);
         }
 
@@ -96,7 +97,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude")] Plantacao plantacao)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,AreaDePlantioId,DataInicio,DataFimPrevista,AreaUtilizada,Status,Producao,Saude")] Plantacao plantacao)
         {
             if (id != plantacao.Id)
             {
@@ -114,6 +115,7 @@ namespace AgrInov.Controllers
                         return NotFound();
                     }
 
+                    plantacaoExistente.AreaDePlantioId = plantacao.AreaDePlantioId;
                     plantacaoExistente.DataInicio = plantacao.DataInicio;
                     plantacaoExistente.DataFimPrevista = plantacao.DataFimPrevista;
                     plantacaoExistente.AreaUtilizada = plantacao.AreaUtilizada;
@@ -148,6 +150,7 @@ namespace AgrInov.Controllers
             }
 
             var plantacao = await _context.Plantacoes
+                .Include(p => p.AreaDePlantio)
                 .Include(p => p.Cultura)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (plantacao == null)
