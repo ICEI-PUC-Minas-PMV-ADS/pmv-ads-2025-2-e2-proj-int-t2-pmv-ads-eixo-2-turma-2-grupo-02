@@ -40,5 +40,8 @@ namespace AgrInov.Models
         public Cultura Cultura { get; set; }
 
         public ICollection<ImagemPlantacao> ImagensPlantacoes { get; set; }
+
+        public static readonly string[] OpcoesStatus = { "Planejada", "Em Andamento", "Concluída", "Cancelada" };
+        public static readonly string[] OpcoesSaude = { "Excelente", "Boa", "Regular", "Ruim", "Crítica" };
     }
 }
