@@ -97,6 +97,76 @@ Registro de evidência:
 
 https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
 
+
+<hr>
+
+| **Caso de Teste** 	| **CT12 – Visualizar a listagem de vendas**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/e1e0dde2-9432-4da0-a600-a58bbff387d9
+
+
+<hr>
+
+<hr>
+
+| **Caso de Teste** 	| **CT13 – Cadastrar uma nova venda**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/76a98ca0-4320-410c-8327-6261bc033244
+
+
+<hr>
+
+
+<hr>
+
+| **Caso de Teste** 	| **CT14 – Atualizar uma venda existente**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/3146afa4-d5c4-44a6-9b53-f3c2299654cc
+
+
+<hr>
+
+<hr>
+
+| **Caso de Teste** 	| **CT15 – Remover uma venda**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/125b4ed6-d2fa-42d4-b40a-5a84f9dcc2ab
+
+
+<hr>
+
 <hr>
 
 | **Caso de Teste** 	| **CT09 – Gerenciar Imagens da Fazenda - Visualizar as Imagens** 	|
