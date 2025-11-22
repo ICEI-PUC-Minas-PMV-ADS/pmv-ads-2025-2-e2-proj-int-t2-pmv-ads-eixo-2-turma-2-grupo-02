@@ -314,7 +314,8 @@ https://github.com/user-attachments/assets/d66a7cca-24ad-416b-b25a-4b442ebfe39b
 
 Registro de evidência: 
 
-aaaaaaaaaaaaaaaa
+https://github.com/user-attachments/assets/a684882b-c3bc-4344-a8ca-d39df10f51ce
+
 
 <hr>
 
@@ -325,6 +326,10 @@ aaaaaaaaaaaaaaaa
 | Responsável pela execução do caso de Teste | Gabriel |
 
 Registro de evidência:
+
+
+
+https://github.com/user-attachments/assets/a8b708a7-602f-49a8-ba02-808c72b383d5
 
 
 
