@@ -18,5 +18,6 @@ namespace AgrInov.Data
         public DbSet<NotaFiscal> NotaFiscal { get; set; }
         public DbSet<Plantacao> Plantacoes { get; set; }
         public DbSet<ImagemPlantacao> ImagemPlantacao { get; set; }
+        public DbSet<ImagemPropriedade> ImagemPropriedade { get; set; }
     }
 }
