@@ -65,9 +65,7 @@
                         @if (User.IsInRole("TI") || User.IsInRole("Técnico Agrícola"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Imagem" ? "active" : "")" asp-controller="Imagem" asp-action="Index">
-                                    <i class="fas fa-images"></i> Imagens
-                                </a>
+                               
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Culturas" ? "active" : "")" asp-controller="Culturas" asp-action="Index">
