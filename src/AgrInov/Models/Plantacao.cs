@@ -15,13 +15,13 @@ namespace AgrInov.Models
         [Display(Name = "Data de termino")]
         public DateTime DataFimPrevista { get; set; }
 
-        [Display(Name = "Data de utilizada")]
+        [Display(Name = "Área")]
         public float AreaUtilizada { get; set; }
 
         [Display(Name = "Status")]
         public string Status { get; set; }
 
-        [Display(Name = "Produção")]
+        [Display(Name = "Produção (kg)")]
         public int Producao { get; set; }
 
         [Display(Name = "Saúde")]
@@ -39,6 +39,6 @@ namespace AgrInov.Models
         [ForeignKey("CulturaId")]
         public Cultura Cultura { get; set; }
 
-        public ICollection<ImagemPlantacao> ImagensPlantacoes  { get; set; }
+        public ICollection<ImagemPlantacao> ImagensPlantacoes { get; set; }
     }
 }
