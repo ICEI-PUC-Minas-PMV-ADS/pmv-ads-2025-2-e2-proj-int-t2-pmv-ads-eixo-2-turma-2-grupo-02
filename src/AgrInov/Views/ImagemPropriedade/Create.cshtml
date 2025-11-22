@@ -1,0 +1,128 @@
+@model AgrInov.Models.ImagemPropriedadeViewModel
+
+
+@{
+    ViewData["Title"] = "Enviar Imagem Propriedade Agricula";
+}
+
+<form asp-action="Create" enctype="multipart/form-data" method="post" class="d-flex flex-column gap-4" style="max-width:800px; margin:auto; padding-top:40px;">
+
+
+    <div>
+        <label class="form-label">Propriedade</label>
+        <select asp-for="PropriedadeAgricula.Id"
+                asp-items="@(new SelectList(Model.ListPropriedadeAgricula, "Id", "Id"))"
+                class="form-select"
+                style="height: 45px; font-size:16px;">
+        </select>
+
+        <span asp-validation-for="PropriedadeAgricula.Id" class="text-danger"></span>
+    </div>
+
+    <!-- Área de Drag & Drop -->
+    <div id="drop-area"
+         style="
+            border: 2px dashed #555;
+            height: 350px;
+            border-radius: 6px;
+            background: #666;
+            color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            font-size: 18px;
+         ">
+
+        <input type="file"
+               asp-for="Imagem.Image"
+               id="fileInput"
+               accept=".jpg,"
+               style="display:none;" />
+
+        <div id="dragText">
+            Arraste a imagem aqui<br /><br />
+            ou Clique para anexar imagem<br /><br />
+            <small>.jpg</small>
+        </div>
+
+        <img id="preview" style="max-height: 100%; max-width: 100%; display:none; border-radius:4px;" />
+    </div>
+
+    <span asp-validation-for="Imagem.Image" class="text-danger"></span>
+
+    <!-- Botões -->
+    <div class="d-flex justify-content-center gap-3 mt-4">
+        <button type="submit"
+                class="btn"
+                style="
+                    background:#000;
+                    color:#fff;
+                    width:200px;
+                    height:45px;
+                    border-radius:8px;
+                    font-size:16px;
+                ">
+            Confirmar Envio
+        </button>
+
+        <a asp-action="Index"
+           class="btn"
+           style="
+                background:#bbb;
+                color:#000;
+                width:200px;
+                height:45px;
+                border-radius:8px;
+                font-size:16px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+           ">
+            Cancelar
+        </a>
+    </div>
+</form>
+
+@section Scripts{
+    <script>
+        const dropArea = document.getElementById("drop-area");
+        const fileInput = document.getElementById("fileInput");
+        const preview = document.getElementById("preview");
+        const dragText = document.getElementById("dragText");
+
+        dropArea.addEventListener("click", () => fileInput.click());
+
+        dropArea.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            dropArea.style.background = "#555";
+        });
+
+        dropArea.addEventListener("dragleave", () => {
+            dropArea.style.background = "#666";
+        });
+
+        dropArea.addEventListener("drop", (e) => {
+            e.preventDefault();
+            dropArea.style.background = "#666";
+            fileInput.files = e.dataTransfer.files;
+            previewImage();
+        });
+
+        fileInput.addEventListener("change", previewImage);
+
+        function previewImage() {
+            const file = fileInput.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = () => {
+                preview.src = reader.result;
+                preview.style.display = "block";
+                dragText.style.display = "none";
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+}

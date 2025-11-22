@@ -20,5 +20,6 @@ namespace AgrInov.Models
         [ForeignKey("CulturaId")]
         public Cultura Cultura { get; set; }
 
+        public ICollection<ImagemPlantacao> ImagensPlantacoes  { get; set; }
     }
 }
