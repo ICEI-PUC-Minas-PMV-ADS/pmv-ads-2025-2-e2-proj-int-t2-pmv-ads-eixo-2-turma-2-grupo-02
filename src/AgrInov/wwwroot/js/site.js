@@ -15,6 +15,25 @@ $sidebarShow.on("click", function () {
     $sidebar.addClass('show');
 });
 
+/* Print Report */
+
+function printReport() {
+    const content = document.getElementById('agr-main-content');
+
+    if (!content) {
+        console.error('Elemento agr-main-content não encontrado');
+        return;
+    }
+
+    const originalContent = document.body.innerHTML;
+    const printContent = content.innerHTML;
+    document.body.innerHTML = printContent;
+    window.print();
+
+    document.body.innerHTML = originalContent;
+    location.reload();
+}
+
 /* Map */
 
 let metricaAtiva = 'vigor';
@@ -201,5 +220,14 @@ function handleMaps() {
 }
 
 $(document).ready(function () {
-    handleMaps();
+    $map = $("#map");
+    if ($map.length > 0) {
+        handleMaps();
+    }
+
+
+    $('#btn-download-relatorio').on('click', function (e) {
+        e.preventDefault();
+        printReport();
+    });
 });

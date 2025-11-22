@@ -43,6 +43,34 @@ https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 
 <hr>
 
+| **Caso de Teste** | **CT04 – Cadastrar cultura** |
+|:---:|:---:|
+| Requisito Associado |  RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/82ca2adb-3662-4728-879d-60016980e6ad
+
+
+
+<hr>
+
+
+| **Caso de Teste** 	| **CT05 – Rotação de culturas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/ab4119a6-25b5-47ee-9a01-8d987bc9a80a
+
+
+
+
 | **Caso de Teste** 	| **CT06 – Saúde das plantações** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006	- A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos). |
@@ -55,7 +83,7 @@ Registro de evidência:
 https://github.com/user-attachments/assets/fca322e0-1a35-46ff-848c-c313e7eeeb6f
 
 
-<ht>
+<hr>
 
 | **Caso de Teste** 	| **CT07 – Gerenciamento de Insumos** 	|
 |:---:	|:---:	|
@@ -66,6 +94,179 @@ https://github.com/user-attachments/assets/fca322e0-1a35-46ff-848c-c313e7eeeb6f
 Registro de evidência: 
 
 https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
+
+
+<hr>
+<hr>
+
+| **Caso de Teste** 	| **CT08 – Visualizar Informação sobre o risco a saúde da plantação** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-008 - A aplicação deve emitir alertas ao agricultor sobre riscos de clima adverso ou presença de pragas |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+
+https://github.com/user-attachments/assets/0e83efb4-9f7a-472c-932a-15e2b715b937
+
+
+
+
+<hr>
+
+
+
+<hr>
+
+| **Caso de Teste** 	| **CT09 – Gerenciar Imagens da Fazenda - Visualizar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/877bd07c-a9e6-4de8-93d2-d51063392ca3
+
+<hr>
+
+| **Caso de Teste** 	| **CT10 – Gerenciar Imagens da Fazenda - Anexar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/89376b50-1e97-4f50-92ba-299b59f1836f
+
+<hr>
+
+| **Caso de Teste** 	| **CT11 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/82ed4925-bd37-42c4-ad77-aa8901e339b4
+
+<hr>
+
+| **Caso de Teste** 	| **CT12 – Visualizar a listagem de vendas**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/e1e0dde2-9432-4da0-a600-a58bbff387d9
+
+
+<hr>
+
+<hr>
+
+| **Caso de Teste** 	| **CT13 – Cadastrar uma nova venda**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/76a98ca0-4320-410c-8327-6261bc033244
+
+
+<hr>
+
+
+<hr>
+
+| **Caso de Teste** 	| **CT14 – Atualizar uma venda existente**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/3146afa4-d5c4-44a6-9b53-f3c2299654cc
+
+
+<hr>
+
+<hr>
+
+| **Caso de Teste** 	| **CT15 – Remover uma venda**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+
+
+https://github.com/user-attachments/assets/125b4ed6-d2fa-42d4-b40a-5a84f9dcc2ab
+
+
+<hr>
+
+
+| **Caso de Teste** 	| **CT16 – Visualizar dados de safras anteriores**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-011	A aplicação deve permitir a comparação entre dados de safras anteriores, mostrando evolução de produtividade |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	AUTOR ??|
+
+Registro de evidência: 
+<!-- TODO: LINK AQUI -->
+
+
+<hr>
+
+
+
+
+
+| **Caso de Teste** 	| **CT17 – Visualizar relatório financeiro** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|  RF-012	A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/bfeb849a-3cbe-4c3e-bc87-a836ded1a40a
+
+
+
+<hr>
+
+
+| **Caso de Teste** 	| **CT18 –  Relatórios sobre as plantações** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|  RF-013	- A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas sobre as plantações.  |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela |
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/4e01169f-43d8-4e5d-b20e-fe8c932e4a46
+
+
 
 <hr>
 
@@ -128,70 +329,58 @@ https://github.com/user-attachments/assets/d66a7cca-24ad-416b-b25a-4b442ebfe39b
 
 Registro de evidência: 
 
-aaaaaaaaaaaaaaaa
+https://github.com/user-attachments/assets/a684882b-c3bc-4344-a8ca-d39df10f51ce
+
 
 <hr>
 
-| **Caso de Teste** | **CT24 – Download Gráfico 1** |
+| **Caso de Teste** | **CT24 – Download do gráfico de meta de produção** |
 |:---:|:---:|
 | Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
 | Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
+| Responsável pela execução do caso de Teste | Gabriel |
 
 Registro de evidência:
 
-aaaaaaaaaaaaaaaa
+
+
+https://github.com/user-attachments/assets/a8b708a7-602f-49a8-ba02-808c72b383d5
+
+
 
 <hr>
 
-| **Caso de Teste** | **CT25 – Download Gráfico 2** |
+| **Caso de Teste** | **CT25 – Download do gráfico financeiro** |
 |:---:|:---:|
 | Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
 | Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
+| Responsável pela execução do caso de Teste | Gabriel |
 
 Registro de evidência:
 
-aaaaaaaaaaaaaaaa
+
+
+https://github.com/user-attachments/assets/eea3cc76-b1a3-4a91-8d2c-3032bbd63d69
+
+
+
+
 
 <hr>
 
-| **Caso de Teste** | **CT26 – Download Gráfico 3** |
-|:---:|:---:|
-| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
-| Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
-
-Registro de evidência:
-
-aaaaaaaaaaaaaaaa
-
-<hr>
-
-| **Caso de Teste** | **CT27 – Download Gráfico 4** |
-|:---:|:---:|
-| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
-| Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
-
-Registro de evidência:
-
-aaaaaaaaaaaaaaaa
-
-<hr>
-
-| **Caso de Teste** 	| **CT28 – Previsão do clima** 	|
+| **Caso de Teste** 	| **CT26 – Previsão do clima** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-018 A aplicação deve fornecer uma previsão do clima dos próximos 5 dias. |
 | Resultados obtidos| Aprovado |
-|Responsável pela execução do caso de Teste |	Tiago |
+|Responsável pela execução do caso de Teste |	Pamela |
 
 Registro de evidência: 
 
+https://github.com/user-attachments/assets/59f45e93-7354-4fcb-a96b-14c634dc81f9
 
 <hr>
 
-| **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
+| **Caso de Teste** 	| **CT27 – Cadastrar propriedade agrícola** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-019 A aplicação deve permitir o gerenciamento da fazenda (CRUD). |
 | Resultados obtidos| Aprovado |
@@ -203,7 +392,7 @@ https://github.com/user-attachments/assets/2be37324-7ce0-4352-90a1-c206b5ee30f0
 
 <hr>
 
-| **Caso de Teste** 	| **CT30 – Atualizar propriedade agrícola** 	|
+| **Caso de Teste** 	| **CT28 – Atualizar propriedade agrícola** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-019 A aplicação deve permitir o gerenciamento da fazenda (CRUD). |
 | Resultados obtidos| Aprovado |

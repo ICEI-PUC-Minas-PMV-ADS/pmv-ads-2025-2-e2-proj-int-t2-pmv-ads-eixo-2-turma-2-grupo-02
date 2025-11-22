@@ -42,52 +42,52 @@ body {
     height: 500px;
 }
 
-.agr-map .info {
-    padding: 6px 8px;
-    background: white;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
+    .agr-map .info {
+        padding: 6px 8px;
+        background: white;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
 
-.agr-map .legend {
-    text-align: left;
-    line-height: 18px;
-    color: #555;
-}
+    .agr-map .legend {
+        text-align: left;
+        line-height: 18px;
+        color: #555;
+    }
 
-.agr-map .legend i {
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.7;
-}
+        .agr-map .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
 
-.agr-map .metric-selector {
-    padding: 8px 10px;
-    font-size: 13px;
-    background: white;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
+    .agr-map .metric-selector {
+        padding: 8px 10px;
+        font-size: 13px;
+        background: white;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
 
-.agr-map .metric-selector a {
-    text-decoration: none;
-    color: #555;
-    padding: 2px 4px;
-    transition: all 0.2s;
-}
+        .agr-map .metric-selector a {
+            text-decoration: none;
+            color: #555;
+            padding: 2px 4px;
+            transition: all 0.2s;
+        }
 
-.agr-map .metric-selector a:hover {
-    color: #28a745;
-}
+            .agr-map .metric-selector a:hover {
+                color: #28a745;
+            }
 
-.agr-map .metric-selector a.active {
-    color: #28a745;
-    font-weight: bold;
-}
+            .agr-map .metric-selector a.active {
+                color: #28a745;
+                font-weight: bold;
+            }
 
 /* Mobile Header Styles */
 #agr-mobile-header {
@@ -112,22 +112,23 @@ body {
     left: 0;
     height: 100vh;
     width: 250px;
+    overflow: auto;
     background-color: #f8f9fa;
     border-right: 1px solid #dee2e6;
     z-index: 9999;
 }
 
-#agr-sidebar .nav-link {
-    color: #495057;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0;
-}
+    #agr-sidebar .nav-link {
+        color: #495057;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0;
+    }
 
-#agr-sidebar .nav-link:hover,
-#agr-sidebar .nav-link.active {
-    background-color: #e9ecef;
-    color: #28a745;
-}
+        #agr-sidebar .nav-link:hover,
+        #agr-sidebar .nav-link.active {
+            background-color: #e9ecef;
+            color: #28a745;
+        }
 
 #agr-sidebar-close {
     display: none;
@@ -146,10 +147,10 @@ body {
         transform: translateX(-100%);
     }
 
-    #agr-sidebar.show {
-        transform: translateX(0%);    
-    }
-    
+        #agr-sidebar.show {
+            transform: translateX(0%);
+        }
+
     #agr-sidebar-close {
         display: block;
     }

@@ -1,0 +1,131 @@
+﻿@model IEnumerable<AgrInov.Models.Cultura>
+@using Highsoft.Web.Mvc.Charts;
+@using Highsoft.Web.Mvc.Charts.Rendering;
+
+@{
+    ViewData["Title"] = "Relatórios Financeiros";
+}
+
+<h1 class="fs-3">Relatórios Financeiros</h1>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+
+@{
+    List<ColumnSeriesData> profitData = new List<ColumnSeriesData>();
+    var currentMonth = Model.Where(m => m.Vendas.Any(v => v.DataOperacao.Month == DateTime.Now.Month && v.DataOperacao.Year == DateTime.Now.Year)).ToList();
+
+    var groupedByMonth = Model
+    .SelectMany(m => m.Vendas)
+    .OrderBy(m => m.DataOperacao)
+    .GroupBy(x => new { Month = x.DataOperacao.Month, Year = x.DataOperacao.Year })
+    .ToDictionary(g => g.Key, g => new
+    {
+        Profit = g.Sum(v => (float)v.Valor - v.Cultura.Insumos.Select(i => (i.Utilizado / i.Quantidade) * i.Custo).ToList().Sum(p => p)),
+        Revenue = g.Sum(v => (float)v.Valor)
+    });
+
+    var groupedByYear = Model
+    .SelectMany(m => m.Vendas)
+    .OrderBy(m => m.DataOperacao)
+    .GroupBy(x => new { Year = x.DataOperacao.Year })
+    .ToDictionary(g => g.Key, g => new
+    {
+        Profit = g.Sum(v => (float)v.Valor - v.Cultura.Insumos.Select(i => (i.Utilizado / i.Quantidade) * i.Custo).ToList().Sum(p => p)),
+        Revenue = g.Sum(v => (float)v.Valor)
+    });
+
+    var months = new List<string> { "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" };
+    var chartOptions = new Highcharts
+    {
+        Title = new Title
+        {
+            Text = "Faturamento Mensal"
+        },
+
+        XAxis = new List<XAxis> {
+            new XAxis {
+                Categories = groupedByMonth.Keys.Select(k => $"{months[k.Month -1]} {k.Year.ToString()}").ToList()
+            }
+        },
+        YAxis = new List<YAxis> {
+        new YAxis {
+          Min = 0,
+            Title = new YAxisTitle {
+              Text = "R$"
+            }
+        }
+      },
+        Tooltip = new Tooltip
+        {
+            HeaderFormat = "<span style='font-size:10px'>{point.key}</span><table style='font-size:12px'>",
+            PointFormat = "<tr><td style='color:{series.color};padding:0'>{series.name}: </td><td style='padding:0'><b>{point.y:.1f} R$</b></td></tr>",
+            FooterFormat = "</table>",
+            Shared = true,
+            UseHTML = true
+        },
+        PlotOptions = new PlotOptions
+        {
+            Column = new PlotOptionsColumn
+            {
+                PointPadding = 0.2,
+                BorderWidth = 0
+            }
+        },
+        Series = new List<Series> {
+        new ColumnSeries {
+          Name = "Lucro liquido",
+            Data = groupedByMonth.Values.Select(p => new ColumnSeriesData
+            {
+                Y = (double)p.Profit
+            }).ToList() as List<ColumnSeriesData>
+        },
+        new ColumnSeries {
+          Name = "Receita",
+            Data = groupedByMonth.Values.Select(p => new ColumnSeriesData
+            {
+                Y = (double)p.Revenue
+            }).ToList() as List<ColumnSeriesData>
+        },
+      }
+    };
+
+    chartOptions.ID = "chart";
+    var renderer = new HighchartsRenderer(chartOptions);
+}
+
+@Html.Raw(renderer.RenderHtml())
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Ano
+            </th>
+            <th>
+                Receita (R$)
+            </th>
+            <th>
+                Lucro Líquido (R$)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in groupedByYear)
+        {
+            <tr>
+                <td>
+                    @item.Key.Year
+                </td>
+                <td>
+                    @item.Value.Revenue.ToString("0.00")
+                </td>
+                <td>
+                    @item.Value.Profit.ToString("0.00")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
