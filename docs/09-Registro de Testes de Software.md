@@ -43,6 +43,29 @@ https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 
 <hr>
 
+| **Caso de Teste** | **CT04 – Cadastrar cultura** |
+|:---:|:---:|
+| Requisito Associado |  RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela |
+
+Registro de evidência: 
+aaaaaaaaaaaaaaaaaaaaa
+
+
+<hr>
+
+
+| **Caso de Teste** 	| **CT05 – Rotação de culturas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência: 
+aaaaaaaaaaaaaaaaaaaaa
+
+
 | **Caso de Teste** 	| **CT06 – Saúde das plantações** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006	- A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos). |
