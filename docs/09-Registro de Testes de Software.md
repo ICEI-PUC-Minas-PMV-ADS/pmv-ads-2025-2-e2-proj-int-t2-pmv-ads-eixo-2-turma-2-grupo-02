@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/88e03693-88ec-4831-b643-fd2d7ced42c3
 # Registro de Testes de Software
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
@@ -50,7 +52,9 @@ https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 |Responsável pela execução do caso de Teste |	Pamela |
 
 Registro de evidência: 
-aaaaaaaaaaaaaaaaaaaaa
+
+https://github.com/user-attachments/assets/82ca2adb-3662-4728-879d-60016980e6ad
+
 
 
 <hr>
@@ -60,10 +64,13 @@ aaaaaaaaaaaaaaaaaaaaa
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
 | Resultados obtidos| Aprovado |
-|Responsável pela execução do caso de Teste |	Lucas|
+|Responsável pela execução do caso de Teste |	Pamela |
 
 Registro de evidência: 
-aaaaaaaaaaaaaaaaaaaaa
+
+https://github.com/user-attachments/assets/ab4119a6-25b5-47ee-9a01-8d987bc9a80a
+
+
 
 
 | **Caso de Teste** 	| **CT06 – Saúde das plantações** 	|
