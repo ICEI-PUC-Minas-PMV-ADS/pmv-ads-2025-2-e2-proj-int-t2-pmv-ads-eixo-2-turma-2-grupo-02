@@ -266,7 +266,8 @@ aaaaaaaaaaaaaaaa
 
 Registro de evidência: 
 
-aaaaaaaaaaaaaaaaaaaa
+https://github.com/user-attachments/assets/59f45e93-7354-4fcb-a96b-14c634dc81f9
+
 <hr>
 
 | **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
