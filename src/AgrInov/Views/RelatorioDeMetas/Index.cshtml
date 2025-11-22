@@ -1,0 +1,196 @@
+﻿@model List<AgrInov.Models.ViewModels.RelatorioMetasViewModel>
+
+@{
+    ViewData["Title"] = "Relatório de metas de produção";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>@ViewData["Title"]</h2>
+        <button id="btn-download-relatorio" class="btn btn-primary">
+            <i class="fas fa-download"></i> Baixar Relatório
+        </button>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle"></i> Não há dados de metas ou plantações para exibir.
+        </div>
+    }
+    else
+    {
+        @foreach (var relatorio in Model)
+        {
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-calendar-alt"></i> Ano: @relatorio.Ano
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (!relatorio.Comparacoes.Any())
+                    {
+                        <p class="text-muted">Nenhum dado disponível para este ano.</p>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Cultura</th>
+                                        <th class="text-end">Meta (Kg)</th>
+                                        <th class="text-end">Produção Real (Kg)</th>
+                                        <th class="text-end">Diferença (Kg)</th>
+                                        <th class="text-end">% Alcançado</th>
+                                        <th class="text-center">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var comparacao in relatorio.Comparacoes)
+                                    {
+                                        <tr>
+                                            <td><strong>@comparacao.NomeCultura</strong></td>
+                                            <td class="text-end">@comparacao.QuantidadeMeta.ToString("N0")</td>
+                                            <td class="text-end">@comparacao.ProducaoReal.ToString("N0")</td>
+                                            <td class="text-end">
+                                                @if (!comparacao.TemMeta && comparacao.ProducaoReal > 0)
+                                                {
+                                                    <span class="text-info">
+                                                        <i class="fas fa-info-circle"></i> Sem meta
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="@(comparacao.Diferenca >= 0 ? "text-success" : "text-danger")">
+                                                        @(comparacao.Diferenca >= 0 ? "+" : "")@comparacao.Diferenca.ToString("N0")
+                                                    </span>
+                                                }
+                                            </td>
+                                            <td class="text-end">
+                                                @if (comparacao.PercentualAlcancado == -1)
+                                                {
+                                                    <span class="text-info fw-bold">
+                                                        <i class="fas fa-infinity"></i> N/A
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="@(comparacao.PercentualAlcancado >= 100 ? "text-success" : comparacao.PercentualAlcancado >= 75 ? "text-warning" : "text-danger")">
+                                                        @comparacao.PercentualAlcancado.ToString("N2")%
+                                                    </span>
+                                                }
+                                            </td>
+                                            <td class="text-center">
+                                                @if (!comparacao.TemMeta && comparacao.ProducaoReal > 0)
+                                                {
+                                                    <span class="badge bg-info">
+                                                        <i class="fas fa-seedling"></i> Produção sem Meta
+                                                    </span>
+                                                }
+                                                else if (comparacao.MetaAlcancada)
+                                                {
+                                                    <span class="badge bg-success">
+                                                        <i class="fas fa-check-circle"></i> Alcançada
+                                                    </span>
+                                                }
+                                                else if (comparacao.TemMeta)
+                                                {
+                                                    <span class="badge bg-danger">
+                                                        <i class="fas fa-times-circle"></i> Não Alcançada
+                                                    </span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-secondary">
+                                                        <i class="fas fa-minus-circle"></i> Sem Dados
+                                                    </span>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                <tfoot class="table-light">
+                                    <tr>
+                                        <th>Total</th>
+                                        <th class="text-end">@relatorio.Comparacoes.Sum(c => c.QuantidadeMeta).ToString("N0")</th>
+                                        <th class="text-end">@relatorio.Comparacoes.Sum(c => c.ProducaoReal).ToString("N0")</th>
+                                        <th class="text-end">
+                                            @{
+                                                var totalMeta = relatorio.Comparacoes.Sum(c => c.QuantidadeMeta);
+                                                var totalProducao = relatorio.Comparacoes.Sum(c => c.ProducaoReal);
+                                                var temMetaTotal = totalMeta > 0;
+                                            }
+                                            @if (!temMetaTotal && totalProducao > 0)
+                                            {
+                                                <span class="text-info">
+                                                    <i class="fas fa-info-circle"></i> Sem meta
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="@(relatorio.Comparacoes.Sum(c => c.Diferenca) >= 0 ? "text-success" : "text-danger")">
+                                                    @(relatorio.Comparacoes.Sum(c => c.Diferenca) >= 0 ? "+" : "")@relatorio.Comparacoes.Sum(c => c.Diferenca).ToString("N0")
+                                                </span>
+                                            }
+                                        </th>
+                                        <th class="text-end">
+                                            @{
+                                                var percentualTotal = temMetaTotal ? (decimal)totalProducao / totalMeta * 100 : (totalProducao > 0 ? -1 : 0);
+                                            }
+                                            @if (percentualTotal == -1)
+                                            {
+                                                <span class="text-info fw-bold">
+                                                    <i class="fas fa-infinity"></i> N/A
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="@(percentualTotal >= 100 ? "text-success" : percentualTotal >= 75 ? "text-warning" : "text-danger")">
+                                                    @percentualTotal.ToString("N2")%
+                                                </span>
+                                            }
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="card border-primary">
+                                    <div class="card-body text-center">
+                                        <h6 class="text-muted">Metas Alcançadas</h6>
+                                        <h3 class="text-primary">@relatorio.Comparacoes.Count(c => c.MetaAlcancada) / @relatorio.Comparacoes.Count</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-success">
+                                    <div class="card-body text-center">
+                                        <h6 class="text-muted">Meta Total (Kg)</h6>
+                                        <h3 class="text-success">@relatorio.Comparacoes.Sum(c => c.QuantidadeMeta).ToString("N0")</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-info">
+                                    <div class="card-body text-center">
+                                        <h6 class="text-muted">Produção Total (Kg)</h6>
+                                        <h3 class="text-info">@relatorio.Comparacoes.Sum(c => c.ProducaoReal).ToString("N0")</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+}

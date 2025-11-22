@@ -16,6 +16,7 @@ namespace AgrInov.Models
         [DisplayName("Data final")]
         public DateTime DataFim { get; set; }
 
+        [DisplayName("Quantidade (kg)")]
         public int Quantidade { get; set; }
 
         [DisplayName("Cultura")]
