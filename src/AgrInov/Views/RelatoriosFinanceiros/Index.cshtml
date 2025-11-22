@@ -27,6 +27,16 @@
         Revenue = g.Sum(v => (float)v.Valor)
     });
 
+    var groupedByYear = Model
+    .SelectMany(m => m.Vendas)
+    .OrderBy(m => m.DataOperacao)
+    .GroupBy(x => new { Year = x.DataOperacao.Year })
+    .ToDictionary(g => g.Key, g => new
+    {
+        Profit = g.Sum(v => (float)v.Valor - v.Cultura.Insumos.Select(i => (i.Utilizado / i.Quantidade) * i.Custo).ToList().Sum(p => p)),
+        Revenue = g.Sum(v => (float)v.Valor)
+    });
+
     var months = new List<string> { "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez" };
     var chartOptions = new Highcharts
     {
@@ -87,3 +97,35 @@
 }
 
 @Html.Raw(renderer.RenderHtml())
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Ano
+            </th>
+            <th>
+                Receita (R$)
+            </th>
+            <th>
+                Lucro Líquido (R$)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in groupedByYear)
+        {
+            <tr>
+                <td>
+                    @item.Key.Year
+                </td>
+                <td>
+                    @item.Value.Revenue.ToString("0.00")
+                </td>
+                <td>
+                    @item.Value.Profit.ToString("0.00")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
