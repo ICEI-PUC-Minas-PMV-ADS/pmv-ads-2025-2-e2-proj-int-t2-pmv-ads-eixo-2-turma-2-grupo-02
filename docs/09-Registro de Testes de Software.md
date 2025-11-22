@@ -343,7 +343,14 @@ https://github.com/user-attachments/assets/a8b708a7-602f-49a8-ba02-808c72b383d5
 
 Registro de evidência:
 
-<!-- 🔴TODO: inserir link do video -->
+
+
+https://github.com/user-attachments/assets/eea3cc76-b1a3-4a91-8d2c-3032bbd63d69
+
+
+
+
+
 <hr>
 
 | **Caso de Teste** 	| **CT26 – Previsão do clima** 	|
