@@ -13,33 +13,111 @@
 <div class="mb-5">
     <div class="agr-card p-5">
         <dl class="row">
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.DataInicio)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.DataInicio)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.DataFimPrevista)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.DataFimPrevista)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.AreaUtilizada)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.AreaUtilizada)
             </dd>
-            <dt class = "col-sm-2">
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Status)
             </dt>
-            <dd class = "col-sm-10">
+            <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Status)
             </dd>
         </dl>
     </div>
 </div>
+
+<h4>Plantações</h4>
+@if (Model.Plantacoes != null && Model.Plantacoes.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plantacoes.FirstOrDefault().Cultura)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plantacoes.FirstOrDefault().DataInicio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plantacoes.FirstOrDefault().DataFimPrevista)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plantacoes.FirstOrDefault().AreaUtilizada)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plantacoes.FirstOrDefault().Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plantacoes.FirstOrDefault().Producao)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plantacoes.FirstOrDefault().Saude)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plantacao in Model.Plantacoes)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => plantacao.Cultura.Nome)
+                    </td>
+                    <td>
+                        @plantacao.DataInicio.ToShortDateString()
+                    </td>
+                    <td>
+                        @plantacao.DataFimPrevista.ToShortDateString()
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => plantacao.AreaUtilizada)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => plantacao.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => plantacao.Producao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => plantacao.Saude)
+                    </td>
+                    <td>
+                        <div class="d-flex gap-2">
+                            <a asp-controller="Plantacoes" asp-action="Details" asp-route-id="@plantacao.Id" class="btn btn-info btn-sm">
+                                <i class="fas fa-eye me-1"></i>Visualizar
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Nenhuma plantação vinculada a esta área.</p>
+}
 
 <div>
     <a asp-action="Index" class="btn btn-info text-white">Voltar</a>
