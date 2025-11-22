@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/88e03693-88ec-4831-b643-fd2d7ced42c3
 # Registro de Testes de Software
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
@@ -43,6 +45,34 @@ https://github.com/user-attachments/assets/372efc31-6578-42e3-a2f8-d3e4c56870f9
 
 <hr>
 
+| **Caso de Teste** | **CT04 – Cadastrar cultura** |
+|:---:|:---:|
+| Requisito Associado |  RF-004 – A aplicação deve permitir o gerenciamento das culturas plantadas em cada área, com informações como data de plantio, espécie e variedade (CRUD). |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/82ca2adb-3662-4728-879d-60016980e6ad
+
+
+
+<hr>
+
+
+| **Caso de Teste** 	| **CT05 – Rotação de culturas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-005 - A aplicação deve gerar recomendações de rotação de cultura com base no histórico de cultivo de cada área. |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela |
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/ab4119a6-25b5-47ee-9a01-8d987bc9a80a
+
+
+
+
 | **Caso de Teste** 	| **CT06 – Saúde das plantações** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006	- A aplicação deve disponibilizar mapas com informações sobre a saúde das plantações (ex.: vigor da planta, umidade, índices vegetativos). |
@@ -55,7 +85,7 @@ Registro de evidência:
 https://github.com/user-attachments/assets/fca322e0-1a35-46ff-848c-c313e7eeeb6f
 
 
-<ht>
+<hr>
 
 | **Caso de Teste** 	| **CT07 – Gerenciamento de Insumos** 	|
 |:---:	|:---:	|
@@ -136,6 +166,42 @@ https://github.com/user-attachments/assets/125b4ed6-d2fa-42d4-b40a-5a84f9dcc2ab
 
 
 <hr>
+
+<hr>
+
+| **Caso de Teste** 	| **CT09 – Gerenciar Imagens da Fazenda - Visualizar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/877bd07c-a9e6-4de8-93d2-d51063392ca3
+
+<hr>
+
+| **Caso de Teste** 	| **CT10 – Gerenciar Imagens da Fazenda - Anexar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/89376b50-1e97-4f50-92ba-299b59f1836f
+
+<hr>
+
+| **Caso de Teste** 	| **CT11 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/82ed4925-bd37-42c4-ad77-aa8901e339b4
 
 <hr>
 

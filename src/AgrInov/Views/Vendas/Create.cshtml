@@ -24,6 +24,11 @@
                 <input asp-for="Quantidade" class="form-control" />
                 <span asp-validation-for="Quantidade" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="DataOperacao" class="control-label"></label>
+                <input asp-for="DataOperacao" class="form-control" />
+                <span asp-validation-for="DataOperacao" class="text-danger"></span>
+            </div>
             <div class="form-group mt-3">
                 <input type="submit" value="Cadastrar" class="btn btn-dark w-100" />
             </div>
@@ -36,5 +41,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
