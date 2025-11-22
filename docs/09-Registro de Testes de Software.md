@@ -225,6 +225,21 @@ https://github.com/user-attachments/assets/125b4ed6-d2fa-42d4-b40a-5a84f9dcc2ab
 <hr>
 
 
+| **Caso de Teste** 	| **CT16 – Visualizar dados de safras anteriores**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-011	A aplicação deve permitir a comparação entre dados de safras anteriores, mostrando evolução de produtividade |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	AUTOR ??|
+
+Registro de evidência: 
+<!-- TODO: LINK AQUI -->
+
+
+<hr>
+
+
+
+
 
 | **Caso de Teste** 	| **CT17 – Visualizar relatório financeiro** 	|
 |:---:	|:---:	|
