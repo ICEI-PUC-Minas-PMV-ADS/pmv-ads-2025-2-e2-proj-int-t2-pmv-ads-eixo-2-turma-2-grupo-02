@@ -22,6 +22,7 @@ namespace AgrInov.Controllers
                 .ToListAsync();
 
             var anosPlantacoes = await _context.Plantacoes
+                .Where(p => p.Status != "Cancelada")
                 .Select(p => p.DataFimPrevista.Year)
                 .Distinct()
                 .ToListAsync();
@@ -41,7 +42,7 @@ namespace AgrInov.Controllers
 
                 var plantacoesAno = await _context.Plantacoes
                     .Include(p => p.Cultura)
-                    .Where(p => p.DataFimPrevista.Year == ano && p.CulturaId.HasValue)
+                    .Where(p => p.DataFimPrevista.Year == ano && p.CulturaId.HasValue && p.Status != "Cancelada")
                     .ToListAsync();
 
                 var metasPorCultura = metasAno
