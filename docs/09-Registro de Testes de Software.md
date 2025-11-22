@@ -67,6 +67,42 @@ Registro de evidência:
 
 https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
 
+<ht>
+
+| **Caso de Teste** 	| **CT09 – Gerenciar Imagens da Fazenda - Visualizar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência: 
+
+
+
+<ht>
+
+| **Caso de Teste** 	| **CT10 – Gerenciar Imagens da Fazenda - Anexar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+
+
+<ht>
+
+| **Caso de Teste** 	| **CT11 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+
+
 <hr>
 
 | **Caso de Teste** 	| **CT19 – Recomendações sobre otimização da produção**	|
