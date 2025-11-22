@@ -15,7 +15,7 @@ namespace AgrInov.Models
         [Display(Name = "Data de termino")]
         public DateTime DataFimPrevista { get; set; }
 
-        [Display(Name = "Área")]
+        [Display(Name = "Área (ha)")]
         public float AreaUtilizada { get; set; }
 
         [Display(Name = "Status")]
