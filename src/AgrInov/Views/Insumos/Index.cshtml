@@ -24,6 +24,9 @@
             <th>@Html.DisplayNameFor(model => model.Nome)</th>
             <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
             <th>@Html.DisplayNameFor(model => model.UnidadeMedida)</th>
+            <th>@Html.DisplayNameFor(model => model.Utilizado)</th>
+            <th>@Html.DisplayNameFor(model => model.Custo)</th>
+            <th>@Html.DisplayNameFor(model => model.Cultura)</th>
             <th></th>
         </tr>
     </thead>
@@ -33,6 +36,9 @@
             <td>@Html.DisplayFor(modelItem => item.Nome)</td>
             <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>
             <td>@Html.DisplayFor(modelItem => item.UnidadeMedida)</td>
+            <td>@Html.DisplayFor(modelItem => item.Utilizado)</td>
+            <td>@Html.DisplayFor(modelItem => item.Custo)</td>
+            <td>@Html.DisplayFor(modelItem => item.Cultura.Nome)</td>
             <td class="text-end">
                 <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fas fa-edit"></i> Atualizar</a>
                 <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="fas fa-eye"></i> Visualizar</a>

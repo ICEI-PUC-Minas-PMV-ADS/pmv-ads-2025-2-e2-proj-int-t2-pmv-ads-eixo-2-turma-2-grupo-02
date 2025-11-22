@@ -12,6 +12,38 @@
 
 <div id="map" class="agr-map"></div>
 
+@{
+    var alertas = new List<(string tipo, string icone, string titulo, string mensagem, bool temBotao)>
+    {
+        ("warning", "fas fa-exclamation-triangle", "Alerta Climático", "Previsão de chuvas intensas nos próximos 3 dias. Considere proteger as mudas jovens.", false),
+        ("danger", "fas fa-bug", "Detecção de Pragas", "Possível presença de pulgões detectada na área. Recomenda-se inspeção imediata.", false),
+        ("info", "fas fa-thermometer-half", "Temperatura Elevada", "Temperaturas acima de 35°C previstas. Aumente a frequência de irrigação.", false),
+        ("warning", "fas fa-wind", "Ventos Fortes", "Ventos de até 60 km/h previstos. Verifique a estabilidade das estruturas de suporte.", false),
+        ("danger", "fas fa-spider", "Risco de Fungos", "Condições de umidade favoráveis ao desenvolvimento de fungos. Monitore sinais de doenças.", false),
+        ("success", "fas fa-sun", "Condições Ideais", "Condições climáticas favoráveis para o crescimento. Mantenha o cronograma de cuidados.", false),
+        ("info", "fas fa-calendar-times", "Finalização Próxima", $"A cultura {Model.Cultura?.Nome ?? "Soja"} da plantação #{Model.Id} está próxima do período de finalização. Para alterar a cultura, você precisa adicionar uma nova plantação clicando abaixo:", true)
+    };
+    
+    var random = new Random();
+    var alertaSelecionado = alertas[random.Next(alertas.Count)];
+}
+
+<div class="position-fixed" style="top: 20px; right: 20px; z-index: 1050; max-width: 400px;">
+    <div class="alert alert-@alertaSelecionado.tipo alert-dismissible fade show" role="alert">
+        <i class="@alertaSelecionado.icone me-2"></i>
+        <strong>@alertaSelecionado.titulo:</strong> @alertaSelecionado.mensagem
+        @if (alertaSelecionado.temBotao)
+        {
+            <div class="mt-3">
+                <a asp-action="Create" class="btn btn-success btn-sm">
+                    <i class="fas fa-plus me-1"></i>Cadastrar plantação
+                </a>
+            </div>
+        }
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+</div>
+
 <div class="mb-5">
     <div class="agr-card p-5">
         <dl class="row">
@@ -50,6 +82,24 @@
             </dt>
             <dd class = "col-sm-10">
                 @Html.DisplayFor(model => model.Saude)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Cultura)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cultura.Nome)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Cultura.Recomendacao)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cultura.Recomendacao)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Cultura.Rotacao)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cultura.Rotacao)
             </dd>
         </dl>
     </div>

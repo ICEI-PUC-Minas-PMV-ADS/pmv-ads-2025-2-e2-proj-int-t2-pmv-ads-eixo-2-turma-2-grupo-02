@@ -4,6 +4,7 @@ using AgrInov.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgrInov.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251119005631_AddCultauraIdToPlantacoes")]
+    partial class AddCultauraIdToPlantacoes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,14 +82,6 @@ namespace AgrInov.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Recomendacao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Rotacao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Culturas");
@@ -117,36 +112,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Imagens");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.ImagemPlantacao", b =>
-                {
-                    b.Property<int>("PlantacaoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ImagemId")
-                        .HasColumnType("int");
-
-                    b.HasKey("PlantacaoId", "ImagemId");
-
-                    b.HasIndex("ImagemId");
-
-                    b.ToTable("ImagemPlantacao");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.ImagemPropriedade", b =>
-                {
-                    b.Property<int>("PropriedadeAgriculaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ImagemId")
-                        .HasColumnType("int");
-
-                    b.HasKey("PropriedadeAgriculaId", "ImagemId");
-
-                    b.HasIndex("ImagemId");
-
-                    b.ToTable("ImagemPropriedade");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Insumo", b =>
                 {
                     b.Property<int>("Id")
@@ -154,12 +119,6 @@ namespace AgrInov.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("CulturaId")
-                        .HasColumnType("int");
-
-                    b.Property<float>("Custo")
-                        .HasColumnType("real");
 
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
@@ -170,12 +129,7 @@ namespace AgrInov.Migrations
                     b.Property<string>("UnidadeMedida")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("Utilizado")
-                        .HasColumnType("real");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("CulturaId");
 
                     b.ToTable("Insumos");
                 });
@@ -359,45 +313,6 @@ namespace AgrInov.Migrations
                     b.ToTable("Vendas");
                 });
 
-            modelBuilder.Entity("AgrInov.Models.ImagemPlantacao", b =>
-                {
-                    b.HasOne("AgrInov.Models.Imagem", null)
-                        .WithMany("ImagensPlantacoes")
-                        .HasForeignKey("ImagemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AgrInov.Models.Plantacao", null)
-                        .WithMany("ImagensPlantacoes")
-                        .HasForeignKey("PlantacaoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("AgrInov.Models.ImagemPropriedade", b =>
-                {
-                    b.HasOne("AgrInov.Models.Imagem", null)
-                        .WithMany("ImagemPropriedade")
-                        .HasForeignKey("ImagemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AgrInov.Models.PropriedadeAgricula", null)
-                        .WithMany("ImagemPropriedade")
-                        .HasForeignKey("PropriedadeAgriculaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-                        
-            modelBuilder.Entity("AgrInov.Models.Insumo", b =>
-                {
-                    b.HasOne("AgrInov.Models.Cultura", "Cultura")
-                        .WithMany("Insumos")
-                        .HasForeignKey("CulturaId");
-
-                    b.Navigation("Cultura");
-                });
-
             modelBuilder.Entity("AgrInov.Models.Meta", b =>
                 {
                     b.HasOne("AgrInov.Models.Cultura", "Cultura")
@@ -440,28 +355,9 @@ namespace AgrInov.Migrations
 
             modelBuilder.Entity("AgrInov.Models.Cultura", b =>
                 {
-                    b.Navigation("Insumos");
-
                     b.Navigation("Metas");
 
                     b.Navigation("Vendas");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Imagem", b =>
-                {
-                    b.Navigation("ImagemPropriedade");
-
-                    b.Navigation("ImagensPlantacoes");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.Plantacao", b =>
-                {
-                    b.Navigation("ImagensPlantacoes");
-                });
-
-            modelBuilder.Entity("AgrInov.Models.PropriedadeAgricula", b =>
-                {
-                    b.Navigation("ImagemPropriedade");
                 });
 #pragma warning restore 612, 618
         }

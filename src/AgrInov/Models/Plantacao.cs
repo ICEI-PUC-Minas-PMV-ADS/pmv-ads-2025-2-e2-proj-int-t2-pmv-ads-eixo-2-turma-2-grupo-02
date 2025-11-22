@@ -14,6 +14,11 @@ namespace AgrInov.Models
         public string Status { get; set; }
         public int Producao { get; set; }
         public string Saude  { get; set; }
+        [Display(Name = "Cultura")]
+        public int? CulturaId { get; set; }
+
+        [ForeignKey("CulturaId")]
+        public Cultura Cultura { get; set; }
 
         public ICollection<ImagemPlantacao> ImagensPlantacoes  { get; set; }
     }

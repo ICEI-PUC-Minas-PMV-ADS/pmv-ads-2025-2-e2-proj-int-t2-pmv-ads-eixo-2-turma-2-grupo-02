@@ -1,29 +1,27 @@
 message: Please cite this software using these metadata.
-title:
+title: AgriNov
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Alves Pires
+    given-names: Gabriel
+  - family-names:de Souza Santos
+    given-names: Lucas
+  - family-names: Carvalho
+    given-names: Mario Guilherme 
+  - family-names: de Lucena Tavares
+    given-names: Mateus
+  - family-names:Silva Otéro
+    given-names: Pamela
+  - family-names: Silva dos Reis
+    given-names: Tiago
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: da Costa
+    given-names: José Wilson
 keywords:
-  - 
-  - 
-repository-code: 
+  - agricultura de precisão
+  - plataforma
+  - tomada de decisões
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t2-pmv-ads-eixo-2-turma-2-grupo-02
 version: 1.0.0
-date-released: 2023-10-31
+
+date-released: 2025-12-08

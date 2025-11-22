@@ -1,51 +1,75 @@
 @model AgrInov.Models.PropriedadeAgricula
+@using AgrInov.Models
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1 class="fs-3 mb-5">Propriedade Agrícula → Detalhes</h1>
+<h1 class="fs-3 mb-5">Propriedade Agrícola → Detalhes</h1>
 
 <div class="d-flex justify-content-end align-items-center gap-2 my-4">
     <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark">Editar</a>
 </div>
 
 <div class="mb-5">
-    <div class="agr-card p-5">
+    <div class="agr-card p-5 border rounded shadow-sm">
         <dl class="row">
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Area)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Area)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Localizacao)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Localizacao)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.TipoDeSolo)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.TipoDeSolo)
-            </dd>
-            <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Cnpj)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Cnpj)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.TamanhoHectares)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.TamanhoHectares)
-            </dd>
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Area)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.Area)</dd>
+
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Localizacao)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.Localizacao)</dd>
+
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.TipoDeSolo)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.TipoDeSolo)</dd>
+
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Cnpj)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.Cnpj)</dd>
+
+            <dt class="col-sm-2">@Html.DisplayNameFor(model => model.TamanhoHectares)</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.TamanhoHectares)</dd>
         </dl>
     </div>
 </div>
+
+<!-- WIDGET DE CLIMA -->
+@if (ViewBag.PrevisaoDoTempo != null && ((List<PrevisaoDiaria>)ViewBag.PrevisaoDoTempo).Count > 0)
+{
+    <div class="mb-5">
+        <h4 class="mb-3 text-primary">
+            Previsão do Tempo para: <strong>@ViewBag.CidadeClima</strong>
+        </h4>
+
+        <div class="card border-info">
+            <div class="card-body bg-light">
+                <div class="row text-center">
+                    @foreach (var dia in (List<PrevisaoDiaria>)ViewBag.PrevisaoDoTempo)
+                    {
+                        <div class="col border-end">
+                            <p class="mb-1 fw-bold text-uppercase">@dia.weekday</p>
+                            <small class="text-muted">@dia.date</small>
+                            <div class="my-2">
+                                <span class="badge bg-white text-dark border shadow-sm">@dia.description</span>
+                            </div>
+                            <p class="mb-0">
+                                <span class="text-danger fw-bold">@dia.max°</span>
+                                <span class="text-muted">/</span>
+                                <span class="text-primary fw-bold">@dia.min°</span>
+                            </p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (!string.IsNullOrEmpty(Model.Localizacao))
+{
+    <div class="alert alert-warning mb-5">
+        <small> Não foi possível carregar a previsão para "@Model.Localizacao". Verifique se o nome da cidade está escrito corretamente (Ex: Betim, MG).</small>
+    </div>
+}
+<!-- FIM DO WIDGET -->
 
 <div class="d-flex justify-content-start gap-1">
     <a asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
