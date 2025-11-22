@@ -98,6 +98,44 @@ https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
 
 <hr>
 
+<hr>
+
+| **Caso de Teste** 	| **CT09 – Gerenciar Imagens da Fazenda - Visualizar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/877bd07c-a9e6-4de8-93d2-d51063392ca3
+
+<hr>
+
+| **Caso de Teste** 	| **CT10 – Gerenciar Imagens da Fazenda - Anexar as Imagens** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/89376b50-1e97-4f50-92ba-299b59f1836f
+
+<hr>
+
+| **Caso de Teste** 	| **CT11 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Lucas|
+
+Registro de evidência:
+
+https://github.com/user-attachments/assets/82ed4925-bd37-42c4-ad77-aa8901e339b4
+
+<hr>
+
 | **Caso de Teste** 	| **CT12 – Visualizar a listagem de vendas**	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-010 – A aplicação deve permitir o gerenciamento de registros de vendas, custos e lucros (CRUD). |
@@ -165,43 +203,7 @@ https://github.com/user-attachments/assets/125b4ed6-d2fa-42d4-b40a-5a84f9dcc2ab
 
 <hr>
 
-<hr>
 
-| **Caso de Teste** 	| **CT09 – Gerenciar Imagens da Fazenda - Visualizar as Imagens** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
-| Resultados obtidos| Aprovado |
-|Responsável pela execução do caso de Teste |	Lucas|
-
-Registro de evidência: 
-
-https://github.com/user-attachments/assets/877bd07c-a9e6-4de8-93d2-d51063392ca3
-
-<hr>
-
-| **Caso de Teste** 	| **CT10 – Gerenciar Imagens da Fazenda - Anexar as Imagens** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
-| Resultados obtidos| Aprovado |
-|Responsável pela execução do caso de Teste |	Lucas|
-
-Registro de evidência:
-
-https://github.com/user-attachments/assets/89376b50-1e97-4f50-92ba-299b59f1836f
-
-<hr>
-
-| **Caso de Teste** 	| **CT11 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
-| Resultados obtidos| Aprovado |
-|Responsável pela execução do caso de Teste |	Lucas|
-
-Registro de evidência:
-
-https://github.com/user-attachments/assets/82ed4925-bd37-42c4-ad77-aa8901e339b4
-
-<hr>
 
 | **Caso de Teste** 	| **CT17 – Visualizar relatório financeiro** 	|
 |:---:	|:---:	|
@@ -214,6 +216,19 @@ Registro de evidência:
 https://github.com/user-attachments/assets/bfeb849a-3cbe-4c3e-bc87-a836ded1a40a
 
 
+
+<hr>
+
+
+| **Caso de Teste** 	| **CT18 –  Relatórios sobre as plantações** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|  RF-013	- A aplicação deve permitir que o técnico agrícola acesse relatórios detalhados com base em dados e imagens coletadas sobre as plantações.  |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela |
+
+Registro de evidência:
+
+aaaaaaaaaaaaaaaaa
 
 <hr>
 
