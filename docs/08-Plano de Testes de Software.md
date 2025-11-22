@@ -55,8 +55,6 @@
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Efetuar login <br> - Clicar em "Gerenciar compra de insumos" <br> - Preencher os campos obrigatórios (Nome, Quantidade, Unidade de medida) <br> - Clicar em "Cadastrar" <br> - Clicar em "Atualizar" <br> - Atualizar os dados desejados <br> - Clicar em "Atualizar" <br> - Clicar em "Remover" <br> - Clicar em "Confirmar" |
 |Critério de Êxito | - O gerenciamento foi realizado com sucesso |
 
-
-
 | **Caso de Teste** 	| **CT08 – Visualizar Informação sobre o risco a saúde da plantação** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-008 - A aplicação deve emitir alertas ao agricultor sobre riscos de clima adverso ou presença de pragas |
@@ -144,37 +142,27 @@
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Acessar a página de Gerenciar metas de vendas <br> - Clicar na aba de relatórios da Página de Gerenciar Metas de Produção |
 |Critério de Êxito | - Gráfico mostrando o comparativo  do desempenho real e metas |
-| **Caso de Teste** 	| **CT24 – Download Gráfico 1** 	|
+| **Caso de Teste** 	| **CT24 – Download do gráfico de meta de produção** 	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
 | Objetivo do Teste 	| Baixar Relatórios de meta de produção |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Vá até a aba de relatório <br> - Clique na aba de Relatórios metas de produção <br> - Baixe o relatório clicando no campo de download |
 |Critério de Êxito | - O download feito com sucesso. |
-| **Caso de Teste** 	| **CT25 – Download Gráfico 2** 	|
+| **Caso de Teste** 	| **CT25 – Download do gráfico financeiro** 	|
 |	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
-| Objetivo do Teste 	| Baixar Relatórios de meta de vendas por plantio |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Vá até a aba de relatório <br> - Clique na aba de Relatórios de vendas de plantio <br> - Baixe o relatório clicando no campo de download |
+| Objetivo do Teste 	| Baixar Relatório financeiro |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Vá até o módulo de Relatórios Financeiros <br> - Clique no ícone de três barras  <br> - Baixe o relatório clicando na opção "download " que pode ser nos formatos .PNG, .JPEG. or  |
 |Critério de Êxito | - O download feito com sucesso. |
-| **Caso de Teste** 	| **CT26 – Download Gráfico 3** 	|
-|	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
-| Objetivo do Teste 	| Baixar Relatórios de Clima |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Vá até a aba de relatório <br> - Clique na aba de Relatórios de Clima <br> - Baixe o relatório clicando no campo de download |
-|Critério de Êxito | - O download feito com sucesso. |
-| **Caso de Teste** 	| **CT27 – Download Gráfico 4** 	|
-|	Requisito Associado 	| RF-017 	A aplicação deve permitir o download dos relatórios|
-| Objetivo do Teste 	| Baixar Relatórios de Insumos |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Vá até a aba de relatório <br> - Clique na aba de Relatórios de Insumos <br> - Baixe o relatório clicando no campo de download |
-|Critério de Êxito | - O download feito com sucesso. |
-| **Caso de Teste** 	| **CT28 – Previsão do clima** 	|
+| **Caso de Teste** 	| **CT26 – Previsão do clima** 	|
 |	Requisito Associado 	|RF-018  A aplicação deve fornecer uma previsão do clima dos próximos 5 dias.|
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Acessar a página de Relatório <br> - Clicar em relatório de Clima |
 |Critério de Êxito | - Visualizar relatório de clima com os últimos 5 dias |
-| **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
+| **Caso de Teste** 	| **CT27 – Cadastrar propriedade agrícola** 	|
 |	Requisito Associado 	|RF-019  A aplicação deve permitir o gerenciamento da fazenda (CRUD).|
 | Objetivo do Teste 	| Verificar se o usuário consegue cadastrar a fazenda. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Acessar a página de Propriedade Agrícola <br> - Cadastrar os dados obrigatórios da propriedade (Nome da propriedade, CNPJ, Area, Imagem, Localização, Tipos de Solos e Tamanho Hectares) |
 |Critério de Êxito | - As informações são cadastradas corretamente |
-| **Caso de Teste** 	| **CT30 – Atualizar propriedade agrícola** 	|
+| **Caso de Teste** 	| **CT28 – Atualizar propriedade agrícola** 	|
 |	Requisito Associado 	|RF-019  A aplicação deve permitir o gerenciamento da fazenda (CRUD).|
 | Objetivo do Teste 	| Verificar se o usuário consegue atualizar a fazenda. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Acessar a página de Propriedade Agrícola <br> - Clicar no botão "Editar" <br> - Editar os dados da fazenda <br> - Clicar no botão "Atualizar" |
