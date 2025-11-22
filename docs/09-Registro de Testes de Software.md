@@ -295,55 +295,30 @@ aaaaaaaaaaaaaaaa
 
 <hr>
 
-| **Caso de Teste** | **CT24 – Download Gráfico 1** |
+| **Caso de Teste** | **CT24 – Download do gráfico de meta de produção** |
 |:---:|:---:|
 | Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
 | Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
+| Responsável pela execução do caso de Teste | Gabriel |
 
 Registro de evidência:
 
-aaaaaaaaaaaaaaaa
+<!-- 🔴TODO: inserir link do video -->
 
 <hr>
 
-| **Caso de Teste** | **CT25 – Download Gráfico 2** |
+| **Caso de Teste** | **CT25 – Download do gráfico financeiro** |
 |:---:|:---:|
 | Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
 | Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
+| Responsável pela execução do caso de Teste | Gabriel |
 
 Registro de evidência:
 
-aaaaaaaaaaaaaaaa
-
+<!-- 🔴TODO: inserir link do video -->
 <hr>
 
-| **Caso de Teste** | **CT26 – Download Gráfico 3** |
-|:---:|:---:|
-| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
-| Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
-
-Registro de evidência:
-
-aaaaaaaaaaaaaaaa
-
-<hr>
-
-| **Caso de Teste** | **CT27 – Download Gráfico 4** |
-|:---:|:---:|
-| Requisito Associado | RF-017 – A aplicação deve permitir o download dos relatórios |
-| Resultados obtidos | Aprovado |
-| Responsável pela execução do caso de Teste | Pamela |
-
-Registro de evidência:
-
-aaaaaaaaaaaaaaaa
-
-<hr>
-
-| **Caso de Teste** 	| **CT28 – Previsão do clima** 	|
+| **Caso de Teste** 	| **CT26 – Previsão do clima** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-018 A aplicação deve fornecer uma previsão do clima dos próximos 5 dias. |
 | Resultados obtidos| Aprovado |
@@ -355,7 +330,7 @@ https://github.com/user-attachments/assets/59f45e93-7354-4fcb-a96b-14c634dc81f9
 
 <hr>
 
-| **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
+| **Caso de Teste** 	| **CT27 – Cadastrar propriedade agrícola** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-019 A aplicação deve permitir o gerenciamento da fazenda (CRUD). |
 | Resultados obtidos| Aprovado |
@@ -367,7 +342,7 @@ https://github.com/user-attachments/assets/2be37324-7ce0-4352-90a1-c206b5ee30f0
 
 <hr>
 
-| **Caso de Teste** 	| **CT30 – Atualizar propriedade agrícola** 	|
+| **Caso de Teste** 	| **CT28 – Atualizar propriedade agrícola** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-019 A aplicação deve permitir o gerenciamento da fazenda (CRUD). |
 | Resultados obtidos| Aprovado |
