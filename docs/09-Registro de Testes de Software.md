@@ -326,7 +326,7 @@ aaaaaaaaaaaaaaaa
 
 Registro de evidência:
 
-<!-- 🔴TODO: inserir link do video -->
+
 
 <hr>
 
@@ -338,10 +338,14 @@ Registro de evidência:
 
 Registro de evidência:
 
-https://github.com/user-attachments/assets/318a8338-be5a-449c-9165-0970800ee1a3
 
 
-<!-- 🔴TODO: inserir link do video -->
+https://github.com/user-attachments/assets/eea3cc76-b1a3-4a91-8d2c-3032bbd63d69
+
+
+
+
+
 <hr>
 
 | **Caso de Teste** 	| **CT26 – Previsão do clima** 	|
