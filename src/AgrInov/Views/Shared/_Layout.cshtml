@@ -119,6 +119,11 @@
                                     <i class="fas fa-file-invoice-dollar"></i> Nota Fiscal
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "RelatoriosFinanceiros" ? "active" : "")" asp-controller="RelatoriosFinanceiros" asp-action="Index">
+                                    <i class="fas fa-file-invoice-dollar"></i> Relatórios Financeiros
+                                </a>
+                            </li>
                         }
                     </ul>
                 </nav>
