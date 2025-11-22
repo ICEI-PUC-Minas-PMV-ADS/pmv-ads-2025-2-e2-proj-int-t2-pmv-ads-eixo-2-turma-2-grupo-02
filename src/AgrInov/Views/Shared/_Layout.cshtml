@@ -101,6 +101,11 @@
                                     <i class="fas fa-boxes"></i> Insumos
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Safra" ? "active" : "")" asp-controller="Safra" asp-action="Index">
+                                    <i class="fas fa-chart-line"></i>Relatorio de Safra
+                                </a>
+                            </li>
                         }
                         @if (User.IsInRole("TI") || User.IsInRole("Gestor"))
                         {
