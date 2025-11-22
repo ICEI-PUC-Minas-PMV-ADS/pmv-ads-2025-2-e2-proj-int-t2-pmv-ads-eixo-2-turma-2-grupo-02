@@ -313,8 +313,7 @@ https://github.com/user-attachments/assets/d66a7cca-24ad-416b-b25a-4b442ebfe39b
 |Responsável pela execução do caso de Teste |	Pamela|
 
 Registro de evidência: 
-
-aaaaaaaaaaaaaaaa
+link
 
 <hr>
 
