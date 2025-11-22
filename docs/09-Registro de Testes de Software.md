@@ -99,6 +99,22 @@ https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
 
 
 <hr>
+<hr>
+
+| **Caso de Teste** 	| **CT08 – Visualizar Informação sobre o risco a saúde da plantação** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-008 - A aplicação deve emitir alertas ao agricultor sobre riscos de clima adverso ou presença de pragas |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Mario|
+
+Registro de evidência: 
+
+https://github.com/user-attachments/assets/7cfeb3ad-28ad-4e0d-bc45-dc00afade3ec
+
+
+<hr>
+
+
 
 | **Caso de Teste** 	| **CT12 – Visualizar a listagem de vendas**	|
 |:---:	|:---:	|
