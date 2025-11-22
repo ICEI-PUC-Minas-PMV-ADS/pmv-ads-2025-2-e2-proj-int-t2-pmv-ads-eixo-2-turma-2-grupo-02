@@ -78,7 +78,7 @@
 |  	|  	|
 | **Caso de Teste**	| **CT11 – Gerenciar Imagens da Fazenda - Desistir de Anexar a imagem**	|
 |Requisito Associado | RF-009	A aplicação deve permitir o gerenciamento de imagens da fazenda |
-| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo anexá-las. |
+| Objetivo do Teste 	| Verificar se a aplicação exibe o gerenciamento das imagens da fazenda permitindo cancelar o anexo. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://agrinov-b3b2emayh8bmgsft.eastus2-01.azurewebsites.net/<br> - Clicar no módulo de **Gerenciar Imagens da Fazenda** <br> - Será exibido a página do gerenciamento da fazenda <br> - No canto Superior direito deverá conter um botão de **Anexar Imagens da Fazenda** <br> - Ao clicar neste botão deverá ser exibido um modal para anexar a imagem da fazenda <br> - Ao anexar a imagem e clicar no X ou **cancelar** a imagem não deverá ser anexada |
 |Critério de Êxito | - A imagem não foi anexada|
 |  	|  	|
