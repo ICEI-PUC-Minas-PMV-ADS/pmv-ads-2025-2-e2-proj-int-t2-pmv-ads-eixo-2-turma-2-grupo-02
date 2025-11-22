@@ -94,8 +94,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Imagem" ? "active" : "")" asp-controller="Imagem" asp-action="Index">
-                                <i class="fas fa-images me-2"></i>Imagem
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "ImagemPropriedade" ? "active" : "")" asp-controller="ImagemPropriedade" asp-action="Index">
+                                <i class="fas fa-images me-2"></i>Imagem Propriedade
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "ImagemPlantacao" ? "active" : "")" asp-controller="ImagemPlantacao" asp-action="Index">
+                                <i class="fas fa-images me-2"></i>Imagem Plantacao
                             </a>
                         </li>
                     </ul>
