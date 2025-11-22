@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AgrInov.Models
@@ -22,5 +23,8 @@ namespace AgrInov.Models
 
         [ForeignKey("CulturaId")]
         public Cultura Cultura { get; set; }
+
+        [DisplayName("Data da Operação")]
+        public DateTime DataOperacao { get; set; } = DateTime.Now;
     }
 }

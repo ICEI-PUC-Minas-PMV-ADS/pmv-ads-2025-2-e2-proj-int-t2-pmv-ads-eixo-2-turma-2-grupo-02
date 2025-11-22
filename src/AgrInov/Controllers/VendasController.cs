@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AgrInov.Data;
+using AgrInov.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using AgrInov.Data;
-using AgrInov.Models;
 
 namespace AgrInov.Controllers
 {
@@ -57,7 +53,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Valor,Quantidade,CulturaId")] Venda venda)
+        public async Task<IActionResult> Create([Bind("Id,Valor,Quantidade,CulturaId,DataOperacao")] Venda venda)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +87,7 @@ namespace AgrInov.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Valor,Quantidade,CulturaId")] Venda venda)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Valor,Quantidade,CulturaId,DataOperacao")] Venda venda)
         {
             if (id != venda.Id)
             {

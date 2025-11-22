@@ -1,10 +1,9 @@
 using AgrInov.Data;
 using AgrInov.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication;
-using BCrypt.Net;
 
 namespace AgrInov.Controllers
 {
@@ -21,13 +20,13 @@ namespace AgrInov.Controllers
         public async Task<IActionResult> Login()
         {
             var temUsuarios = await _context.Usuarios.AnyAsync();
-            
+
             // Se não há usuários, redireciona para cadastro
             if (!temUsuarios)
             {
                 return RedirectToAction("Cadastro");
             }
-            
+
             ViewBag.TemUsuarios = temUsuarios;
             return View();
         }
@@ -56,7 +55,7 @@ namespace AgrInov.Controllers
                     new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
                     new Claim(ClaimTypes.Email, usuario.Email)
                 };
-                
+
                 if (usuario.Cargo != null)
                 {
                     claims.Add(new Claim(ClaimTypes.Role, usuario.Cargo.Nome));
@@ -92,7 +91,7 @@ namespace AgrInov.Controllers
             {
                 return RedirectToAction("Login");
             }
-            
+
             return View();
         }
 
@@ -119,7 +118,7 @@ namespace AgrInov.Controllers
                     _context.Cargos.Add(cargoTI);
                     await _context.SaveChangesAsync();
                 }
-                
+
                 usuario.CargoId = cargoTI.Id;
                 usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Usuarios.Add(usuario);
