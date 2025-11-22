@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/88e03693-88ec-4831-b643-fd2d7ced42c3
 # Registro de Testes de Software
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
@@ -135,6 +133,18 @@ https://github.com/user-attachments/assets/82ed4925-bd37-42c4-ad77-aa8901e339b4
 
 <hr>
 
+| **Caso de Teste** 	| **CT17 – Visualizar relatório financeiro** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|  RF-012	A aplicação deve gerar relatórios financeiros com custos de insumos e receitas por safra, apresentando o lucro líquido |
+| Resultados obtidos| Aprovado |
+|Responsável pela execução do caso de Teste |	Pamela|
+
+Registro de evidência:
+
+aaaaa
+
+<hr>
+
 | **Caso de Teste** 	| **CT19 – Recomendações sobre otimização da produção**	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-014	- A aplicação deve fornecer recomendações automáticas de boas práticas para otimização da produção (ex.: irrigação, correção do solo). |
@@ -250,11 +260,11 @@ aaaaaaaaaaaaaaaa
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-018 A aplicação deve fornecer uma previsão do clima dos próximos 5 dias. |
 | Resultados obtidos| Aprovado |
-|Responsável pela execução do caso de Teste |	Tiago |
+|Responsável pela execução do caso de Teste |	Pamela |
 
 Registro de evidência: 
 
-
+aaaaaaaaaaaaaaaaaaaa
 <hr>
 
 | **Caso de Teste** 	| **CT29 – Cadastrar propriedade agrícola** 	|
