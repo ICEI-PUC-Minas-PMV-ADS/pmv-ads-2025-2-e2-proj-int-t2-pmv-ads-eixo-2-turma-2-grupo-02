@@ -101,12 +101,12 @@
                                         <i class="fas fa-boxes"></i> Insumos
                                     </a>
                                 </li>
-                                 <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Safra" ? "active" : "")" asp-controller="Safra" asp-action="Index">
                                         <i class="fas fa-chart-line"></i> Relatorio de Safra
                                     </a>
                                 </li>
-                                
+
                             }
                             @if (User.IsInRole("TI") || User.IsInRole("Gestor"))
                             {
@@ -127,12 +127,12 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "RelatoriosFinanceiros" ? "active" : "")" asp-controller="RelatoriosFinanceiros" asp-action="Index">
-                                        <i class="fas fa-file-invoice-dollar"></i> Relatórios Financeiros
+                                        <i class="fas fa-coins"></i> Relatórios Financeiros
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "RelatorioDeMetas" ? "active" : "")" asp-controller="RelatorioDeMetas" asp-action="Index">
-                                        <i class="fas fa-file-invoice-dollar"></i> Relatórios de metas
+                                        <i class="fas fa-clipboard-check"></i> Relatórios de metas
                                     </a>
                                 </li>
                             }
