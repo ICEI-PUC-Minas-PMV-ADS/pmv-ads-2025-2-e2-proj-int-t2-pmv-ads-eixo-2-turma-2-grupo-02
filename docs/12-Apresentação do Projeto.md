@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/5b5923b0-34b7-43e1-a3bd-1022c7c5da3d
 
 ## Vídeo de apresentação - Etapa 05
 
-Inclua aqui o vídeo de APRESENTAÇÃO FINAL do projeto produzido na Etapa 05.
+https://github.com/user-attachments/assets/46418a43-8cf7-49f9-9a43-37ad2ad2290d
 
 ### Orientações para Produção do Vídeo Pitch (Etapa 05)
 
