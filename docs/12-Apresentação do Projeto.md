@@ -14,7 +14,7 @@ AgrInov
 </p>
 
 ## Conjunto de Slides (Estrutura)
-https://www.canva.com/design/DAGxJJ9Q41I/lI6MweRALqOaWzUVU7WJUw/edit
+[https://www.canva.com/design/DAGxJJ9Q41I/lI6MweRALqOaWzUVU7WJUw/edit](https://www.canva.com/design/DAG6wFvkIQ4/QhM8MSPoJc-_t3Kb5pqkSw/view?utm_content=DAG6wFvkIQ4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h541cb52e05)
 
 ## Vídeo de apresentação - Etapa 01
 https://github.com/user-attachments/assets/5b5923b0-34b7-43e1-a3bd-1022c7c5da3d
