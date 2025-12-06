@@ -3,7 +3,7 @@
 ## Instalação e Execução
 
 ### Pré-requisitos
-- .NET SDK 6.0 ou superior
+- .NET SDK 8 ou superior
 - SQL Server ou banco de dados compatível
 - Visual Studio 2022 ou VS Code
 
